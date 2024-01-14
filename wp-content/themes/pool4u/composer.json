@@ -1,0 +1,15 @@
+{
+    "name": "headspin/sunphade",
+    "description": "This is dependency for creating subscription options",
+    "type": "library",
+    "require": {
+        "mailchimp/marketing": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vyacheslav lobintsev"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,317 @@
+.wp-block-headspin-slider-text{
+    padding: 150px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 24px;
+
+    @include medium-desktop-up{
+        gap: 70px;
+        padding: 200px 0 100px;
+        
+    }
+    @include tablet-l-up{
+        grid-template-columns: 1.5fr 2.5fr;
+        grid-template-rows: 1fr;
+    }
+    .swiper{
+        overflow: visible;
+        padding-bottom: 80px;
+        grid-row: 2;
+
+        @include tablet-l-up{
+            grid-column: 2;
+            grid-row: 1;
+
+        }
+        @include phone-only{
+            padding-bottom: 124px;
+        }
+        .slider-text__image{
+            cursor: grab;
+            display: flex;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 90%;
+                height: 95%;
+                background: $yellow;
+                top: 35px;
+                right: -8px;
+                z-index: -1;
+                border-radius:36px;
+            }
+            @include phone-only{
+                &::after{
+                    top: 20px;
+                    border-radius: 16px;
+                }
+            }
+
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            
+            img.swiper-slide{
+                object-fit: cover;
+                position: unset;
+                // height: auto;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                border-radius: 36px;
+                @include phone-only{
+                    aspect-ratio: 4 / 3;
+                    border-radius: 16px;
+                }
+            }
+
+            
+        }
+    }
+    .swiper-autoplay-option{
+        position: relative;
+        cursor: pointer;
+        font-size: 13px;
+        margin-top: 16px;
+        padding-left: 30px;
+        line-height: 140%;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            transform: translateY(-50%);
+            left: 3px;
+            border-left: 8px solid $teal;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 8px solid transparent;
+        }
+        &.play{
+            &::after{
+                border-left: 4px solid $teal;
+                border-top: 0;
+                border-bottom: 0;
+                border-right: 4px solid $teal;
+            }
+        }
+    }
+    .protection-description-wrapper{
+        position: absolute;
+        z-index: 5;
+        color: $white;
+        border-radius: 8px;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity .3s;
+        &.visible{
+            opacity: 1;
+        }
+        .protection-description{
+            padding: 12px 24px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 40px;
+                height: 2px;
+                left: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: -44px;
+                width: 8px;
+                height: 8px;
+                border-radius: 8px;
+                transform: translateY(-50%);
+            }
+            ul{
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+           li, p{
+                font-size: 13px;
+                color: $white;
+                margin-top: 0;
+                
+            }
+        }
+        &.protection{
+            background: $orange;
+            top: 13%;
+            left: 20%;
+            @include phone-only{
+                left: 22%;
+            }
+            .protection-description{
+                &::after, &::before{
+                    background: $orange;
+                }
+            }
+        }
+        &.blinds, &.sunscreens{
+            background: $red;
+            top: 15%;
+            left: 33%;
+            @include phone-only{
+                top: 10%;
+                left: 36%;
+            }
+            @include small-phone-only{
+                left: 40%;
+            }
+            .protection-description{
+                &::after, &::before{
+                    background: $red;
+                }
+            }
+        }
+        &.sunscreens{
+            top: 46%;
+            left: 33%;
+            @include phone-only{
+                top: 40%;
+                left: 37%;
+            }
+            @include small-phone-only{
+                top: 30%;
+            }
+        }
+        &.sunphade{
+            background: $teal;
+            top: 30%;
+            left: 20%;
+            @include phone-only{
+                left: 22%;
+            }
+            @include small-phone-only{
+                left: 24%;
+            }
+            .protection-description{
+                &::after, &::before{
+                    background: $teal;
+                }
+            }
+        }
+
+    }
+
+    .swiper-pagination{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 25px;
+        @include phone-only{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 25px);
+            row-gap: 14px;
+        }
+        @include small-phone-only{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-bullet{
+            position: relative;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            background: transparent;
+            & > div{
+                position: absolute;
+                left: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 14px;
+                @include desktop-up{
+                    font-size: $base-font-size;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 24px;
+                inset: 0;
+                background: transparent;
+                border: 2px solid $teal;
+                border-radius: 24px;
+                opacity: 1;
+
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+                top: 48%;
+                transform: translateY(-50%);
+                left: 2px;
+                background: $teal;
+                border: 2px solid $white;
+                border-radius: 22px;
+                opacity: 0 ;
+            }
+            &-active{
+                background: transparent;
+                &::after{
+                    opacity: 1;
+                }
+            }
+        }
+
+
+    }
+    .slider-text__content{
+        display: flex;
+        align-items: center;
+        &-wrapper{
+            display: grid;
+            grid-template-columns: 50px auto;
+            grid-template-rows: 16px .5fr 1fr .6fr;
+            gap: 14px;
+            > img{
+                grid-row-end: span 2;
+                @include tablet-l-up{
+                    margin-bottom: 24px;
+                }
+            }
+            .slider-text__subheading{
+                @include font('buttons', $weight: 700, $size: 13px );
+                text-transform: uppercase;
+                color: $orange;
+                grid-row: 1;
+                grid-column: 2;
+                margin-bottom: 0;
+            }
+            .slider-text__heading{
+                grid-row: 2;
+                grid-column: 2;
+                margin-bottom: 5px;
+            }
+            .slider-text__preamble{
+                grid-row: 3 ;
+                grid-column: 1 / span 2;
+                margin-bottom: 10px;
+                @include tablet-l-up{
+                    margin-bottom: 24px;
+                }
+            }
+            .slider-text__btn-group{
+                grid-row: 4 ;
+                grid-column: 1 / span 2;
+                @include font('buttons', 700, 13px);
+                .wp-block-button__link{
+                    background: $teal;
+                }
+            }
+            @include tablet-l-up{
+                display: unset;
+            }
+        }
+    }
+}

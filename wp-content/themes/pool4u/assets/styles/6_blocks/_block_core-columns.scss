@@ -1,0 +1,28 @@
+/**
+ *  ██████╗ ██████╗ ██╗     ██╗   ██╗███╗   ███╗███╗   ██╗███████╗
+ * ██╔════╝██╔═══██╗██║     ██║   ██║████╗ ████║████╗  ██║██╔════╝
+ * ██║     ██║   ██║██║     ██║   ██║██╔████╔██║██╔██╗ ██║███████╗
+ * ██║     ██║   ██║██║     ██║   ██║██║╚██╔╝██║██║╚██╗██║╚════██║
+ * ╚██████╗╚██████╔╝███████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚████║███████║
+ *  ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝
+ *
+ * Core WP Block
+ */
+p + .wp-block-columns{
+	margin: 40px 0;
+}
+.wp-block-headspin-image-text + .wp-block-columns{
+	margin: 40px 0;
+}
+
+ .wp-block-columns{
+	margin: 80px 0;
+
+	.wp-block-column {
+		margin-bottom: half($base-spacing-unit);
+	}
+	& + .wp-block-headspin-image-text.is-style-link{
+		margin-top: -1.75em;
+	 }
+
+}

@@ -1,0 +1,123 @@
+/*
+	oooooooooo.                  .       .
+	`888'   `Y8b               .o8     .o8
+	 888     888 oooo  oooo  .o888oo .o888oo  .ooooo.  ooo. .oo.    .oooo.o
+	 888oooo888' `888  `888    888     888   d88' `88b `888P"Y88b  d88(  "8
+	 888    `88b  888   888    888     888   888   888  888   888  `"Y88b.
+	 888    .88P  888   888    888 .   888 . 888   888  888   888  o.  )88b
+	o888bood8P'   `V88V"V8P'   "888"   "888" `Y8bod8P' o888o o888o 8""888P'
+ */
+
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ */
+.btn,
+.wp-block-button__link {
+    position: relative;
+	background: $btn-background;
+    border: 0; /* [4] */
+	border-radius: 100px;
+	color: $btn-text;
+    cursor: pointer; /* [5] */
+    display: inline-block; /* [1] */
+    margin:  0; /* [4] */
+    max-width: 100%;
+    overflow: visible; /* [6] */
+    padding: 10px 24px;
+    text-align: center; /* [4] */
+    text-decoration: none !important; /* [4] */
+    user-select: none;
+    vertical-align: middle; /* [2] */
+    transition: all .2s;
+	@include font("buttons", $size: 13px, $weight: 700, $line-height: 17px);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+        &.tertiary{
+            background: $yellow;
+            color: $teal;
+            &::after{
+                border-right: 1px solid $teal;
+                border-bottom: 1px solid $teal;
+            }
+        }
+    @include tablet-p-up {
+        width: unset;
+    }
+    &::after{
+        position: absolute;
+        content:'';
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+        top: 40%;
+        right: 15px;
+        transform: rotate(-45deg);
+    }
+
+
+    &:disabled {
+    	cursor: not-allowed;
+    	opacity: .7;
+    }
+
+    /**
+     * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+     */
+    &::-moz-focus-inner {
+        border:  0;
+        padding: 0;
+    }
+
+    &.center {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+}
+.wp-block-button{
+    .wp-block-button__link{
+
+        &:hover {
+            background: $btn-hover;
+            color: $btn-text;
+            padding-right: 40px;
+        }
+        &.tertiary{
+            &:hover{
+                background: $btn-tertiary-hover;
+                color: $teal;
+            }
+            &.orange{
+                background: $orange;
+                &:hover{
+                    background: darken($color: $orange, $amount: 10);
+                }
+            }
+        }
+    }
+     + .wp-block-button{
+        .wp-block-button__link{
+            
+            background: $white;
+            border: 1px solid $teal;
+            color: $teal;
+            &::after{
+                border-right: 1px solid $teal;
+                border-bottom: 1px solid $teal;
+            }
+            
+        }
+        
+    }
+}

@@ -1,0 +1,43 @@
+/*
+	ooooooooooooo                                                                           oooo
+	8'   888   `8                                                                           `888
+	     888      oooo    ooo oo.ooooo.   .ooooo.   .oooooooo oooo d8b  .oooo.   oo.ooooo.   888 .oo.   oooo    ooo
+	     888       `88.  .8'   888' `88b d88' `88b 888' `88b  `888""8P `P  )88b   888' `88b  888P"Y88b   `88.  .8'
+	     888        `88..8'    888   888 888   888 888   888   888      .oP"888   888   888  888   888    `88..8'
+	     888         `888'     888   888 888   888 `88bod8P'   888     d8(  888   888   888  888   888     `888'
+	    o888o         .8'      888bod8P' `Y8bod8P' `8oooooo.  d888b    `Y888""8o  888bod8P' o888o o888o     .8'
+	              .o..P'       888                 d"     YD                      888                   .o..P'
+	              `Y8P'       o888o                "Y88888P'                     o888o                  `Y8P'
+ */
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea,
+p {
+	color: $body-text;
+	@include font("default", $size: $base-font-size);
+	@include phone-only{
+		@include font("default", $size: $mobile-font-size);
+
+	}
+	.is-style-orange{
+		color: $orange;
+		@include font("buttons", 700, 13px);
+		text-transform: uppercase;	
+		margin-bottom: 0;
+	}
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+blockquote {
+	border-left: 4px solid $primary;
+	font-size: 24px;
+	font-style: italic;
+	padding: 4px 0 8px 16px;
+}

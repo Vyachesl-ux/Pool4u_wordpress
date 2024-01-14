@@ -1,0 +1,142 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .hs-config .tab-content .tab-pane{
+	display: none;
+ }
+ .hs-config .tab-content .tab-pane.nav-tab-active{
+	display: block;
+ }
+
+ .hsradiolist {
+	border: 1px solid #c3c4c7;
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+  }
+.hsradiolist input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.hsradiolist input[type=radio] + label {
+  color: #50575e;
+  background: #dcdcde;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 !important;
+}
+
+.hsradiolist input[type=radio]:checked + label{
+  color: white;
+  background: #2271b1;
+}
+
+.hsradiolist label + input[type=radio] + label {
+  border-left: 1px solid #c3c4c7;
+}
+
+/* Hide default HTML checkbox */
+.hsswitch{
+	position: relative;
+}
+.hsswitch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.hsswitch .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #dcdcde;
+	width: 40px;
+	height: 24px;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-left: 1px solid #c3c4c7;
+}
+
+.hsswitch .slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.hsswitch input:checked + .slider {
+	background-color: #2271b1;
+}
+
+.hsswitch input:focus + .slider {
+	box-shadow: 0 0 1px #2271b1;
+}
+
+.hsswitch input:checked + .slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.hsswitch .slider.round {
+	border-radius: 14px;
+}
+
+.hsswitch .slider.round:before {
+	border-radius: 50%;
+}
+
+/* menu listings */
+
+ul.menu_entries li{
+	margin: 0;
+	padding: .2rem 0;
+	display: flex;
+	flex-direction: column;
+}
+ul.menu_entries li ul{
+	max-height: 550px;
+	transition: all .2s ease-in-out;
+	overflow: hidden;
+}
+ul.menu_entries li > span{
+	display: flex;
+	margin-bottom: 1rem;
+}
+ul.menu_entries li > span > span{
+	margin-left: 2rem;
+}
+ul.menu_entries ul li > span > span{
+	margin-left: 3rem;
+}
+ul.menu_entries > .menu > span{
+	font-weight: bold;
+}
+ul.menu_entries li.locked > span{
+	color: #9b9b9b;
+}
+ul.menu_entries li.locked > span::after{
+	font-family: "dashicons";
+	content: "\f160";
+	color: #9b9b9b;
+	margin-left: .5rem;
+}
+ul.menu_entries li.locked ul{
+	max-height: 0;
+}
+

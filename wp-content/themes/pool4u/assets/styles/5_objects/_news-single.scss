@@ -1,0 +1,47 @@
+.breadcrumbs{
+    color: $orange;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    @include font('default', 500, 13px);
+    span{
+        color: $teal;
+        a{
+            text-decoration: underline;
+            margin-right: 20px;
+        }
+        & + span{
+            margin-left: 20px;
+        }
+    }
+}
+.news-header{
+    &__figure{
+        position: relative;
+        img{
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        &-category{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $orange;
+            padding: 2px 16px;
+            border-bottom-left-radius: 5px;
+            @include font("buttons", 700, 13px);
+        }
+    }
+    .news-publication-date{
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $cyan;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+.news__link{
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+

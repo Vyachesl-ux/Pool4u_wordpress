@@ -1,0 +1,48 @@
+.wp-block-headspin-icon-info-list{
+    padding: 24px 0;
+
+    .icon-info-list{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        @include phone-only{
+            justify-content: space-between;
+        }
+        @include desktop-up{
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .wp-block-headspin-icon-info{
+            padding: 24px;
+            background: $white;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 240px;
+            margin-bottom: 24px;
+            @include phone-only{
+                padding: 16px;
+                max-width: unset;
+                width: 48%;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+            @include desktop-up{
+                width: calc(20% - 20px);
+                margin-bottom: 0;
+
+                & + .wp-block-headspin-icon-info{
+                    margin-left: 24px;
+                }
+            }
+            
+            .icon-info__heading{
+                @extend %h5;
+                margin: 24px 0;
+                font-weight: 500;
+            }
+        }
+    }
+}

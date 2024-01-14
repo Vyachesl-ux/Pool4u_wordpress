@@ -1,0 +1,46 @@
+/**
+ * ███████╗██╗████████╗    ██╗███╗   ███╗ ██████╗      ██████╗ ██████╗ ███╗   ██╗████████╗
+ * ██╔════╝██║╚══██╔══╝    ██║████╗ ████║██╔════╝     ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝
+ * █████╗  ██║   ██║       ██║██╔████╔██║██║  ███╗    ██║     ██║   ██║██╔██╗ ██║   ██║
+ * ██╔══╝  ██║   ██║       ██║██║╚██╔╝██║██║   ██║    ██║     ██║   ██║██║╚██╗██║   ██║
+ * ██║     ██║   ██║       ██║██║ ╚═╝ ██║╚██████╔╝    ╚██████╗╚██████╔╝██║ ╚████║   ██║██╗
+ * ╚═╝     ╚═╝   ╚═╝       ╚═╝╚═╝     ╚═╝ ╚═════╝      ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝╚═╝
+ *
+ */
+
+.fit-image-container {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	img {
+		height: auto;
+		object-fit: cover;
+		position: unset;
+		width: 100%;
+	}
+
+	&.contain {
+		background-size: contain;
+
+		img {
+			object-fit: contain;
+		}
+	}
+
+	&.top {
+		background-position: top;
+
+		img {
+			object-position: top;
+		}
+	}
+
+	&.bottom {
+		background-position: bottom;
+
+		img {
+			object-position: bottom;
+		}
+	}
+}

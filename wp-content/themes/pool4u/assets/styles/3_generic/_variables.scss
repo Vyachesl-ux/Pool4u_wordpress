@@ -1,0 +1,11 @@
+:root {
+	// Widths and spacing
+	--page-width: #{$page-width};
+	--text-width: #{$text-width};
+	--base-padding: #{$mobile-padding};
+	--full-width: 100vw;
+
+	@include tablet-p-up {
+		--base-padding: #{$desktop-padding};
+	}
+}

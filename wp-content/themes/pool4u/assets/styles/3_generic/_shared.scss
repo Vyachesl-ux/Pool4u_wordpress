@@ -1,0 +1,48 @@
+/*
+	 .oooooo..o oooo                                           .o8
+	d8P'    `Y8 `888                                          "888
+	Y88bo.       888 .oo.    .oooo.   oooo d8b  .ooooo.   .oooo888
+	 `"Y8888o.   888P"Y88b  `P  )88b  `888""8P d88' `88b d88' `888
+	     `"Y88b  888   888   .oP"888   888     888ooo888 888   888
+	oo     .d8P  888   888  d8(  888   888     888    .o 888   888
+	8""88888P'  o888o o888o `Y888""8o d888b    `Y8bod8P' `Y8bod88P"
+ */
+
+
+/**
+ * Where `margin-bottom` is concerned,this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre,
+%margin-bottom {
+    margin-bottom: $base-spacing-unit;
+}
+
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once,here.
+ */
+ul,
+ol,
+dd,
+%margin-left {
+    margin-left: 2 * $base-spacing-unit;
+}

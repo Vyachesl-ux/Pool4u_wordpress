@@ -1,0 +1,21 @@
+/*
+	ooooooooooooo            .o8       oooo
+	8'   888   `8           "888       `888
+	     888       .oooo.    888oooo.   888   .ooooo.   .oooo.o
+	     888      `P  )88b   d88' `88b  888  d88' `88b d88(  "8
+	     888       .oP"888   888   888  888  888ooo888 `"Y88b.
+	     888      d8(  888   888   888  888  888    .o o.  )88b
+	    o888o     `Y888""8o  `Y8bod8P' o888o `Y8bod8P' 8""888P'
+ */
+
+
+.site-content table {
+	border-collapse: collapse;
+	width: 100%;
+
+	td,
+	th {
+		border: 1px solid $secondary;
+		padding: 6px;
+	}
+}

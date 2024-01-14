@@ -1,0 +1,24 @@
+/*
+	ooooo         o8o              oooo
+	`888'         `"'              `888
+	 888         oooo  ooo. .oo.    888  oooo   .oooo.o
+	 888         `888  `888P"Y88b   888 .8P'   d88(  "8
+	 888          888   888   888   888888.    `"Y88b.
+	 888       o  888   888   888   888 `88b.  o.  )88b
+	o888ooooood8 o888o o888o o888o o888o o888o 8""888P'
+ */
+
+a {
+    color: $links;
+    text-decoration: none;
+    transition: color .1s ease;
+	&.wp-block-button__link{
+
+		&:hover,
+		&:active {
+			padding-right: 40px;
+			background: darken($color: $teal, $amount: 5);
+		}
+	}
+
+}

@@ -1,0 +1,41 @@
+/*
+	ooooo         o8o               .
+	`888'         `"'             .o8
+	 888         oooo   .oooo.o .o888oo  .oooo.o
+	 888         `888  d88(  "8   888   d88(  "8
+	 888          888  `"Y88b.    888   `"Y88b.
+	 888       o  888  o.  )88b   888 . o.  )88b
+	o888ooooood8 o888o 8""888P'   "888" 8""888P'
+ */
+
+
+ul {
+	list-style: disc;
+	font-family: "IBM Plex Sans", serif;
+	color: $teal;
+	li{
+		@include font("default",  $size: 18px, $weight: 400);
+		@include phone-only{
+			@include font("default", $size: $mobile-font-size);
+	
+		}
+	}
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}

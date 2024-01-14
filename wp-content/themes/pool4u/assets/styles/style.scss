@@ -1,0 +1,140 @@
+/*!
+Theme Name: Headspin Theme
+Theme URI: http://underscores.me/
+Author: Headspin AS
+Author URI: http://www.headspin.no
+Description: Headspin Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: headspin
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Headspin theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Settings
+	## Colors
+	## Global
+# Tools
+	## Functions
+	## Mixins
+# Generic
+	## Box-sizing
+	## Normalize
+	## Reset
+	## Shared
+	## Variables
+# Base
+	## Page
+	## Typography
+	## Elements
+	## Headings
+	## Links
+	## Lists
+	## Forms
+	## Tables
+# Objects
+	## Page
+	## Accessibility
+	## Buttons
+	## Header
+	## Footer
+	## Gutenberg
+# Blocks
+# Trumps
+	## Widths
+	## Typography
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Settings
+--------------------------------------------------------------*/
+@import "1_settings/colors";
+@import "1_settings/global";
+
+/*--------------------------------------------------------------
+# Tools
+--------------------------------------------------------------*/
+@import "2_tools/functions";
+@import "2_tools/mixins";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+@import "3_generic/box-sizing";
+@import "3_generic/normalize";
+@import "3_generic/reset";
+@import "3_generic/shared";
+@import "3_generic/variables";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "4_base/page";
+@import "4_base/typography";
+@import "4_base/elements";
+@import "4_base/headings";
+@import "4_base/links";
+@import "4_base/lists";
+@import "4_base/forms";
+@import "4_base/tables";
+
+/*--------------------------------------------------------------
+# Objects
+--------------------------------------------------------------*/
+@import "5_objects/accessibility";
+@import "5_objects/buttons";
+@import "5_objects/header";
+@import "5_objects/fit-image-container";
+@import "5_objects/footer";
+@import "5_objects/gutenberg";
+@import "5_objects/site";
+@import "5_objects/wrapper";
+@import "5_objects/news-archive";
+@import "5_objects/news-single";
+@import "5_objects/hamburger";
+@import "5_objects/case-studies-archive";
+@import "5_objects/pre-footer";
+@import "5_objects/video-modal";
+@import "5_objects/subscribe-form";
+@import "5_objects/subscribe-handler";
+
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "6_blocks/block_core-separator";
+@import "6_blocks/block_core-columns";
+@import "6_blocks/block_slider-text";
+@import "6_blocks/block_image-text";
+@import "6_blocks/block_section";
+@import "6_blocks/block_icon-info-list";
+@import "6_blocks/block_case-studies";
+@import "6_blocks/block_case-studies-single";
+@import "6_blocks/block-quote";
+@import "6_blocks/block_employees";
+@import "6_blocks/block-news";
+@import "6_blocks/block_advantages";
+@import "6_blocks/block_accordion";
+@import "6_blocks/block_brochures";
+@import "6_blocks/block_core-image";
+@import "6_blocks/block_short-line";
+
+/*--------------------------------------------------------------
+# Trumps
+--------------------------------------------------------------*/
+@import "7_trumps/widths";
+@import "7_trumps/typography";

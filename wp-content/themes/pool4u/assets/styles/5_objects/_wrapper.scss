@@ -1,0 +1,43 @@
+/**
+ * ██╗    ██╗██████╗  █████╗ ██████╗ ██████╗ ███████╗██████╗
+ * ██║    ██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+ * ██║ █╗ ██║██████╔╝███████║██████╔╝██████╔╝█████╗  ██████╔╝
+ * ██║███╗██║██╔══██╗██╔══██║██╔═══╝ ██╔═══╝ ██╔══╝  ██╔══██╗
+ * ╚███╔███╔╝██║  ██║██║  ██║██║     ██║     ███████╗██║  ██║
+ *  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝  ╚═╝
+ *
+ */
+
+.wrapper {
+	--wrapper-width: #{$text-width};
+	margin: 0 auto;
+	max-width: calc(var(--wrapper-width) + (2 * var(--base-padding)));
+	padding: 0 var(--base-padding);
+	width: 100%;
+
+	&.wide {
+		--wrapper-width: #{$page-width};
+	}
+
+	&.full {
+		max-width: none;
+		&:last-child{
+			margin-bottom: -136px;
+		}
+	}
+
+	.entry-content {
+		& + * {
+			clear: both;
+		}
+
+		&::after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+	}
+	& + &{
+		margin-top: 30px;
+	}
+}

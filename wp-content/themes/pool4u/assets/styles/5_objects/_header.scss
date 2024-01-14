@@ -1,0 +1,451 @@
+/*
+	ooooo   ooooo                           .o8
+	`888'   `888'                          "888
+	 888     888   .ooooo.   .oooo.    .oooo888   .ooooo.  oooo d8b
+	 888ooooo888  d88' `88b `P  )88b  d88' `888  d88' `88b `888""8P
+	 888     888  888ooo888  .oP"888  888   888  888ooo888  888
+	 888     888  888    .o d8(  888  888   888  888    .o  888
+	o888o   o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
+ */
+.header-wrapper{
+display: none;
+@include tablet-l-up
+{	
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background: $white;
+	z-index: 400;}
+}
+.header-wrapper{
+	body.admin-bar &{
+		top: 32px;
+	}
+}
+ .site-header {
+	align-items: center;
+	background: transparent;
+	display: flex;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 400;
+	background: $white;
+	// height: 50px;
+	@include tablet-l-up{
+		height: auto;
+		padding: 20px 0;
+		max-width: $page-width;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	body.admin-bar & {
+		top: 32px;
+
+		@media screen and (max-width: 782px) {
+			top: 46px;
+		}
+	}
+	
+	// body.scrolled & {
+	// 	background: $blue100;
+	// 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	// }
+	.site-branding {
+		flex-shrink: 0;
+		margin-left: 0;
+		overflow: hidden;
+		transition: 0.3s;
+		@include phone-only{
+			margin-left: 0;
+		}
+		a {
+			img {
+				max-width: 180px;
+				width: 100%;
+			}
+		}
+		&,
+		.site-title {
+			width: 160px;
+			display: flex;
+			align-items: center;
+
+			@include tablet-landscape {
+				height: 80px;
+				width: auto;
+			}
+
+
+			@include big-desktop-up {
+				width:210px;
+			}
+		}
+
+		body.scrolled & {
+			width: 110px;
+			// @include tablet-landscape {
+			// 	background: $blue100;
+			// }
+		}
+
+		.site-title {
+			margin: 0;
+
+			a {
+				display: flex;
+				width: 100%;
+				color: $white;
+
+				svg {
+					height: 36px;
+				}
+			}
+		}
+	}
+
+	.main-navigation {
+		width: 100%;
+		.menu-toggle {
+			display: none;
+		}
+		.menu-hoved-meny-container, .menu-main-menu-container {
+			display: flex;
+			justify-content: end;
+			transition: all 0.3s, height 0.5s;
+			height: 60px;
+			position: relative;
+			@include big-desktop-up {
+				height: 116px;
+				// width: 200px;
+			}
+
+			body.scrolled & {
+				height: 80px;
+			}
+		}
+
+		.menu {
+			display: none;
+			justify-content: right;
+			list-style: none;
+			margin: 0 60px 0 0;
+
+			@include tablet-l-up {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				margin: 0;
+			}
+
+			.menu-item {
+				align-items: center;
+				border-left: 1px solid transparent;
+				position: relative;
+				padding: 5px 20px;
+				@include font('buttons');
+				&:nth-last-child( -n + 2 ){
+					flex-grow: 1;
+				}
+
+				&:last-child{
+					transition: all .2s;
+					flex-grow: unset;
+					background: $teal;
+					border-radius: 30px;
+					&:hover{
+						background: darken($color: $teal, $amount: 5);
+					}
+					a{
+						color: $white;
+					}
+				}
+				&.menu-item-has-children{
+				margin-right: 16px;
+
+				
+					&::after{
+						position: absolute;
+						content:'';
+						width: 7px;
+						height: 7px;
+						top: 50%;
+						right: 0;
+						transform: rotate(-45deg) translateY(-50%);
+						border-bottom: 2px solid $teal;
+						border-left: 2px solid $teal;
+					}
+					&:hover{
+						.sub-menu{
+							top: 30px;
+							opacity: 1;
+						}
+					}
+				}
+
+				.sub-menu {
+					transition: all .3s;
+					position: absolute;
+					top: 0;
+					opacity: 0;
+					list-style: none;
+					margin-left: 0;
+					padding: 0 8px;
+					width: 200px;
+					background: $white;
+					.menu-item{
+						padding: 5px 0;
+						
+
+							&:first-child{
+							display: block;
+							@include tablet-l-up{
+								display: none;
+							}
+		
+							}
+						
+						a{
+							z-index: 3;
+							&:hover{
+								&::after{
+									opacity: 1 !important;
+									z-index: -1;
+								}
+							}
+						}
+						&:last-child{
+							background: transparent;
+							a{
+								color: $teal;
+							}
+						}
+					}
+				}
+
+				a {
+					color: $teal;
+					text-decoration: none;
+					text-transform: uppercase;
+					position: relative;
+					font-weight: 700;
+					font-size: 13px;
+
+					&::after{
+						position: absolute;
+						content: '';
+						height: 7px;
+						background: $yellow;
+						width: 100%;
+						bottom: 0;left: 0;
+						z-index: -1;
+						opacity: 0;
+						transition: opacity .3s ease-out;
+					}
+
+					
+					&:hover {
+						&::after {
+							opacity: 1;
+						}
+					}
+				}
+				&.pll-parent-menu-item{
+					overflow: hidden;
+					position: absolute;
+					right: 10px;
+					top: 40%;
+					cursor: pointer;
+					&.is-open{
+						.sub-menu{
+							transition: all .3s;
+							height: 100px;
+						}
+					}
+					a{
+						&::after{
+							opacity: 0;
+						}
+					}
+					.sub-menu{
+						transition: all .3s;
+						list-style: none;
+						margin-left: 0;
+						display: block;
+						height: 0;
+						.lang-item{
+							padding: 0;
+						}
+					}
+				}
+
+				&.current-menu-item,
+				&.current-menu-parent {
+					a::after {
+						width: 100%;
+					}
+				}
+				&.current-menu-item {
+					position: relative;
+					a {
+						
+						&::after {
+
+							opacity: 1;
+						}
+					}
+					.sub-menu .menu-item{
+						a{
+							&::after{
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
+
+			&.menu-open .menu-item {
+				border-color: $teal;
+			}
+		}
+	}
+
+	&.mobile {
+		justify-content: space-between;
+		.menu-clue{
+			flex-grow: 1;
+			text-align: right;
+			padding-right: 10px;
+			text-transform: uppercase;
+			@include font("buttons", 700, 13px);
+		}
+		@include tablet-l-up {
+			display: none;
+		}
+	}
+}
+
+// Mobile navigation
+
+.main-navigation {
+	&.mobile {
+		position: absolute;
+		.menu-toggle{
+			display: none;
+		}
+		.menu-menu-1-container, .menu-main-menu-container {
+			top: 0;
+			position: fixed;
+			right: -100%;
+			transition-duration: 0.3s;
+			display: block;
+			height: 100%;
+			z-index: 1;
+			background-color: $white;
+			width: 100%;
+			.menu {
+				margin-left: 0;
+				margin-bottom: 0;
+				padding-top: 100px;
+				&-item {
+					position: relative;
+					list-style-type: none;
+					padding: 0;
+					a{
+						@include font("buttons", 700, 13px);
+						text-transform: uppercase;
+						display: block;
+						padding: 16px 50px;
+	
+					}
+					&:last-child{
+						padding: 16px 0;
+						a{
+							padding: 8px 24px 8px 12px;
+							margin-left: 50px;
+							background: $teal;
+							display: inline-block;
+							color: $white;
+							border-radius: 20px;
+							position: relative;
+							&::after{
+								position: absolute;
+								content: '';
+								width: 7px;
+								height: 7px;
+								border-bottom: 1px solid $white;
+								border-left: 1px solid $white;
+								top: 50%;right: 10px;
+								transform: translateY(-50%) rotate(-133deg) ;
+	
+							}
+						}
+					}
+					&.menu-item-has-children{
+						& > a{
+							display: inline-block;
+							position: relative;
+							&::after{
+								position: absolute;
+								content:'';
+								width: 7px;
+								height: 7px;
+								top: 20px;
+								right: 0;
+								transform: rotate(-45deg) translateY(-50%);
+								border-bottom: 2px solid $teal;
+								border-left: 2px solid $teal;
+							}
+						}
+					}
+	
+					&.menu-item-has-children.active{
+						a{
+							transition: all .3s;
+						}
+					}
+					.sub-menu{
+						transition: all .3s;
+						overflow: hidden;
+						height: 0;
+						background: $cyan90;
+						margin-left: 0;
+						.menu-item{
+							a{
+								padding: 16px 70px;
+							}
+							&:last-child{
+								a{
+									background: transparent;
+									color: $teal;
+									margin-left: 0;
+								}
+							}
+						}
+	
+					}
+				}
+			}
+		}
+		&.active {
+
+			.menu-menu-1-container, .menu-main-menu-container {
+				right: 0;
+			}
+		}
+	}
+}
+.entry-header ~ section > .wrapper > .wp-block-headspin-image-text:first-child:not(.is-style-video) {
+	margin: 0 !important;
+}
+.entry-header ~ .entry-content>.wrapper>.wp-block-headspin-image-text{
+	padding-top: 0;
+	@include tablet-l-up{
+		padding-top: 50px;
+	}
+}
+

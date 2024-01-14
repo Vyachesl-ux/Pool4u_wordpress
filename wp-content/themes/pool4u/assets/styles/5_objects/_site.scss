@@ -1,0 +1,35 @@
+/**
+ * ███████╗██╗████████╗███████╗
+ * ██╔════╝██║╚══██╔══╝██╔════╝
+ * ███████╗██║   ██║   █████╗
+ * ╚════██║██║   ██║   ██╔══╝
+ * ███████║██║   ██║   ███████╗
+ * ╚══════╝╚═╝   ╚═╝   ╚══════╝
+ *
+ */
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.home{
+	.entry-header{
+		display: none;
+	}
+}
+
+.site-content {
+	flex-grow: 1;
+	.site-main{
+		.entry-header{
+			padding: 128px 0 100px;
+			.entry-title{
+				max-width: calc($page-width + 48px);
+				width: 100%;
+				margin: auto;
+				padding: 0 24px;
+			}
+		}
+	}
+}

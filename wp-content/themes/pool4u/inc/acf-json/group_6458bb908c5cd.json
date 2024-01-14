@@ -1,0 +1,52 @@
+{
+    "key": "group_6458bb908c5cd",
+    "title": "News",
+    "fields": [
+        {
+            "key": "field_646e159d6d2b4",
+            "label": "Category",
+            "name": "category",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "press_release": "PRESS RELEASE",
+                "environment": "ENVIRONMENT",
+                "technology": "TECHNOLOGY",
+                "event": "EVENT"
+            },
+            "default_value": "",
+            "return_format": "label",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1688114849
+}

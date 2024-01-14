@@ -1,0 +1,74 @@
+.wp-block-headspin-section{
+    .wp-block-headspin-advantages{
+        margin-top: -130px;
+    }
+}
+.wp-block-headspin-advantages{
+    .advantages-content{
+        display: flex;
+        justify-content: space-between;
+        @include phone-h{
+            flex-wrap: wrap;
+        }
+        &__item{
+            padding: 0 24px;
+            @include phone-h{
+                width: 100% ;
+                & + .advantages-content__item{
+                    margin-top: 50px;
+                }
+            }
+            &:not(:nth-child(2)){
+                h3{
+                    margin: 36px 0;
+                }
+                li{
+                    color: $red;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "+";
+                        width: 20px;
+                        height: 20px;
+                        top: -5px;
+                        left: 0;
+                        transform: rotate(45deg);
+                        font-size: 30px;
+                    }
+                }
+                
+            }
+            ul{
+                margin-left: 0;
+                margin-bottom: 0;
+                li{
+                    padding-left: 25px;
+                    list-style-type: none;
+                    & + li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &:nth-child(2){
+                h3{
+                    @extend %h2;
+                    
+                }
+                li{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        height: 8px;
+                        width: 15px;
+                        border-bottom: 2px solid $teal;
+                        border-left: 2px solid $teal;
+                        left: 0;
+                        top: 50%;
+                        transform: rotate(-45deg) translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

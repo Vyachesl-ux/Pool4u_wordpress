@@ -1,0 +1,31 @@
+/*
+	oooooooooo.                                          o8o              o8o
+	`888'   `Y8b                                         `"'              `"'
+	 888     888  .ooooo.  oooo    ooo          .oooo.o oooo    oooooooo oooo  ooo. .oo.    .oooooooo
+	 888oooo888' d88' `88b  `88b..8P'          d88(  "8 `888   d'""7d8P  `888  `888P"Y88b  888' `88b
+	 888    `88b 888   888    Y888'    8888888 `"Y88b.   888     .d8P'    888   888   888  888   888
+	 888    .88P 888   888  .o8"'88b           o.  )88b  888   .d8P'  .P  888   888   888  `88bod8P'
+	o888bood8P'  `Y8bod8P' o88'   888o         8""888P' o888o d8888888P  o888o o888o o888o `8oooooo.
+	                                                                                       d"     YD
+	                                                                                       "Y88888P'
+ */
+
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}

@@ -1,0 +1,173 @@
+/*
+	ooo        ooooo  o8o               o8o
+	`88.       .888'  `"'               `"'
+	 888b     d'888  oooo  oooo    ooo oooo  ooo. .oo.    .oooo.o
+	 8 Y88. .P  888  `888   `88b..8P'  `888  `888P"Y88b  d88(  "8
+	 8  `888'   888   888     Y888'     888   888   888  `"Y88b.
+	 8    Y     888   888   .o8"'88b    888   888   888  o.  )88b
+	o8o        o888o o888o o88'   888o o888o o888o o888o 8""888P'
+ */
+
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ *
+ * single value, e.g.:
+ * .foo {
+ * 		@include tablet-l-up {
+ * 			display: flex;
+ * 		}
+ * }
+ */
+
+ @mixin font($font: "default", $weight: "", $size: "", $line-height: false) {
+	@if $font == "default" {
+		font-family: $font-base;
+	}	
+	@else if $font == "heading" {
+		font-family: $font-headings;
+	} 
+	@else if $font == "buttons" {
+		font-family: $font-buttons;
+	} 
+
+	@else {
+		font-family: $font;
+	}
+
+	@if $size != "" {
+		font-size: $size;
+	}
+
+	@if $weight != "" {
+		font-weight: $weight;
+	}
+
+	@if $line-height != false {
+		line-height: $line-height;
+	}
+}
+
+
+/**
+ * Check for IE
+ */
+ @mixin IE {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+}
+
+@mixin notIE {
+	@supports not (-ms-high-contrast: none) {
+		@content;
+	}
+}
+
+
+/**
+ * Media queries
+ */
+@mixin small-phone-only {
+	@media only screen and (max-width: 360px) {
+		@content;
+	}
+}
+@mixin phone-only {
+	@media only screen and (max-width: 599px) {
+		@content;
+	}
+}
+@mixin phone-h {
+	@media only screen and (max-width: 736px) {
+		@content;
+	}
+}
+@mixin tablet-landscape {
+	@media only screen and (max-width: 1024px) {
+		@content;
+	}
+}
+
+
+@mixin non-desktop {
+	@media only screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin tablet-p-up {
+	@media only screen and (min-width: 600px) {
+		@content;
+	}
+}
+
+@mixin tablet-l-up {
+	@media only screen and (min-width: 900px) {
+		@content;
+	}
+}
+
+@mixin desktop-up {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin medium-desktop-up {
+	@media only screen and (min-width: 1500px) {
+		@content;
+	}
+}
+
+@mixin big-desktop-up {
+	@media only screen and (min-width: 1800px) {
+		@content;
+	}
+}
+
+@mixin tablet-p-only {
+	@media only screen and (min-width: 600px) and (max-width: 899px) {
+		@content;
+	}
+}
+
+@mixin tablet-l-only {
+	@media only screen and (min-width: 900px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin desktop-only {
+	@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+		@content;
+	}
+}
+
+@mixin medium-desktop-only {
+	@media only screen and (min-width: 1500px) and (max-width: 1799px) {
+		@content;
+	}
+}
+
+
+
+//  Background svg mixin
+@mixin background-svg($svg) {
+    background-image: svg-url($svg);
+}
+@mixin default-block-margins($factor: 1) {
+	margin: #{double($base-spacing-unit) * $factor} 0;
+
+	@include tablet-l-up {
+		margin: #{quad($base-spacing-unit) * $factor} 0;
+	}
+
+	&:first-child,
+	.wp-block-headspin-anchor:first-child + & {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,65 @@
+/*
+	oooooooooooo
+	`888'     `8
+	 888          .ooooo.  oooo d8b ooo. .oo.  .oo.    .oooo.o
+	 888oooo8    d88' `88b `888""8P `888P"Y88bP"Y88b  d88(  "8
+	 888    "    888   888  888      888   888   888  `"Y88b.
+	 888         888   888  888      888   888   888  o.  )88b
+	o888o        `Y8bod8P' d888b    o888o o888o o888o 8""888P'
+ */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: lighten($tertiary, 30%);
+	border: 1px solid;
+	border-color: $tertiary;
+	color: $body-text;
+	font-size: 14px;
+	line-height: 1;
+	outline: none;
+	padding: .4em 1em;
+
+	&:hover {
+		border-color: darken($tertiary, 20%);
+	}
+
+	&:active,
+	&:focus {
+		border-color: darken($tertiary, 20%);
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	background: none;
+	border: 2px solid $primary;
+	border-radius: 4px;
+	color: $body-text;
+	outline: none;
+	padding: 3px 12px 5px;
+	width: 100%;
+	@include font("default", $size: 16px, $weight: 400);
+}
+
+label {
+	display: block;
+	line-height: 1.2;
+	margin-bottom: 4px;
+	@include font("default", $size: 12px, $weight: 400);
+}

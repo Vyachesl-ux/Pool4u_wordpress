@@ -1,0 +1,34 @@
+/**
+ *   .oooooo.                    .                          .o8
+ *  d8P'  `Y8b                 .o8                         "888
+ * 888           oooo  oooo  .o888oo  .ooooo.  ooo. .oo.    888oooo.   .ooooo.  oooo d8b  .oooooooo
+ * 888           `888  `888    888   d88' `88b `888P"Y88b   d88' `88b d88' `88b `888""8P 888' `88b
+ * 888     ooooo  888   888    888   888ooo888  888   888   888   888 888ooo888  888     888   888
+ * `88.    .88'   888   888    888 . 888    .o  888   888   888   888 888    .o  888     `88bod8P'
+ *  `Y8bood8P'    `V88V"V8P'   "888" `Y8bod8P' o888o o888o  `Y8bod8P' `Y8bod8P' d888b    `8oooooo.
+ *                                                                                       d"     YD
+ *                                                                                       "Y88888P'
+ *
+ * Styles for the default gutenberg elements
+ */
+
+.gutenberg-content {
+	overflow-x: hidden;
+	position: relative;
+
+	.alignfull {
+		margin-left: calc(var(--full-width) * -.5 + 50%);
+		margin-right: calc(var(--full-width) * -.5 + 50%);
+		width: var(--full-width);
+	}
+
+	.alignwide {
+		left: 50%;
+		max-width: 100vw;
+		padding-left: var(--base-padding);
+		padding-right: var(--base-padding);
+		position: relative;
+		transform: translateX(-50%);
+		width: calc(var(--page-width) + var(--base-padding) * 2);
+	}
+}

@@ -1,0 +1,76 @@
+/*
+	ooooooooo.
+	`888   `Y88.
+	 888   .d88'  .oooo.    .oooooooo  .ooooo.
+	 888ooo88P'  `P  )88b  888' `88b  d88' `88b
+	 888          .oP"888  888   888  888ooo888
+	 888         d8(  888  `88bod8P'  888    .o
+	o888o        `Y888""8o `8oooooo.  `Y8bod8P'
+	                       d"     YD
+	                       "Y88888P'
+ */
+
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+html {
+    overflow-y: auto; /* [2] */
+}
+
+body {
+	background: $bgcolor;
+	color: $body-text;
+}
+
+section {
+	padding-top: quad($base-spacing-unit);
+	padding-bottom: double($base-spacing-unit);
+
+	@include tablet-l-up {
+		padding: quad($base-spacing-unit) 0;
+	}
+
+	+ section:not(.padded) {
+		padding-top: 0;
+	}
+
+	&.no-padding {
+		padding: 0;
+	}
+
+	&.no-top-padding {
+		padding-top: 0;
+	}
+	& > .wrapper{
+		& > .wp-block-headspin-section:last-child{
+			margin-bottom: - double($base-spacing-unit);
+			@include tablet-l-up{
+				margin-bottom: - quad($base-spacing-unit);
+			}
+		}
+		.wp-block-headspin-image-text:first-child:not(.wp-block-headspin-image-text.is-style-video){
+			margin: 100px 0;
+		}
+		& > .wp-block-headspin-image-text:last-child{
+			margin-bottom: -80px;
+			@include tablet-l-up{
+
+				margin-bottom: -160px;
+			}
+		}
+
+	}
+}
+
+:root {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}

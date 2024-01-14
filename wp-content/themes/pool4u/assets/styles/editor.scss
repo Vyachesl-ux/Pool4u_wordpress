@@ -1,0 +1,121 @@
+/**
+ * Import settings
+ */
+
+@import "1_settings/colors";
+@import "1_settings/global";
+@import "2_tools/mixins";
+@import "2_tools/functions";
+@import "3_generic/variables";
+
+
+
+.edit-post-visual-editor {
+	@import "4_base/elements";
+	@import "4_base/tables";
+	@import "4_base/headings";
+	@import "5_objects/buttons";
+	@import "5_objects/gutenberg";
+	@import "5_objects/wrapper";
+	@import "5_objects/fit-image-container";
+
+}
+
+:root {
+	font-size: $base-font-size;
+}
+.block-editor-block-list__layout{
+
+	&.is-root-container > .alignwide{
+		max-width: 1300px !important;
+		
+	}
+}
+
+ /**
+  * Gutenberg
+ */
+
+.edit-post-visual-editor {
+	background: $bgcolor;
+
+	.editor-styles-wrapper {
+		background: $bgcolor;
+	}
+
+	.block-editor-block-list__layout {
+		@import "4_base/headings";
+		@import "4_base/typography";
+		@import "4_base/page";
+		@import "4_base/lists";
+		@import "4_base/elements";
+	}
+
+	a {
+		color: $links;
+	}
+
+	.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+		width: 100%;
+	}
+
+	.block-editor-plain-text,
+	.block-editor-plain-text::placeholder {
+		background: transparent;
+		color: inherit !important;
+		font-family: inherit !important;
+		font-size: inherit !important;
+		font-style: inherit;
+		font-weight: inherit !important;
+		letter-spacing: inherit;
+		text-transform: inherit;
+	}
+
+	[data-type="core/button"] {
+		@import "5_objects/buttons";
+	}
+
+	.editor-post-title__input,
+	.editor-post-title__input:focus {
+		@include font("heading", 400, 72px);
+	}
+}
+
+.edit-post-visual-editor,
+.edit-post-visual-editor p,
+.block-editor-block-styles__item-preview,
+.block-editor-block-styles__item-preview p,
+.editor-styles-wrapper p.wp-block,
+.editor-block-preview__content p {
+	@include font("default", 400, $base-font-size);
+}
+
+// Fix bug with acf blocks' inspector panel
+.block-editor-block-inspector .acf-block-panel .acf-block-fields {
+	margin: 0;
+}
+//Objects
+@import "5_objects/news-archive";
+@import "5_objects/news-single";
+@import "5_objects/video-modal";
+@import "5_objects/subscribe-form";
+
+
+
+// Include styles for Gutenberg blocks
+@import "6_blocks/block_core-separator";
+@import "6_blocks/block_core-columns";
+@import "6_blocks/block_slider-text";
+@import "6_blocks/block_image-text";
+@import "6_blocks/block_section";
+@import "6_blocks/block_icon-info-list";
+@import "6_blocks/block_case-studies";
+@import "6_blocks/block_case-studies-single";
+@import "6_blocks/block-quote";
+@import "6_blocks/block_employees";
+@import "6_blocks/block-news";
+@import "6_blocks/block_advantages";
+@import "6_blocks/block_accordion";
+@import "6_blocks/block_brochures";
+@import "6_blocks/block_core-image";
+@import "6_blocks/block_short-line";

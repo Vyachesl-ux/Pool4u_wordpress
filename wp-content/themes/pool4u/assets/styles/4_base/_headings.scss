@@ -1,0 +1,88 @@
+/*
+	ooooo   ooooo                           .o8   o8o
+	`888'   `888'                          "888   `"'
+	 888     888   .ooooo.   .oooo.    .oooo888  oooo  ooo. .oo.    .oooooooo  .oooo.o
+	 888ooooo888  d88' `88b `P  )88b  d88' `888  `888  `888P"Y88b  888' `88b  d88(  "8
+	 888     888  888ooo888  .oP"888  888   888   888   888   888  888   888  `"Y88b.
+	 888     888  888    .o d8(  888  888   888   888   888   888  `88bod8P'  o.  )88b
+	o888o   o888o `Y8bod8P' `Y888""8o `Y8bod88P" o888o o888o o888o `8oooooo.  8""888P'
+	                                                               d"     YD
+	                                                               "Y88888P'
+ */
+
+
+%h1,
+h1 {
+	@include font("heading", $size: 36px, $weight: 400);
+	line-height: 45px;
+	color: $teal;
+	@include tablet-p-up {
+		font-size: 56px;
+		line-height: 71px;
+	}
+}
+
+h2, %h2 {
+	@include font("heading", $size: 21px, $weight: 600);
+	margin-bottom: .8em;
+	margin-top: 1em;
+	line-height: 26px;
+	color: $teal;
+	@include tablet-p-up {
+		font-size: 36px;
+		line-height: 45px;
+	}
+}
+
+h3 {
+	@include font("heading", $size: 22px, $weight: 600);
+	margin-bottom: .2em;
+	color: $teal;
+	@include tablet-p-up {
+		font-size: 21px;
+		line-height: 26px;
+	}
+}
+
+h4 {
+	@include font("heading", $size: 20px, $weight: 400);
+	margin-bottom: .2em;
+
+	@include tablet-p-up {
+		font-size: 22px;
+	}
+}
+
+h5, %h5 {
+	@include font("heading", $size: 18px, $weight: 700, $line-height: 27px);
+	margin-bottom: 2em;
+	margin-top: 0;
+	color: $teal;
+}
+
+h6 {
+	@include font("buttons", $size: 13px, $weight: 600);
+	margin-bottom: 2em;
+	margin-top: 0;
+	color: $teal;
+	&.is-style-orange{
+		color: $orange;
+	}
+}
+
+// Add margin between consecutive headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	+ h1,
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5,
+	+ h6 {
+		margin-top: .7em;
+	}
+}

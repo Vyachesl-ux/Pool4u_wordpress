@@ -1,0 +1,30 @@
+.brochures-block{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    &__wrapper{
+        
+        width: 100%;
+
+      @include tablet-l-up{
+          width: 25%;
+
+      }
+            
+
+            
+    
+
+        img, &-title, &-desc{
+            margin-bottom: 24px;
+            @include font("default");
+            color: $teal;
+        }
+        .wp-block-buttons{
+            .wp-block-button__link{
+                @include font('buttons', 700, 13px);
+                background: $teal;
+            }
+        }
+    }
+}

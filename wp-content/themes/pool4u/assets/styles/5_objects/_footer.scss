@@ -1,0 +1,148 @@
+/*
+	oooooooooooo                         .
+	`888'     `8                       .o8
+	 888          .ooooo.   .ooooo.  .o888oo  .ooooo.  oooo d8b
+	 888oooo8    d88' `88b d88' `88b   888   d88' `88b `888""8P
+	 888    "    888   888 888   888   888   888ooo888  888
+	 888         888   888 888   888   888 . 888    .o  888
+	o888o        `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
+ */
+
+.site-footer {
+	background: $teal;
+	color: $cyan80;
+	font-size: 13px;
+	font-weight: 500;
+	.main-footer, .footer-footer{
+		max-width: $page-width;
+		margin: auto;
+	}
+	.main-footer{
+		display: flex;
+		padding: 50px 0;
+		gap: 20px;
+		@include phone-h{
+			flex-wrap: wrap;
+
+			&__item{
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.footer-menu{
+			width: 80%;
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 0;
+			margin-left: 0;
+			padding-left: 20px;
+			gap: 20px;
+			@include phone-h{
+				flex-wrap: wrap;
+				width: 100%;
+				justify-content: flex-start;
+				padding-left: 0;
+			}
+			.menu-item{
+				list-style-type: none;
+				text-transform: uppercase;
+				padding: 0 30px;
+				@include phone-h{
+					padding: 0 16px;
+				}
+				a{
+					margin-bottom: 30px;
+					@include font('default', 500, 13px, 16.9px);
+					color: $yellow;
+					letter-spacing: 1px;
+					cursor: auto;
+					display: block;
+				} 
+				.sub-menu{
+					margin-left: 0;
+					.menu-item{
+						padding: 0;
+						a{
+							@include font('default', 400, 18px);
+							text-transform: capitalize;
+							color: $cyan80;
+							letter-spacing: normal;
+							cursor: pointer;
+							padding: 5px 0;
+							margin-bottom: 5px;
+						}
+
+					}
+				}
+				&:last-of-type{
+					.sub-menu{
+						.menu-item{
+							padding-left: 40px;
+							position: relative;
+							&::after{
+								position: absolute;
+								content:'';
+								width: 24px;
+								height: 24px;
+								left: 0;
+								top: 0;
+							}
+							&.instagram{
+								&::after{
+									background: url("assets/images/icons/instagram.png") no-repeat;
+									background-size: cover;
+								}
+							}
+							&.linkedin{
+								&::after{
+									background: url("assets/images/icons/linkedin.png") no-repeat;
+									background-size: cover;
+								}
+							}
+							&.facebook{
+								&::after{
+									background: url("assets/images/icons/facebook.png") no-repeat;
+									background-size: cover;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-footer{
+		padding: 30px 0;
+		display: flex;
+		border-top: 1px solid rgb($white, .2);
+		@include phone-h{
+			flex-wrap: wrap;
+		}
+		span{
+			width: 10%;
+			@include phone-h{
+				text-align: center;
+				width: 100%;
+				padding:0 24px;
+			}
+		}
+		&__wrapp{
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			padding-left: 40px;
+			@include phone-h{
+				flex-wrap: wrap;
+			}
+			a, div{
+				color: inherit;
+				@include phone-h{
+					width: 100%;
+					text-align: center;
+				}
+			}
+
+		}
+
+	}
+}

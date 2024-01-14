@@ -1,0 +1,72 @@
+/*
+	ooooooooo.                                    .
+	`888   `Y88.                                .o8
+	 888   .d88'  .ooooo.   .oooo.o  .ooooo.  .o888oo
+	 888ooo88P'  d88' `88b d88(  "8 d88' `88b   888
+	 888`88b.    888ooo888 `"Y88b.  888ooo888   888
+	 888  `88b.  888    .o o.  )88b 888    .o   888 .
+	o888o  o888o `Y8bod8P' 8""888P' `Y8bod8P'   "888"
+ */
+
+/**
+ * As well as using normalize.css, it is often advantageous to remove all
+ * margins from certain elements.
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr,
+figure {
+    margin:  0;
+    padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,
+ins {
+    text-decoration: none;
+}
+
+/**
+ * Apply faux underlines to inserted text via `border-bottom`.
+ */
+ins {
+    border-bottom: 1px solid;
+}
+
+/**
+ * Remove unwanted space below certain elements.
+ */
+img,
+svg,
+figure {
+    vertical-align: middle;
+}
