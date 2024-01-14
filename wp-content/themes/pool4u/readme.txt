@@ -1,4 +1,4 @@
-=== _headspin ===
+=== Pool4u ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called _headspin.
+A starter theme called _pool4u.
 
 == Description ==
 
-Design and developed by Headspin AS
+Design and developed by Pool4u
 
 == Installation ==
 
@@ -25,7 +25,7 @@ Design and developed by Headspin AS
 
 = Does this theme support any plugins? =
 
-_headspin includes support for Infinite Scroll in Jetpack.
+_pool4u includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
