@@ -12,7 +12,7 @@
 ul {
 	list-style: disc;
 	font-family: "IBM Plex Sans", serif;
-	color: $teal;
+	color: $primary;
 	li{
 		@include font("default",  $size: 18px, $weight: 400);
 		@include phone-only{

@@ -31,16 +31,16 @@
 
 .wp-block-headspin-accordion-item {
 	background: $white;
-	color: $teal;
+	color: $primary;
 	cursor: pointer;
 	transition: .2s;
-    border: 1px solid $teal;
+    border: 1px solid $primary;
     margin-bottom: 8px;
     border-radius: 10px;
 
 
     &:last-child{
-        border-bottom: 1px solid $teal;
+        border-bottom: 1px solid $primary;
     }
 
 
@@ -57,7 +57,7 @@
             transform: translateY(-50%);
             right: 32px;
 			transition: .3s;
-            background: $teal;
+            background: $primary;
 		}
         &::after{
             width: 16px;
@@ -86,8 +86,8 @@
 	&.expanded {
 		.accordion__title::after {
 			transform: rotate(180deg);
-            border-bottom: 2px solid $teal;
-            border-left: 2px solid $teal;
+            border-bottom: 2px solid $primary;
+            border-left: 2px solid $primary;
 
 		}
 

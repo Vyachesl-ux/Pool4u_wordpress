@@ -20,13 +20,13 @@
                 top: 50%;
                 right: 16px;
                 transform: translateY(-50%);
-                background: $teal;
+                background: $primary;
                 color: $white;
-                border: 2px solid $teal;
+                border: 2px solid $primary;
                 padding: 0.6em 1em;
                 z-index: 3;
                 &:hover{
-                    background: darken($color: $teal, $amount: 5);
+                    background: darken($color: $primary, $amount: 5);
                     
                 }
     
@@ -108,7 +108,7 @@
             text-align: center;
         }
         .success{
-            color: $teal;
+            color: $primary;
         }
     }
     @keyframes pulse {

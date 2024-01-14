@@ -206,10 +206,10 @@
 
             .wp-block-button__link{
                 background: $white !important;
-                color: $teal;
+                color: $primary;
                 &::after{
-                    border-right: 1px solid $teal;
-                    border-bottom: 1px solid $teal;
+                    border-right: 1px solid $primary;
+                    border-bottom: 1px solid $primary;
                 }
             }
         }

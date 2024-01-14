@@ -21,7 +21,7 @@
 		
 	</header><!-- .entry-header -->
 
-	<section class="entry-content gutenberg-content no-top-padding">
+	<section class="entry-content gutenberg-content">
 		<div class="wrapper">
 			<?php
 			the_content();

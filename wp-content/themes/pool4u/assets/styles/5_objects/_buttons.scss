@@ -41,10 +41,10 @@
     letter-spacing: .1em;
         &.tertiary{
             background: $yellow;
-            color: $teal;
+            color: $primary;
             &::after{
-                border-right: 1px solid $teal;
-                border-bottom: 1px solid $teal;
+                border-right: 1px solid $primary;
+                border-bottom: 1px solid $primary;
             }
         }
     @include tablet-p-up {
@@ -96,7 +96,7 @@
         &.tertiary{
             &:hover{
                 background: $btn-tertiary-hover;
-                color: $teal;
+                color: $primary;
             }
             &.orange{
                 background: $orange;
@@ -110,11 +110,11 @@
         .wp-block-button__link{
             
             background: $white;
-            border: 1px solid $teal;
-            color: $teal;
+            border: 1px solid $primary;
+            color: $primary;
             &::after{
-                border-right: 1px solid $teal;
-                border-bottom: 1px solid $teal;
+                border-right: 1px solid $primary;
+                border-bottom: 1px solid $primary;
             }
             
         }

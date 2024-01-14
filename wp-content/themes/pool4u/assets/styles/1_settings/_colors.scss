@@ -10,7 +10,7 @@
 
 
 $white:		#fff;
-$teal: 		#006A6B;
+$header: 		#0e1e3f;
 $cyan:		#00CCCC;
 $cyan80:	#BBEAE9;
 $cyan90:	#E9F8F7;
@@ -20,7 +20,7 @@ $red:		#960808;
 
 
 
-$primary:	$teal;
+$primary:	$header;
 $secondary:	$cyan;
 $tertiary:	$cyan;
 
@@ -31,14 +31,14 @@ $tertiary:	$cyan;
 
 $bgcolor:			$white;
 
-$body-text:			$teal;
-$links:				$teal;
+$body-text:			$header;
+$links:				$header;
 $links-hover:		$white;
 
-$header-text:		$teal;
-$title-text:		$teal;
+$header-text:		$header;
+$title-text:		$header;
 
 $btn-text:			$white;
-$btn-background:	$teal;
-$btn-hover:			darken($teal, 5);
+$btn-background:	$header;
+$btn-hover:			darken($header, 5);
 $btn-tertiary-hover: darken($yellow, 10);

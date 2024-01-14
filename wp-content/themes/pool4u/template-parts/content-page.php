@@ -24,7 +24,7 @@ $current_url = get_permalink();
 			
 		</header><!-- .entry-header -->
 	<?php endif ?>
-	<section class="entry-content gutenberg-content no-top-padding">
+	<section class="entry-content gutenberg-content">
 		<div class="wrapper">
 			<?php
 			the_content();

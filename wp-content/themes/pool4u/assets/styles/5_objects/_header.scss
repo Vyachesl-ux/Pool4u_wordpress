@@ -155,10 +155,10 @@ display: none;
 				&:last-child{
 					transition: all .2s;
 					flex-grow: unset;
-					background: $teal;
+					background: $primary;
 					border-radius: 30px;
 					&:hover{
-						background: darken($color: $teal, $amount: 5);
+						background: darken($color: $primary, $amount: 5);
 					}
 					a{
 						color: $white;
@@ -176,8 +176,8 @@ display: none;
 						top: 50%;
 						right: 0;
 						transform: rotate(-45deg) translateY(-50%);
-						border-bottom: 2px solid $teal;
-						border-left: 2px solid $teal;
+						border-bottom: 2px solid $primary;
+						border-left: 2px solid $primary;
 					}
 					&:hover{
 						.sub-menu{
@@ -221,14 +221,14 @@ display: none;
 						&:last-child{
 							background: transparent;
 							a{
-								color: $teal;
+								color: $primary;
 							}
 						}
 					}
 				}
 
 				a {
-					color: $teal;
+					color: $primary;
 					text-decoration: none;
 					text-transform: uppercase;
 					position: relative;
@@ -309,7 +309,7 @@ display: none;
 			}
 
 			&.menu-open .menu-item {
-				border-color: $teal;
+				border-color: $primary;
 			}
 		}
 	}
@@ -367,7 +367,7 @@ display: none;
 						a{
 							padding: 8px 24px 8px 12px;
 							margin-left: 50px;
-							background: $teal;
+							background: $primary;
 							display: inline-block;
 							color: $white;
 							border-radius: 20px;
@@ -397,8 +397,8 @@ display: none;
 								top: 20px;
 								right: 0;
 								transform: rotate(-45deg) translateY(-50%);
-								border-bottom: 2px solid $teal;
-								border-left: 2px solid $teal;
+								border-bottom: 2px solid $primary;
+								border-left: 2px solid $primary;
 							}
 						}
 					}
@@ -421,7 +421,7 @@ display: none;
 							&:last-child{
 								a{
 									background: transparent;
-									color: $teal;
+									color: $primary;
 									margin-left: 0;
 								}
 							}

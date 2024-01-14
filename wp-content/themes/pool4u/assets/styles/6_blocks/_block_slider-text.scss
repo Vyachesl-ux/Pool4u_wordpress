@@ -85,17 +85,17 @@
             height: 10px;
             transform: translateY(-50%);
             left: 3px;
-            border-left: 8px solid $teal;
+            border-left: 8px solid $primary;
             border-top: 6px solid transparent;
             border-bottom: 6px solid transparent;
             border-right: 8px solid transparent;
         }
         &.play{
             &::after{
-                border-left: 4px solid $teal;
+                border-left: 4px solid $primary;
                 border-top: 0;
                 border-bottom: 0;
-                border-right: 4px solid $teal;
+                border-right: 4px solid $primary;
             }
         }
     }
@@ -185,7 +185,7 @@
             }
         }
         &.sunphade{
-            background: $teal;
+            background: $primary;
             top: 30%;
             left: 20%;
             @include phone-only{
@@ -196,7 +196,7 @@
             }
             .protection-description{
                 &::after, &::before{
-                    background: $teal;
+                    background: $primary;
                 }
             }
         }
@@ -238,7 +238,7 @@
                 height: 24px;
                 inset: 0;
                 background: transparent;
-                border: 2px solid $teal;
+                border: 2px solid $primary;
                 border-radius: 24px;
                 opacity: 1;
 
@@ -251,7 +251,7 @@
                 top: 48%;
                 transform: translateY(-50%);
                 left: 2px;
-                background: $teal;
+                background: $primary;
                 border: 2px solid $white;
                 border-radius: 22px;
                 opacity: 0 ;
@@ -306,7 +306,7 @@
                 grid-column: 1 / span 2;
                 @include font('buttons', 700, 13px);
                 .wp-block-button__link{
-                    background: $teal;
+                    background: $primary;
                 }
             }
             @include tablet-l-up{
