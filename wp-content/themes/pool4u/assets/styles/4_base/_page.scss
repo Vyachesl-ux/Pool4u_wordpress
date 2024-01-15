@@ -49,21 +49,9 @@ section {
 		padding-top: 0;
 	}
 	& > .wrapper{
-		& > .wp-block-pool4u-section:last-child{
-			margin-bottom: - double($base-spacing-unit);
-			@include tablet-l-up{
-				margin-bottom: - quad($base-spacing-unit);
-			}
-		}
+
 		.wp-block-pool4u-image-text:first-child:not(.wp-block-pool4u-image-text.is-style-img-background){
 			margin: 100px 0;
-		}
-		& > .wp-block-pool4u-image-text:last-child{
-			margin-bottom: -80px;
-			@include tablet-l-up{
-
-				margin-bottom: -160px;
-			}
 		}
 
 	}
