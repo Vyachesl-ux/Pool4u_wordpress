@@ -29,6 +29,11 @@ body {
 	background: $bgcolor;
 	color: $body-text;
 }
+.page.has-post-thumbnail{
+	& > section{
+		padding: 0;
+	}
+}
 
 section {
 	padding-top: quad($base-spacing-unit);

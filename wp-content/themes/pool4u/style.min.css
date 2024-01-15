@@ -63,6 +63,7 @@ ul,ol,dd{margin-left:80px}
 :root{--page-width:1150px;--text-width:860px;--base-padding:16px;--full-width:100vw}
 html{overflow-y:auto}
 body{background:#fff;color:#0e1e3f}
+.page.has-post-thumbnail>section{padding:0}
 section{padding-top:160px;padding-bottom:80px}
 section+section:not(.padded){padding-top:0}
 section.no-padding{padding:0}
@@ -84,7 +85,7 @@ hr.wp-block-separator+.wp-block-headspin-image-text{padding-top:0}
 img{height:auto;max-width:100%}
 img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
-h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-headspin-image-text.is-style-link .image-text__content-wrapper .image-text__heading,.wp-block-headspin-image-text .image-text__content .image-text__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:600;margin-bottom:.8em;margin-top:1em;line-height:26px;color:#0e1e3f}
+h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-headspin-image-text.is-style-link .image-text__content-wrapper .image-text__heading,.wp-block-headspin-image-text .image-text__content .image-text__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:300;margin-bottom:.8em;margin-top:1em;line-height:26px;color:#0e1e3f}
 h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:600;margin-bottom:.2em;color:#0e1e3f}
 h4{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
 h5,.wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info .icon-info__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:27px;margin-bottom:2em;margin-top:0;color:#0e1e3f}
@@ -556,7 +557,7 @@ p+.wp-block-columns{margin:40px 0}
 .center-text{text-align:center !important}
 @media only screen and (min-width:600px){:root{--base-padding:24px}
 h1{font-size:40px;line-height:71px}
-h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-headspin-image-text.is-style-link .image-text__content-wrapper .image-text__heading,.wp-block-headspin-image-text .image-text__content .image-text__heading{font-size:36px;line-height:45px}
+h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-headspin-image-text.is-style-link .image-text__content-wrapper .image-text__heading,.wp-block-headspin-image-text .image-text__content .image-text__heading{font-size:35px;line-height:45px}
 h3{font-size:21px;line-height:26px}
 h4{font-size:22px}
 .btn,.wp-block-button__link{width:unset}

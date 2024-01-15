@@ -23,13 +23,13 @@ h1 {
 }
 
 h2, %h2 {
-	@include font("heading", $size: 21px, $weight: 600);
+	@include font("heading", $size: 21px, $weight: 300);
 	margin-bottom: .8em;
 	margin-top: 1em;
 	line-height: 26px;
 	color: $header;
 	@include tablet-p-up {
-		font-size: 36px;
+		font-size: 35px;
 		line-height: 45px;
 	}
 }
