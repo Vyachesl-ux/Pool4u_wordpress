@@ -151,10 +151,10 @@
 					flex-grow: 1;
 				}
 
-				&:last-child{
+				&:last-child, &:nth-child(3){
 					
 					a{
-						color: $primary;
+						color: $white;
 					}
 				}
 				&.menu-item-has-children{
