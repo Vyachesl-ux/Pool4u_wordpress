@@ -65,7 +65,7 @@ const icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( "headspin/image-text", {
+registerBlockType( "pool4u/image-text", {
 	icon: icon,
 	getEditWrapperProps( attributes ) {
 		return { 'data-align': attributes.align ?? "full" };

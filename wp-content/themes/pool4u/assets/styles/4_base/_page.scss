@@ -36,12 +36,6 @@ body {
 }
 
 section {
-	padding-top: quad($base-spacing-unit);
-	padding-bottom: double($base-spacing-unit);
-
-	@include tablet-l-up {
-		padding: quad($base-spacing-unit) 0;
-	}
 
 	+ section:not(.padded) {
 		padding-top: 0;
@@ -55,16 +49,16 @@ section {
 		padding-top: 0;
 	}
 	& > .wrapper{
-		& > .wp-block-headspin-section:last-child{
+		& > .wp-block-pool4u-section:last-child{
 			margin-bottom: - double($base-spacing-unit);
 			@include tablet-l-up{
 				margin-bottom: - quad($base-spacing-unit);
 			}
 		}
-		.wp-block-headspin-image-text:first-child:not(.wp-block-headspin-image-text.is-style-video){
+		.wp-block-pool4u-image-text:first-child:not(.wp-block-pool4u-image-text.is-style-img-background){
 			margin: 100px 0;
 		}
-		& > .wp-block-headspin-image-text:last-child{
+		& > .wp-block-pool4u-image-text:last-child{
 			margin-bottom: -80px;
 			@include tablet-l-up{
 

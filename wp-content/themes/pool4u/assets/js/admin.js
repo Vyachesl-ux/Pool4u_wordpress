@@ -49,21 +49,9 @@
       wp.blocks.unregisterBlockStyle("core/button", "outline");
 
       //image-text block
-      wp.blocks.registerBlockStyle("headspin/image-text", {
-        name: "img-icon",
-        label: "Use image as icon"
-      });
-      wp.blocks.registerBlockStyle("headspin/image-text", {
-        name: "video",
-        label: "Video"
-      });
-      wp.blocks.registerBlockStyle("headspin/image-text", {
-        name: "frame",
-        label: "Add yellow frame"
-      });
-      wp.blocks.registerBlockStyle("headspin/image-text", {
-        name: "link",
-        label: "Block news link"
+      wp.blocks.registerBlockStyle("pool4u/image-text", {
+        name: "img-background",
+        label: "Фото как фон"
       });
 
       //separator
@@ -89,11 +77,7 @@
       });
 
       //section
-      wp.blocks.registerBlockStyle("headspin/section", {
-        name: "yellow",
-        label: "Yellow background"
-      });
-      wp.blocks.registerBlockStyle("headspin/section", {
+      wp.blocks.registerBlockStyle("pool4u/section", {
         name: "margin-top",
         label: "Add top space"
       });

@@ -269,7 +269,7 @@ const icon = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("
  *                             registered; otherwise `undefined`.
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_3__.registerBlockType)("headspin/image-text", {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_3__.registerBlockType)("pool4u/image-text", {
   icon: icon,
 
   getEditWrapperProps(attributes) {

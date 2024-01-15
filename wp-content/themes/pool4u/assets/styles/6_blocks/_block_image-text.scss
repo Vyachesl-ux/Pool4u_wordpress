@@ -1,4 +1,4 @@
-.block-editor-block-list__block.wp-block-headspin-image-text{
+.block-editor-block-list__block.wp-block-pool4u-image-text{
 
         grid-template-rows: 450px !important;
         .fit-image-container{
@@ -17,7 +17,7 @@
         }
  
 }
-.wp-block-headspin-image-text{
+.wp-block-pool4u-image-text{
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
@@ -155,7 +155,7 @@
         }
     }
     
-    &.is-style-video{
+    &.is-style-img-background{
         display: flex;
         margin-left: calc(var(--full-width) * -.5 + 50%);
         margin-right: calc(var(--full-width) * -.5 + 50%);
