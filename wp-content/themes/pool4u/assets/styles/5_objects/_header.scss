@@ -8,9 +8,9 @@
 	o888o   o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
  */
 .header-wrapper{
-display: none;
-@include tablet-l-up
+	@include tablet-l-up
 	{	
+		display: none;
 		display: block;
 		position: fixed;
 		top: 0;
@@ -35,7 +35,6 @@ display: none;
 	top: 0;
 	width: 100%;
 	z-index: 400;
-	background: $white;
 	border-bottom: 1px solid rgba($color: #141414, $alpha: 0.2);
 	@include tablet-l-up{
 		height: auto;

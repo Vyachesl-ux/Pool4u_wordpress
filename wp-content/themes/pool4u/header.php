@@ -37,19 +37,18 @@
 <body <?php body_class(); ?>>
 <?php do_action( "wp_body_open" ); ?>
 <div id="page" class="site">
-	<div class="header-wrapper"></div>
 		<header id="masthead" class="site-header <?php echo is_admin_bar_showing() ? 'has-admin-bar' : '' ?>">
 			<?php
-			$logo_path = get_template_directory_uri() . "/assets/images/favicons/apple-touch-icon.webp";
-			$title_tag = "div";
+				$logo_path = get_template_directory_uri() . "/assets/images/favicons/apple-touch-icon.webp";
+				$title_tag = "div";
 			?>
-			<div class="site-header__container">
+				<div class="site-header__container">
 				<<?php echo $title_tag; ?> class="site-branding">
 					<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php hsl_e( "Gå til forsiden" ); ?>" aria-label="Go to home page">
 						<img src="<?php echo $logo_path ?>" width="70" alt="логотип">
 					</a>
 				</<?php echo $title_tag; ?>><!-- .site-branding -->
-	
+		
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'headspin' ); ?></button>
 					<?php
@@ -59,33 +58,7 @@
 					) );
 					?>
 				</nav><!-- #site-navigation -->
-			</div>
+				</div>
 			</header><!-- #masthead -->
-
-		<header id="masthead-mobile" class="site-header mobile <?php echo is_admin_bar_showing() ? 'has-admin-bar' : '' ?>">
-			<?php $title_tag = "div";?>
-			<<?php echo $title_tag; ?> class="site-branding">
-				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php hsl_e( "Gå til forsiden" ); ?>" aria-label="Go to home page">
-					<img src="<?php echo $logo_path ?>" width="180" height="60" alt="logo">
-				</a>
-			</<?php echo $title_tag; ?>><!-- .site-branding -->
-			<div class="menu-clue"><?php echo hsl_e("Menu") ?></div>
-			<div class="hamburger">
-				<div class="hamburger__bar top"></div>
-				<div class="hamburger__bar bottom"></div>
-			</div>
-
-	</header><!-- #masthead -->
-
-	<nav id="site-navigation" class="main-navigation mobile">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'headspin' ); ?></button>
-		<?php
-		wp_nav_menu( array(
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'mobile-menu',
-		) );
-
-		?>
-	</nav><!-- #site-navigation -->
 
 	<div id="content" class="site-content">

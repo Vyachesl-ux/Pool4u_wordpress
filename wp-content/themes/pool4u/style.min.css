@@ -122,9 +122,8 @@ label{display:block;line-height:1.2;margin-bottom:4px;font-family:"Montserrat",H
 .wp-block-button .wp-block-button__link.tertiary.orange:hover{background:#f6831e}
 .wp-block-button+.wp-block-button .wp-block-button__link{background:#fff;border:1px solid #0e1e3f;color:#0e1e3f}
 .wp-block-button+.wp-block-button .wp-block-button__link::after{border-right:1px solid #0e1e3f;border-bottom:1px solid #0e1e3f}
-.header-wrapper{display:none}
 body.admin-bar .header-wrapper{top:32px}
-.site-header{background:rgba(0,0,0,0);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:400;background:#fff;border-bottom:1px solid rgba(20,20,20,.2)}
+.site-header{background:rgba(0,0,0,0);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:400;border-bottom:1px solid rgba(20,20,20,.2)}
 body.admin-bar .site-header{top:32px}
 .site-header__container{max-width:1300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;background-color:rgba(0,0,0,0)}
 .site-header .site-branding{-ms-flex-negative:0;flex-shrink:0;margin-left:0;overflow:hidden;-webkit-transition:.3s;transition:.3s}
@@ -215,7 +214,7 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .gutenberg-content .alignwide{left:50%;max-width:100vw;padding-left:var(--base-padding);padding-right:var(--base-padding);position:relative;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:calc(var(--page-width) + var(--base-padding)*2)}
 .site{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100vh}
 .site-content{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
-.site-content .site-main .entry-header{padding:128px 0 100px}
+.site-content .site-main .entry-header{padding:0 0 100px}
 .site-content .site-main .entry-header .entry-title{max-width:1348px;width:100%;margin:auto;padding:0 24px}
 .wrapper{--wrapper-width:860px;margin:0 auto;max-width:calc(var(--wrapper-width) + 2*var(--base-padding));padding:0 var(--base-padding);width:100%}
 .wrapper.wide{--wrapper-width:1300px}
@@ -568,7 +567,7 @@ h4{font-size:22px}
 }@media only screen and (min-width:900px){section{padding:160px 0}
 section>.wrapper>.wp-block-headspin-section:last-child{margin-bottom:-160px}
 section>.wrapper>.wp-block-headspin-image-text:last-child{margin-bottom:-160px}
-.header-wrapper{display:block;position:fixed;top:0;left:0;height:100px;width:100%;background:#fff;z-index:400}
+.header-wrapper{display:none;display:block;position:fixed;top:0;left:0;height:100px;width:100%;background:#fff;z-index:400}
 .site-header{height:auto;padding:20px 0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 .site-header .main-navigation .menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;margin:0}
 .site-header .main-navigation .menu .menu-item .sub-menu .menu-item:first-child{display:none}
