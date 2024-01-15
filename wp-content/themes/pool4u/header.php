@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _headspin
+ * 
  */
 
 ?>
@@ -17,16 +17,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="cannonical" href="<?php echo get_site_url() . '/' ?>">
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/apple-touch-icon.png'?>">
+	<link rel="apple-touch-icon" sizes="100x100" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/apple-touch-icon.webp'?>">
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/favicon-32x32.png'  ?>">
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/favicon-16x16.png' ?>">
 	<link rel="shortcut-icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/favicon-16x16.png' ?>">
 	<link rel="manifest" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/site.webmanifest' ?> ">
-	<link rel="mask-icon" href="<?php echo get_template_directory_uri() . '/assets/images/favicons/safari-pinned-tab.svg '?>" color="#006a6b">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<meta name="apple-mobile-web-app-title" content="Sunphade">
-	<meta name="application-name" content="Sunphade">
+	<meta name="apple-mobile-web-app-title" content="Будівніцтво бассейнів в Україні">
+	<meta name="application-name" content="Будівніцтво бассейнів в Україні">
 
 	<script>
 		var decodeHtmlNumeric=function(a){return a.replace(/&#([0-9]{1,7});/g,function(a,b){return String.fromCharCode(parseInt(b,10))}).replace(/&#[xX]([0-9a-fA-F]{1,6});/g,function(a,b){return String.fromCharCode(parseInt(b,16))})};
@@ -38,16 +37,15 @@
 <body <?php body_class(); ?>>
 <?php do_action( "wp_body_open" ); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'headspin' ); ?></a>
 	<div class="header-wrapper"></div>
 		<header id="masthead" class="site-header <?php echo is_admin_bar_showing() ? 'has-admin-bar' : '' ?>">
 			<?php
-			$logo_path = get_template_directory_uri() . "/assets/images/header-logo.svg";
+			$logo_path = get_template_directory_uri() . "/assets/images/favicons/apple-touch-icon.webp";
 			$title_tag = "div";
 			?>
 			<<?php echo $title_tag; ?> class="site-branding">
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php hsl_e( "Gå til forsiden" ); ?>" aria-label="Go to home page">
-					<img src="<?php echo $logo_path ?>" width="180" height="60" alt="">
+					<img src="<?php echo $logo_path ?>" width="70" alt="">
 				</a>
 			</<?php echo $title_tag; ?>><!-- .site-branding -->
 	

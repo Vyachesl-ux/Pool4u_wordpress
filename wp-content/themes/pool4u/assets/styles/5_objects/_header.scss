@@ -63,12 +63,6 @@ display: none;
 		@include phone-only{
 			margin-left: 0;
 		}
-		a {
-			img {
-				max-width: 180px;
-				width: 100%;
-			}
-		}
 		&,
 		.site-title {
 			width: 160px;
