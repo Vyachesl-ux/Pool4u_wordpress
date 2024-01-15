@@ -12,7 +12,6 @@ $current_url = get_permalink();
 <input type="hidden" name="return_url" value="<?php echo esc_url($current_url); ?>">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if( !hs_first_block_is( "headspin/slider-text" ) ):?>
 		<header class="entry-header">
 			
 				<?php if ( has_post_thumbnail() ) : ?>
@@ -23,7 +22,6 @@ $current_url = get_permalink();
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			
 		</header><!-- .entry-header -->
-	<?php endif ?>
 	<section class="entry-content gutenberg-content">
 		<div class="wrapper">
 			<?php
