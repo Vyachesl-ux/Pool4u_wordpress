@@ -16,6 +16,9 @@
 
 .site-content {
 	flex-grow: 1;
+	margin-top: -111px;
+	position: relative;
+	z-index: 1;
 	.site-main{
 		.entry-header{
 			padding: 0 0 100px;

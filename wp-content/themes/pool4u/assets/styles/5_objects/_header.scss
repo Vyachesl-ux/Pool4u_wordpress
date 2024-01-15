@@ -7,40 +7,19 @@
 	 888     888  888    .o d8(  888  888   888  888    .o  888
 	o888o   o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
  */
-.header-wrapper{
-	@include tablet-l-up
-	{	
-		display: none;
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100px;
-		width: 100%;
-		background: $white;
-		z-index: 400;
-	}
-}
-.header-wrapper{
-	body.admin-bar &{
-		top: 32px;
-	}
-}
+
+
  .site-header {
 	background: transparent;
 	display: flex;
 	justify-content: center;
-	left: 0;
-	position: fixed;
-	top: 0;
 	width: 100%;
-	z-index: 400;
 	border-bottom: 1px solid rgba($color: #141414, $alpha: 0.2);
+	position: relative;
+	z-index: 2;
 	@include tablet-l-up{
 		height: auto;
 		padding: 20px 0;
-		left: 50%;
-		transform: translateX(-50%);
 	}
 	body.admin-bar & {
 		top: 32px;
