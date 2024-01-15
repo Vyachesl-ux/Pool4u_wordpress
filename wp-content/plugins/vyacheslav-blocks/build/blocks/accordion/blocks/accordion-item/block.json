@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"textdomain": "headspin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"version": "0.1.0",
+
+	"name": "headspin/accordion-item",
+	"title": "FAq element",
+	"category": "design",
+	"description": "Shows option to the faq accordion",
+	"keywords": ["accordion", "faq", "questions", "frequently", "asked"],
+	"parent": ["headspin/accordion"],
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"subtitle": {
+			"type": "string"
+		}
+	}
+}

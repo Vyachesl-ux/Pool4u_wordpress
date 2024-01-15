@@ -1,0 +1,130 @@
+.wp-block-headspin-slider-text {
+	font-family: "IBM Plex Sans";
+	.slider-text__content {
+		grid-column: 1;
+		grid-row: 1;
+		h1,
+		p {
+			color: #006A6B;
+		}
+	}
+
+	&.image-right {
+		.slider-text__content-wrapper {
+			margin-left: auto !important;
+			max-width: 1000px;
+			width: 100%;
+		}
+	}
+
+	&.image-left {
+		.slider-text__content-wrapper {
+			margin-right: auto !important;
+			max-width: 1000px;
+			width: 100%;
+		}
+	}
+	.swiper{
+		width: 100%;
+		.slider-text__image {
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			box-shadow: 8px 8px 0px 0px rgba(255,226,126,1);
+			border-radius: 36px;
+			grid-column: 2;
+			grid-row: 1;
+			overflow: hidden;
+			.components-button {
+				background: #fff;
+				box-shadow: inset 0 0 0 1px #000;
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+	
+			&:not(.img-set) {
+				height: 100%;
+			}
+	
+			&.img-set {
+				.components-button {
+					display: none;
+					left: 16px;
+					top: 16px;
+					transform: none;
+				}
+	
+				&:hover .components-button {
+					display: block;
+				}
+			}
+	
+			img {
+				vertical-align: middle;
+			}
+		}
+	}
+	.swiper-autoplay-option{
+		margin-top: 20px;
+		color: #006A6B;
+		margin-left: 30px;
+		&::after{
+			width: unset !important;
+			height: unset !important;
+		}
+
+	}
+	.protection-description-wrapper{
+		opacity: 1 !important;
+		overflow: hidden;
+		.protection-description{
+			padding: 0 !important;
+			border-radius: 10px;
+			
+			p:first-child{
+				text-transform: uppercase;
+			}
+			p{
+				padding: 12px 24px;
+				font-size: 13px;
+			}
+		}
+		&.protection{
+			top: 0 !important;
+			.protection-description{
+				p:first-child{
+					background: darken($color: #F89E4F, $amount: 5);
+				}
+			}
+		}
+		&.blinds, &.sunscreens{
+			left: 46% !important;
+			.protection-description{
+				p:first-child{
+					background: darken($color: #960808, $amount: 5);
+				}
+			}
+		}
+		&.sunscreens{
+			top: 55% !important;
+		}
+		&.sunphade{
+			top: 35% !important;
+			.protection-description{
+				p:first-child{
+					background: darken($color: #006A6B, $amount: 5);
+				}
+			}
+		}
+	}
+
+	.block-editor-rich-text__editable:focus {
+		text-transform: none;
+	}
+}
+
+.image-text-alignment-dropdown > .components-button {
+	height: 100%;
+}

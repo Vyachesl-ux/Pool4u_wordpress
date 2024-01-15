@@ -1,0 +1,16 @@
+.wp-block-headspin-section {
+	> .wp-block {
+		&:not(.alignfull) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&:not(.alignwide):not(.alignfull) {
+			max-width: var(--wp--style--global--content-size);
+		}
+
+		&.alignwide {
+			max-width: 1300px;
+		}
+	}
+}

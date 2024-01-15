@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"textdomain": "headspin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"version": "0.1.0",
+
+	"name": "headspin/advantages",
+	"title": "Advantages list",
+	"category": "design",
+	"description": "Displays sunphade advantages in comparison with other brands",
+	"supports": {
+		"align": [
+			"wide"
+		]
+	},
+	"attributes": {
+		"blinds_header": {
+			"type": "string"
+		},
+		"sunphade_header": {
+			"type": "string"
+		},
+		"sunscreen_header": {
+			"type": "string"
+		},
+		"blinds_list": {
+			"type": "string"
+		},
+		"sunphade_list": {
+			"type": "string"
+		},
+		"sunscreen_list": {
+			"type": "string"
+		},
+		"imgAlt": {
+			"type": "string"
+		}
+	}
+}

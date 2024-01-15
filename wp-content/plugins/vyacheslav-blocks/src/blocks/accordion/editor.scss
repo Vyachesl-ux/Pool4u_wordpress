@@ -1,0 +1,13 @@
+.wp-block-headspin-accordion {
+	.block-list-appender {
+		display: none;
+		position: static;
+	}
+
+	&.is-selected,
+	&.has-child-selected {
+		.block-list-appender {
+			display: block;
+		}
+	}
+}

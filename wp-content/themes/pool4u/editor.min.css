@@ -262,12 +262,12 @@ p+.wp-block-columns{margin:40px 0}
 .block-editor-block-list__block.is-style-video .fit-image-container{height:600px}
 .block-editor-block-list__block.is-style-video .image-text__content h4,.block-editor-block-list__block.is-style-video .image-text__content .image-text__preamble,.block-editor-block-list__block.is-style-video .image-text__content .image-text__btn-group .wp-block-button:first-child{display:none}
 .block-editor-block-list__block.is-style-link .image-text__content h6,.block-editor-block-list__block.is-style-link .image-text__content .image-text__btn-group .wp-block-button:last-child{display:none}
-.wp-block-headspin-section{background:#e9f8f7;padding:80px 0}
-.wp-block-headspin-section.is-style-margin-top{margin-top:130px}
-.wp-block-headspin-section.is-style-yellow{background:#ffe27e}
-.wp-block-headspin-section .wp-block-headspin-image-text{padding:0}
-.wp-block-headspin-section.center{text-align:center}
-.wp-block-headspin-section.center h6{text-transform:uppercase}
+.wp-block-pool4u-section{background:#e9f8f7;padding:80px 0}
+.wp-block-pool4u-section.is-style-margin-top{margin-top:130px}
+.wp-block-pool4u-section.is-style-yellow{background:#ffe27e}
+.wp-block-pool4u-section .wp-block-pool4u-image-text{padding:0}
+.wp-block-pool4u-section.center{text-align:center}
+.wp-block-pool4u-section.center h6{text-transform:uppercase}
 .wp-block-headspin-icon-info-list{padding:24px 0}
 .wp-block-headspin-icon-info-list .icon-info-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}
 .wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info{padding:24px;background:#fff;border-radius:10px;width:100%;max-width:240px;margin-bottom:24px}
@@ -481,7 +481,7 @@ p+.wp-block-columns{margin:40px 0}
 .wp-block-headspin-slider-text .protection-description-wrapper.sunscreens{top:40%;left:37%}
 .wp-block-headspin-slider-text .protection-description-wrapper.sunphade{left:22%}
 .wp-block-headspin-slider-text .swiper-pagination{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,25px);row-gap:14px}
-.wp-block-headspin-section{padding:40px 0}
+.wp-block-pool4u-section{padding:40px 0}
 .wp-block-headspin-icon-info-list .icon-info-list{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info{padding:16px;max-width:unset;width:48%}
 .wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info:last-child{margin-bottom:0}
