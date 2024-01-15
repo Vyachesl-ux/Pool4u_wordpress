@@ -20,9 +20,9 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_headspin_blocks_block_init() {
+function create_block_vl_blocks_block_init() {
 	$blocks = glob( __DIR__ . '/build/blocks/*', GLOB_ONLYDIR );
 
 	foreach ( $blocks as $block ) register_block_type( $block );
 }
-add_action( 'init', 'create_block_headspin_blocks_block_init' );
+add_action( 'init', 'create_block_vl_blocks_block_init' );
