@@ -126,7 +126,7 @@ label{display:block;line-height:1.2;margin-bottom:4px;font-family:"Montserrat",H
 body.admin-bar .header-wrapper{top:32px}
 .site-header{background:rgba(0,0,0,0);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:400;background:#fff;border-bottom:1px solid rgba(20,20,20,.2)}
 body.admin-bar .site-header{top:32px}
-.site-header__container{max-width:1300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%}
+.site-header__container{max-width:1300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;background-color:rgba(0,0,0,0)}
 .site-header .site-branding{-ms-flex-negative:0;flex-shrink:0;margin-left:0;overflow:hidden;-webkit-transition:.3s;transition:.3s}
 .site-header .site-branding,.site-header .site-branding .site-title{width:160px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 body.scrolled .site-header .site-branding{width:110px}
