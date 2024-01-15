@@ -19,7 +19,6 @@ $current_url = get_permalink();
 						<?php the_post_thumbnail(); ?>
 					</div>
 				<?php endif; ?>
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			
 		</header><!-- .entry-header -->
 	<section class="entry-content gutenberg-content">
