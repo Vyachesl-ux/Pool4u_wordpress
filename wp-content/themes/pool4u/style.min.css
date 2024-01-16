@@ -97,17 +97,17 @@ ol{list-style:decimal}
 li>ul,li>ol{margin-bottom:0;margin-left:1.5em}
 dt{font-weight:600}
 dd{margin:0 1.5em 1.5em}
-button,input[type=button],input[type=reset],input[type=submit]{background:#6ff;border:1px solid;border-color:#0cc;color:#0e1e3f;font-size:14px;line-height:1;outline:0;padding:.4em 1em}
-button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{border-color:#066}
-button:active,button:focus,input[type=button]:active,input[type=button]:focus,input[type=reset]:active,input[type=reset]:focus,input[type=submit]:active,input[type=submit]:focus{border-color:#066}
+button,input[type=button],input[type=reset],input[type=submit]{background:#b0e0f4;border:1px solid;border-color:#29abe2;color:#0e1e3f;font-size:14px;line-height:1;outline:0;padding:.4em 1em}
+button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{border-color:#146c91}
+button:active,button:focus,input[type=button]:active,input[type=button]:focus,input[type=reset]:active,input[type=reset]:focus,input[type=submit]:active,input[type=submit]:focus{border-color:#146c91}
 input[type=text],input[type=email],input[type=url],input[type=password],input[type=search],input[type=number],input[type=tel],input[type=range],input[type=date],input[type=month],input[type=week],input[type=time],input[type=datetime],input[type=datetime-local],input[type=color],textarea{background:0;border:2px solid #0e1e3f;border-radius:4px;color:#0e1e3f;outline:0;padding:3px 12px 5px;width:100%;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:16px;font-weight:400}
 label{display:block;line-height:1.2;margin-bottom:4px;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:12px;font-weight:400}
 .site-content table{border-collapse:collapse;width:100%}
-.site-content table td,.site-content table th{border:1px solid #0cc;padding:6px}
+.site-content table td,.site-content table th{border:1px solid #29abe2;padding:6px}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute !important;width:1px;word-wrap:normal !important}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.6);box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}
-.btn,.wp-block-button__link{position:relative;background:#0e1e3f;border:0;border-radius:100px;color:#fff;cursor:pointer;display:inline-block;margin:0;max-width:100%;overflow:visible;padding:10px 24px;text-align:center;text-decoration:none !important;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-webkit-transition:all .2s;transition:all .2s;font-family:"Montserrat",monospace;font-size:13px;font-weight:700;line-height:17px;text-transform:uppercase;letter-spacing:.1em}
+.btn,.wp-block-button__link{position:relative;background:#29abe2;border:0;border-radius:100px;color:#fff;cursor:pointer;display:inline-block;margin:0;max-width:100%;overflow:visible;padding:10px 24px;text-align:center;text-decoration:none !important;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-webkit-transition:all .2s;transition:all .2s;font-family:"Montserrat",monospace;font-size:13px;font-weight:700;line-height:17px;text-transform:uppercase;letter-spacing:.1em}
 .btn.tertiary,.wp-block-button__link.tertiary{background:#ffe27e;color:#0e1e3f}
 .btn.tertiary::after,.wp-block-button__link.tertiary::after{border-right:1px solid #0e1e3f;border-bottom:1px solid #0e1e3f}
 .btn::after,.wp-block-button__link::after{position:absolute;content:"";width:8px;height:8px;border-top:1px solid rgba(0,0,0,0);border-left:1px solid rgba(0,0,0,0);border-right:1px solid #fff;border-bottom:1px solid #fff;top:40%;right:15px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
@@ -232,7 +232,7 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.environment{background:#ffe27e;border:2px solid #ffe27e}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.technology{background:#0e1e3f;color:#fff;border:2px solid #0e1e3f}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.technology.active{color:#0e1e3f}
-.news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.event{background:#0cc;border:2px solid #0cc}
+.news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.event{background:#29abe2;border:2px solid #29abe2}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.active{background:0;padding-right:20px}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.active::after,.news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.active::before{position:absolute;content:"";width:15px;height:1px;background:#0e1e3f;-webkit-transform:rotate(45deg);transform:rotate(45deg);top:50%;right:0}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper .archive-filter__button.active::before{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
@@ -243,12 +243,12 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .news-archive .news-grid .news-grid__container .news-archive__category{position:absolute;top:0;right:0;padding:0 5px;border-bottom-left-radius:7px;padding:2px 8px;font-family:"Montserrat",monospace;font-size:13px;font-weight:700;letter-spacing:2px;color:#003d3d;z-index:1}
 .news-archive .news-grid .news-grid__container .news-archive__category[data-type="press release"]{background:#f89e4f}
 .news-archive .news-grid .news-grid__container .news-archive__category[data-type=technology]{background:#0e1e3f;color:#fff}
-.news-archive .news-grid .news-grid__container .news-archive__category[data-type=event]{background:#0cc}
+.news-archive .news-grid .news-grid__container .news-archive__category[data-type=event]{background:#29abe2}
 .news-archive .news-grid .news-grid__container .news-archive__category[data-type=environment]{background:#ffe27e}
 .news-archive .news-grid .news-grid__container figure{margin-bottom:0;overflow:hidden}
 .news-archive .news-grid .news-grid__container figure img{-webkit-transition:scale .3s;transition:scale .3s;width:calc(100% + 48px);height:100%;max-height:200px;-o-object-fit:cover;object-fit:cover}
 .news-archive .news-grid .news-grid__container .news-archive__title{margin:0}
-.news-archive .news-grid .news-grid__container .news-archive__date{text-transform:uppercase;font-family:"Montserrat",monospace;font-size:13px;font-weight:500;color:#0cc;margin:12px 0}
+.news-archive .news-grid .news-grid__container .news-archive__date{text-transform:uppercase;font-family:"Montserrat",monospace;font-size:13px;font-weight:500;color:#29abe2;margin:12px 0}
 .news-archive .news-grid .news-grid__container .news-archive__text{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
 .news-archive .news-grid .news-grid__container .news__link img{width:3%;height:auto}
 .news-archive .news-grid .news-grid__container:hover figure img{-webkit-transition:all .3s;transition:all .3s;-webkit-transform:scale(1.05);transform:scale(1.05)}
@@ -262,7 +262,7 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .news-header__figure{position:relative}
 .news-header__figure img{width:100%;max-height:500px;-o-object-fit:cover;object-fit:cover}
 .news-header__figure-category{position:absolute;top:0;right:0;background:#f89e4f;padding:2px 16px;border-bottom-left-radius:5px;font-family:"Montserrat",monospace;font-size:13px;font-weight:700}
-.news-header .news-publication-date{font-size:13px;text-transform:uppercase;color:#0cc;font-weight:700;margin-bottom:24px}
+.news-header .news-publication-date{font-size:13px;text-transform:uppercase;color:#29abe2;font-weight:700;margin-bottom:24px}
 .news__link{margin-top:24px;text-transform:uppercase}
 .hamburger{cursor:pointer;-webkit-transition:-webkit-transform .1s;transition:-webkit-transform .1s;transition:transform .1s;transition:transform .1s,-webkit-transform .1s;margin-right:40px}
 .hamburger:hover .hamburger__bar.top{-webkit-transform:translateY(2px);transform:translateY(2px)}

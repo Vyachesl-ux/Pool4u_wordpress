@@ -10,8 +10,8 @@
 
 
 $white:		#fff;
-$header: 		#0e1e3f;
-$cyan:		#00CCCC;
+$header: 	#0e1e3f;
+$cyan:		#29ABE2;
 $cyan80:	#BBEAE9;
 $cyan90:	#E9F8F7;
 $orange:	#F89E4F;
@@ -40,6 +40,6 @@ $header-text:		$header;
 $title-text:		$header;
 
 $btn-text:			$white;
-$btn-background:	$header;
+$btn-background:	$cyan;
 $btn-hover:			darken($header, 5);
 $btn-tertiary-hover: darken($yellow, 10);
