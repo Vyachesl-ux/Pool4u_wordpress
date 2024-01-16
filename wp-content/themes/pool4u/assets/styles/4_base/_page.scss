@@ -27,7 +27,8 @@ html {
 
 body {
 	background: $bgcolor;
-	color: $body-text;
+	color: $primary;
+	letter-spacing: 1px;
 }
 .page.has-post-thumbnail{
 	& > section{
