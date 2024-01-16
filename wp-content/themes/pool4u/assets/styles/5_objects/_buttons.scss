@@ -21,8 +21,8 @@
 .btn,
 .wp-block-button__link {
     position: relative;
-	background: $btn-background;
-    border: 0; /* [4] */
+	background-color: $cyan;
+    border: 1px solid $cyan;
 	border-radius: 100px;
 	color: $btn-text;
     cursor: pointer; /* [5] */
@@ -36,9 +36,9 @@
     user-select: none;
     vertical-align: middle; /* [2] */
     transition: all .2s;
-	@include font("buttons", $size: 13px, $weight: 700, $line-height: 17px);
+	@include font("default", $size: 15px, $weight: 400, $line-height: 17px);
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: 1px;
         &.tertiary{
             background: $yellow;
             color: $primary;
@@ -50,19 +50,7 @@
     @include tablet-p-up {
         width: unset;
     }
-    &::after{
-        position: absolute;
-        content:'';
-        width: 8px;
-        height: 8px;
-        border-top: 1px solid transparent;
-        border-left: 1px solid transparent;
-        border-right: 1px solid $white;
-        border-bottom: 1px solid $white;
-        top: 40%;
-        right: 15px;
-        transform: rotate(-45deg);
-    }
+
 
 
     &:disabled {
@@ -89,35 +77,30 @@
     .wp-block-button__link{
 
         &:hover {
-            background: $btn-hover;
-            color: $btn-text;
-            padding-right: 40px;
+            background-color: darken($color: $cyan, $amount: 10);
         }
         &.tertiary{
             &:hover{
-                background: $btn-tertiary-hover;
+                background-color: $btn-tertiary-hover;
                 color: $primary;
             }
-            &.orange{
-                background: $orange;
-                &:hover{
-                    background: darken($color: $orange, $amount: 10);
-                }
-            }
+
         }
     }
      + .wp-block-button{
         .wp-block-button__link{
             
             background: $white;
-            border: 1px solid $primary;
-            color: $primary;
-            &::after{
-                border-right: 1px solid $primary;
-                border-bottom: 1px solid $primary;
+            color: $primary !important;
+            &:hover{
+                background: darken($color: $cyan, $amount: 10);
+                color: $white !important;
             }
             
         }
         
     }
+}
+.is-layout-flex{
+    gap: 1em;
 }

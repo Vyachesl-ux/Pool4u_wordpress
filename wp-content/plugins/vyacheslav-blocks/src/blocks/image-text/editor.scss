@@ -1,18 +1,13 @@
 .wp-block-pool4u-image-text {
-    color: #006a6b;
 	.image-text__content {
 		p {
 			margin: 0;
 		}
         &-wrapper{
-            font-family: "IBM Plex Mono";
+            font-family: "Montserrat";
             .image-text__preamble{
                 margin-bottom: 34px;
             }
-        }
-        .wp-block-button__link{
-            background-color: #006a6b;
-            font-size: 13px;
         }
 	}
 
@@ -73,6 +68,21 @@
 
 	.block-editor-rich-text__editable:focus {
 		text-transform: none;
+	}
+	&.is-style-img-background{
+		.wp-block-button{
+			.wp-block-button__link{
+				background-color: #29abe2;
+			}
+
+			+ .wp-block-button{
+				.wp-block-button__link{
+					border: 1px solid #29abe2;
+			   }
+
+			}
+		}
+
 	}
 }
 

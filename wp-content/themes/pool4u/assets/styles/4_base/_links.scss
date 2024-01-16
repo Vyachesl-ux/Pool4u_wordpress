@@ -16,8 +16,7 @@ a {
 
 		&:hover,
 		&:active {
-			padding-right: 40px;
-			background: darken($color: $primary, $amount: 5);
+			background: darken($color: $cyan, $amount: 10);
 		}
 	}
 

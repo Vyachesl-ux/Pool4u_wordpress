@@ -160,15 +160,6 @@
                     font-weight: bold;
                 }
             }
-
-            .wp-block-button__link{
-                background: $white !important;
-                color: $primary;
-                &::after{
-                    border-right: 1px solid $primary;
-                    border-bottom: 1px solid $primary;
-                }
-            }
         }
     }
 
