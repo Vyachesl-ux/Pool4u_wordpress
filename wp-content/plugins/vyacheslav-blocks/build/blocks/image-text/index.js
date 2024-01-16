@@ -378,7 +378,7 @@ const icon = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("
       label: "55/45",
       value: "5545"
     }];
-    const allowedBlocks = ["core/heading", "core/paragraph", "core/list", "core/quote", "core/spacer", "core/buttons"];
+    const allowedBlocks = ["core/heading", "core/paragraph", "core/list", "core/quote", "core/spacer", "core/buttons", "pool4u/social-icons", "pool4u/social-icon"];
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
       title: "Layout"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {

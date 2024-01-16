@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"textdomain": "headspin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"version": "0.1.0",
+
+	"name": "headspin/accordion",
+	"title": "FAq",
+	"category": "design",
+	"description": "Frequently asked questions",
+	"keywords": ["faq", "questions", "accordion"],
+    "supports": {
+		"align": [
+			"wide"
+		]
+	},
+    "attributes": {
+        "heading":{
+            "type": "string"
+        },
+        "preamble":{
+            "type": "string"
+        }
+
+    }
+}

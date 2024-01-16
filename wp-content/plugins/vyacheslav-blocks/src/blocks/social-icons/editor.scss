@@ -1,0 +1,51 @@
+.wp-block-pool4u-card-boxes {
+	.block-editor-block-list__layout {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 48px;
+		justify-content: center;
+
+		.block-list-appender {
+			display: none;
+			margin-left: 12px;
+			pointer-events: all;
+
+			.block-editor-button-block-appender {
+				height: 100%;
+			}
+		}
+
+		.is-hovered ~ .block-list-appender {
+			display: block;
+		}
+	}
+
+	div.card-boxes__container {
+		display: block;
+		margin: 48px 0;
+		width: 100%;
+
+		.wp-block-pool4u-card-box {
+			margin: 0;
+			padding: 0;
+			width: calc(25% - 36px);
+		}
+	}
+
+	&.is-selected,
+	&.has-child-selected,
+	&.is-hovered {
+		.block-editor-block-list__layout .block-list-appender {
+			display: block;
+		}
+	}
+
+	.block-editor-plain-text,
+	.block-editor-plain-text::placeholder {
+		background: transparent;
+		color: inherit !important;
+		font-weight: inherit !important;
+		letter-spacing: inherit;
+		text-transform: inherit;
+	}
+}

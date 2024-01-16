@@ -125,6 +125,8 @@ registerBlockType( "pool4u/image-text", {
 			"core/quote",
 			"core/spacer",
 			"core/buttons",
+			"pool4u/social-icons",
+			"pool4u/social-icon"
 		];
 
 		return (
