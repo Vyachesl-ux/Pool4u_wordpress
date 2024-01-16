@@ -4,14 +4,6 @@
         .fit-image-container{
             height: 100%;
         }
-        &.is-style-link{
-            .fit-image-container{
-                height: 100px;
-            }
-            .image-text__content{
-                width: 70%;
-            }
-        }
         & + &{
             margin-top: 0;
         }
@@ -156,16 +148,19 @@
         .image-text__content{
             position: absolute;
             left: 10%;
-            transform: translateY(-50%);
-            color: $white;
-            top: calc(50% - 40px);
+            top: 30%;
+            padding-left: 0;
             @include tablet-l-up
             {
-                top: 50%;
+                max-width: 600px;
+                left: 20%;
 
             }
             .image-text__heading{
                 color: $primary;
+                strong{
+                    font-weight: bold;
+                }
             }
 
             .wp-block-button__link{
