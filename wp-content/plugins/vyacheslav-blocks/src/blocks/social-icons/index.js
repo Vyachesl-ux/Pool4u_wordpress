@@ -83,27 +83,6 @@ registerBlockType( 'pool4u/social-icons', {
 
 	return (
 		<div {...useBlockProps()}>
-			<BlockControls>
-				<DropdownMenu
-					icon={ attributes.align === "wide" ? stretchWide : stretchFullWidth }
-					label={ "Change alignment" }
-					className="social-icons-alignment-dropdown"
-					controls={ [
-						{
-							title: "Full width",
-							icon: stretchFullWidth,
-							isActive: attributes.align !== "wide",
-							onClick: () => setAttributes({ align: "full" }),
-						},
-						{
-							title: "Wide width",
-							icon: stretchWide,
-							isActive: attributes.align === "wide",
-							onClick: () => setAttributes({ align: "wide" }),
-						},
-					] }
-				/>
-			</BlockControls>
 			<div className="social-icons__container">
 				<Fragment>
 					<InnerBlocks
@@ -132,8 +111,7 @@ registerBlockType( 'pool4u/social-icons', {
 	save: ( { attributes, className } ) => {
 		return (
 			<div {...useBlockProps.save({ 
-				className: classNames(`${className}`,
-				attributes.align === "wide" ? "alignwide" : "alignfull" 
+				className: classNames(`${className}` 
 				)})}>
 				<div className="social-icons__container">
 					<InnerBlocks.Content />

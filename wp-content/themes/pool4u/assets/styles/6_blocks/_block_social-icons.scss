@@ -1,0 +1,11 @@
+.wp-block-pool4u-social-icons{
+    .social-icons__container{
+        display: flex;
+        gap: 25px;
+        max-width: 400px;
+        height: 24px;
+        .fit-image-container{
+            width: 25px;
+        }
+    }
+}

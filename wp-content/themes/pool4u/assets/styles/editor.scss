@@ -21,6 +21,7 @@
 
 }
 
+
 :root {
 	font-size: $base-font-size;
 }
@@ -29,6 +30,16 @@
 	&.is-root-container > .alignwide{
 		max-width: 1300px !important;
 		
+	}
+	> .wp-block-pool4u-section .wp-block{
+		margin: 0 auto;
+		max-width: 800px;
+		&.alignwide{
+		max-width: 1300px !important;
+		}
+		&.alignfull{
+			max-width: none;
+		}
 	}
 }
 
@@ -49,6 +60,12 @@
 		@import "4_base/page";
 		@import "4_base/lists";
 		@import "4_base/elements";
+		@import "5_objects/gutenberg";
+		
+	}
+	.wp-block-pool4u-section{
+		@import "5_objects/gutenberg";
+
 	}
 
 	a {
@@ -99,6 +116,8 @@
 @import "5_objects/news-single";
 @import "5_objects/video-modal";
 @import "5_objects/subscribe-form";
+@import "5_objects/gutenberg";
+
 
 
 
@@ -119,3 +138,4 @@
 @import "6_blocks/block_brochures";
 @import "6_blocks/block_core-image";
 @import "6_blocks/block_short-line";
+@import "6_blocks/block_social-icons";

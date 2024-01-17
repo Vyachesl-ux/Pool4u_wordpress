@@ -11,6 +11,9 @@
 	"category": "design",
 	"keywords": ["social", "icons", "icon", "фото", "соцсети", "иконки"],
     "description": "Отображает группу социальных иконок с ссылками",
+	"supports": {
+		"align": ["wide"]
+	},
 	"attributes": {
 		"cardCount": {
 			"type": "number",
