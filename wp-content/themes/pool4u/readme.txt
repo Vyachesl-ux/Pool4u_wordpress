@@ -13,7 +13,7 @@ A starter theme called _pool4u.
 
 == Description ==
 
-Design and developed by Pool4u
+Design and developed by vyacheslav lobintsev
 
 == Installation ==
 
