@@ -8,11 +8,12 @@
 	@include phone-only{
 		padding: 40px 0;
 	}
-	&.is-style-yellow{
-		background: $yellow;
-	}
+
 	.wp-block-pool4u-image-text{
 		padding: 0;
+		+ .wp-block-pool4u-image-text{
+			margin-top: 50px;
+		}
 	}
 	&.center{
 		text-align: center;

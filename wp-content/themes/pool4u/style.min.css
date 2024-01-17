@@ -387,7 +387,6 @@ p+.wp-block-columns{margin:40px 0}
 .wp-block-headspin-slider-text .slider-text__content-wrapper .slider-text__btn-group{grid-row:4;grid-column:1/span 2;font-family:"Montserrat",monospace;font-size:13px;font-weight:700}
 .wp-block-headspin-slider-text .slider-text__content-wrapper .slider-text__btn-group .wp-block-button__link{background:#0e1e3f}
 .block-editor-block-list__block.wp-block-pool4u-image-text{grid-template-rows:450px !important}
-.block-editor-block-list__block.wp-block-pool4u-image-text+.block-editor-block-list__block.wp-block-pool4u-image-text{margin-top:0}
 .wp-block-pool4u-image-text{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-top:60px;padding-bottom:60px;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;line-height:23px}
 .wp-block-pool4u-image-text .fit-image-container{margin-bottom:24px}
 .wp-block-pool4u-image-text .image-text__content .image-text__heading{margin-top:0;margin-bottom:10px}
@@ -409,8 +408,8 @@ p+.wp-block-columns{margin:40px 0}
 .block-editor-block-list__block.is-style-img-background .image-text__subheading{display:none}
 .wp-block-pool4u-section{background:#f2fbff;padding:80px 0}
 .wp-block-pool4u-section.is-style-margin-top{margin-top:130px}
-.wp-block-pool4u-section.is-style-yellow{background:#ffe27e}
 .wp-block-pool4u-section .wp-block-pool4u-image-text{padding:0}
+.wp-block-pool4u-section .wp-block-pool4u-image-text+.wp-block-pool4u-image-text{margin-top:50px}
 .wp-block-pool4u-section.center{text-align:center}
 .wp-block-pool4u-section.center h6{text-transform:uppercase}
 .wp-block-headspin-icon-info-list{padding:24px 0}
