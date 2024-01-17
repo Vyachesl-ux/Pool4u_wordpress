@@ -37,6 +37,19 @@ function hs_acf_blocks_init() {
 	}
 	if ( function_exists( "acf_register_block_type" ) ) {
 		acf_register_block( array(
+			"name"				=> "projects",
+			"title"				=> __( "Проекты", "pool4u" ),
+			"description"		=> __( "Показать все проекты", "pool4u" ),
+			"render_callback"	=> "hs_acf_render_block",
+			"category"			=> "layout",
+			"keywords"			=> array( "projects","project","проекты" ),
+			"icon"				=> '<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 16h13v1h-13v-1zm13-3h-13v1h13v-1zm0-6h-5v1h5v-1zm0 3h-5v1h5v-1zm-17-8v17.199c0 .771-1 .771-1 0v-15.199h-2v15.98c0 1.115.905 2.02 2.02 2.02h19.958c1.117 0 2.022-.904 2.022-2.02v-17.98h-21zm19 17h-17v-15h17v15zm-9-12h-6v4h6v-4z"/></svg>',
+			"align"				=> "",
+			"supports"			=> array(
+				"align"			=> array("wide"),
+			),
+		));
+		acf_register_block( array(
 			"name"				=> "employees",
 			"title"				=> __( "Employees", "headspin" ),
 			"description"		=> __( "Show all employees", "headspin" ),
