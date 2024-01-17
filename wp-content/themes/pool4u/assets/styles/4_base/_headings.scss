@@ -23,8 +23,8 @@ h1 {
 }
 
 h2, %h2 {
-	@include font("heading", $size: 21px, $weight: 300);
-	margin-bottom: .8em;
+	@include font("heading", $size: 21px, $weight: 400);
+	margin-bottom: 1em;
 	margin-top: 1em;
 	line-height: 26px;
 	color: $header;
