@@ -15,9 +15,12 @@ $projects = new WP_Query([
         <div class="wrapper">
             <div class="projects-content">
                 <pre>
-                    <?php foreach($projects->posts as $project): $thumbnail = get_the_post_thumbnail($project->ID, 'medium') ?>
+                    <?php foreach($projects->posts as $project): $thumbnail = get_the_post_thumbnail($project->ID, 'large') ?>
                         <div class="projects-content__item">
                             <figure class="projects-content__item-image"><?php echo $thumbnail ?></figure>
+                            <div class="project-content__item-image--info">
+                                <h3 class="project-content__item-image--info-header"><?php echo $project->post_title ?></h3>
+                            </div>
                         </div>
                     <?php endforeach?>
 
