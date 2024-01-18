@@ -65,9 +65,10 @@
             }
             &-header,
             &-description {
-                @include font("default" );
+              @include font("default" );
               margin-bottom: 0;
               padding: 10px 20px;
+              display: block;
             }
             &-header{
                 text-transform: uppercase;
