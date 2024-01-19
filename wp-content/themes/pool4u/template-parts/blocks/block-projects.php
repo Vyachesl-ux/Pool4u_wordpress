@@ -21,7 +21,7 @@ $projects = new WP_Query([
                                 <?php echo $thumbnail ?>
                                 <div class="projects-content__item-image--info">
                                     <h3 class="projects-content__item-image--info-header"><?php echo $project->post_title ?></h3>
-                                    <a href="<?php echo get_permalink($project->ID) ?>" class="projects-content__item-image--info-description" data-post-id="<?php echo $project->ID?>"><?php echo hsl_e("Докладніше") ?></a>
+                                    <a href="<?php echo get_permalink($project->ID) ?>" class="projects-content__item-image--info-description" data-modal="<?php echo $project->ID?>"><?php echo hsl_e("Докладніше") ?></a>
                                 </div>
                             </div>
                         </div>
