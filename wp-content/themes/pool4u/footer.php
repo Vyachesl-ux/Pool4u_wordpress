@@ -34,7 +34,23 @@
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
-					<div class="modal-work__content"></div>
+					<div class="modal-work__content">
+						<h4 class="modal-work__header"><?php hsl_e("характеристики") ?></h4>
+						<div class="modal-work__content-wrapper">
+							<?php $descriptions = get_field("description", $post->ID);
+								foreach($descriptions as $description):?>
+									<div class="modal-work__content-item">
+										<p class="modal-text"><?php echo $description['first_col'] ?></p>
+										<p class="modal-text"><?php echo $description['second_col'] ?></p>
+									</div>
+							<?php endforeach?>
+							
+						</div>
+						<div class="modal-work__footer">
+							<button type="button" class="slickPrev swiper-button-prev" aria-label="Previous slide"></button>
+							<button type="button" class="slickNext swiper-button-next" aria-label="Next slide"></button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
