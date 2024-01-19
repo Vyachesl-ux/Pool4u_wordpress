@@ -12,7 +12,36 @@
 ?>
 
 	</div><!-- #content -->
+	<?php 
+		$projects = new WP_Query([
+			"post_type" => "projects",
+			"posts_per_page" => -1,
+			]
+		);
 
+		foreach($projects->posts as $post): ?>
+		<div class="modal" id="<?php echo $post->ID ?>">
+			<div class="modal__dialog">
+				<div class="modal-work">
+					<button class="modal__close" type="button" data-close></button>
+					<div class="modal-work__preview swiper">
+						<div class="swiper-wrapper">
+							<?php $images = get_field("project_images", $post->ID);
+								foreach($images as $image):?>
+									<div class="swiper-slide"><img src="<?php echo $image["url"] ?>" alt="фотография бассейна" class="modal-work__photo"></div>
+								<?php endforeach
+							?>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="modal-work__content"></div>
+				</div>
+			</div>
+		</div>
+	
+	<?php endforeach ?>
+
+	
 	<footer id="colophon" class="site-footer">
 		<div class="main-footer">
 			<div class="main-footer__item">
