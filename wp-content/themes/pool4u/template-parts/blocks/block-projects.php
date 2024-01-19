@@ -11,7 +11,7 @@ $projects = new WP_Query([
  ?>
 
  <div class="wp-block-pool4u-projects<?php echo $class ?>" id="<?php echo $id; ?>">
-    <div class="projects" id="projects">
+    <div class="projects">
         <div class="wrapper wide">
             <div class="projects-content">
                 
@@ -21,16 +21,17 @@ $projects = new WP_Query([
                                 <?php echo $thumbnail ?>
                                 <div class="projects-content__item-image--info">
                                     <h3 class="projects-content__item-image--info-header"><?php echo $project->post_title ?></h3>
-                                    <a href="<?php echo get_permalink($project->ID) ?>" class="projects-content__item-image--info-description"><?php echo hsl_e("Докладніше") ?></a>
+                                    <a href="<?php echo get_permalink($project->ID) ?>" class="projects-content__item-image--info-description" data-post-id="<?php echo $project->ID?>"><?php echo hsl_e("Докладніше") ?></a>
                                 </div>
                             </div>
                         </div>
+
                     <?php endforeach?>
                 
                     <div class="projects-content__item">
                         <h3 class="projects-header"><?php echo get_field("heading")?></h3>
                         <p class="projects-text"><?php echo get_field("description_action") ?></p>
-                        <div class="btn"><a class="btn-link color" href="#contact_us"><?php echo get_field("button_text") ?></a></div>
+                        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#contact_us"><?php echo get_field("button_text") ?></a></div>
                     </div>
 
                 

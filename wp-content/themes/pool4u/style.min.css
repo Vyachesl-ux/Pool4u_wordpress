@@ -88,6 +88,7 @@ h4{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weigh
 h5,.wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info .icon-info__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:27px;margin-bottom:2em;margin-top:0;color:#0e1e3f}
 h6{font-family:"Montserrat",monospace;font-size:13px;font-weight:600;margin-bottom:2em;margin-top:0;color:#0e1e3f}
 h6.is-style-orange{color:#f89e4f}
+h1.is-style-margin,h2.is-style-margin,h3.is-style-margin,h4.is-style-margin,h5.is-style-margin,h6.is-style-margin{margin:2em 0}
 h1+h1,h1+h2,h1+h3,h1+h4,h1+h5,h1+h6,h2+h1,h2+h2,h2+h3,h2+h4,h2+h5,h2+h6,h3+h1,h3+h2,h3+h3,h3+h4,h3+h5,h3+h6,h4+h1,h4+h2,h4+h3,h4+h4,h4+h5,h4+h6,h5+h1,h5+h2,h5+h3,h5+h4,h5+h5,h5+h6,h6+h1,h6+h2,h6+h3,h6+h4,h6+h5,h6+h6{margin-top:.7em}
 a{color:#0e1e3f;text-decoration:none;-webkit-transition:color .1s ease;transition:color .1s ease}
 a.wp-block-button__link:hover,a.wp-block-button__link:active{background:#1a8dbe}
@@ -531,6 +532,7 @@ p+.wp-block-columns{margin:40px 0}
 .wp-block-headspin-short-line+.wp-block-headspin-image-text{padding-top:40px}
 .wp-block-pool4u-social-icons .social-icons__container{display:-webkit-box;display:-ms-flexbox;display:flex;gap:25px;max-width:400px;height:24px}
 .wp-block-pool4u-social-icons .social-icons__container .fit-image-container{width:25px}
+.projects{padding-bottom:50px}
 .projects-content{display:grid;grid-template-columns:1.28fr 1fr;grid-gap:100px}
 .projects-content__item{position:relative}
 .projects-content__item:nth-child(2){margin-top:100px}
@@ -599,6 +601,7 @@ h4{font-size:22px}
 .wp-block-headspin-icon-info-list .icon-info-list{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
 .wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info{width:calc(20% - 20px);margin-bottom:0}
 .wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info+.wp-block-headspin-icon-info{margin-left:24px}
+.projects{padding-bottom:100px}
 .projects-content__item-image:hover .projects-content__item-image--info{-webkit-transition:opacity .5s ease 0s;transition:opacity .5s ease 0s;opacity:1}
 .projects-content__item-image:hover .projects-content__item-image--info-description:hover{background:#d5d5d5;-webkit-transition:background .3s;transition:background .3s}
 }@media(min-width:1380px){.wp-block-case-studies{padding:120px 0 !important;width:1150px !important}

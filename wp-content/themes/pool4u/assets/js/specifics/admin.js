@@ -56,10 +56,10 @@
 			wp.blocks.registerBlockStyle("core/separator", { name: "left", label: "Alignment left" });
 			
 			//headings
-			wp.blocks.registerBlockStyle("core/heading", { name: "orange", label: "Orange color" });
+			wp.blocks.registerBlockStyle("core/heading", { name: "margin", label: "Двойной отступ" });
 			
 			//paragraph
-			wp.blocks.registerBlockStyle("core/paragraph", { name: "orange", label: "Orange color" });
+			wp.blocks.registerBlockStyle("core/paragraph", { name: "margin", label: "Двойной отступ" });
 
 			
 			//section

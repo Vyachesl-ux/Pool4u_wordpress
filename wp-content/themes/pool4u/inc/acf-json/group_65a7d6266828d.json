@@ -76,7 +76,7 @@
                 {
                     "key": "field_65a7e28948d9e",
                     "label": "Вторая колонка",
-                    "name": "вторая_колонка",
+                    "name": "second_col",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -115,5 +115,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705582638
+    "modified": 1705609219
 }

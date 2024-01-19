@@ -12,34 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="wp-block-headspin-section is-style-yellow pre-footer">
-		<div class="wrapper">
-			<div class="pre-footer__wrapper">
 
-				<div class="pre-footer__wrapper-galery">
-					<?php
-					if($images = get_field("pre-footer-image", "option"));
-					foreach($images as $image):
-					?>
-						<img class="pre-footer__wrapper-galery--elem" src="<?php echo $image["url"] ?>" alt="pre-footer-collage">
-						<?php endforeach ?>
-				</div>
-				<div class="pre-footer__wrapper-content">
-					<?php if($title = get_field("pre-footer-title", "option")): ?>
-						<h2 class="pre-footer__wrapper-item"><?php echo $title ?></h2>
-					<?php endif ?>
-					<?php if($button = get_field("pre-footer-button", "option")): ?>
-						<div class="wp-block-buttons">
-							<a class="wp-block-button__link" href="<?php  echo $button["url"]?>">
-								<?php echo $button["title"] ?>
-							</a>
-						</div>
-					<?php endif ?>
-				</div>
-			</div>
-
-		</div>
-	</div>
 	<footer id="colophon" class="site-footer">
 		<div class="main-footer">
 			<div class="main-footer__item">
