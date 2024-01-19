@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACI;AACJ;AAAK;EACG;AAER,C","sources":["webpack://headspin-blocks/./src/blocks/benefits/editor.scss"],"sourcesContent":[".block-editor-block-list__block.wp-block-pool4u-benefits{\n    font-family: \"Montserrat\";\n     p, h2{\n        color: #fff !important;\n    }\n}\n"],"names":[],"sourceRoot":""}
