@@ -183,135 +183,6 @@ function getClosestByClass(element, className) {
 })();
 "use strict";
 
-var caseFilterButtons = document.querySelectorAll('.case-filter__button');
-if (caseFilterButtons) {
-  var addActive = function addActive(event) {
-    if (event.target.classList.contains('active')) {
-      caseFilterButtons.forEach(function (button) {
-        button.classList.remove('active');
-      });
-    } else {
-      caseFilterButtons.forEach(function (button) {
-        button.classList.remove('active');
-        event.target.classList.add('active');
-      });
-    }
-  };
-  caseFilterButtons.forEach(function (button) {
-    button.addEventListener('click', addActive);
-  });
-}
-"use strict";
-
-(function () {
-  var caseFilterButtons = document.querySelectorAll('.case-filter__button');
-  var caseContainer = document.querySelectorAll('.case-study__wrapp');
-  var loadMoreCases = document.querySelector('.show-more-cases');
-  var counter = 0;
-  if (caseFilterButtons && loadMoreCases) {
-    caseContainer.length < 3 ? loadMoreCases.classList.add('hide') : loadMoreCases.classList.remove('hide');
-    caseFilterButtons.forEach(function (button) {
-      button.addEventListener('click', filterCases);
-      function filterCases() {
-        var buttonValue = button.textContent;
-        window.history.replaceState(null, null, '/case-studies/' + buttonValue);
-        caseContainer.forEach(function (element, index) {
-          var dataType = element.getAttribute('data-type');
-          dataType !== buttonValue && button.classList.contains("active") ? element.classList.add('hide') : element.classList.remove('hide');
-          if (!button.classList.contains("active")) {
-            window.history.replaceState(null, null, '/case-studies/');
-            index % 2 == 0 ? element.classList.add('reverse') : element.classList.remove('reverse');
-            if (index > 2) {
-              element.classList.add('hide');
-              element.classList.remove('visible');
-            } else {
-              element.classList.remove('hide');
-              element.classList.add('visible');
-              loadMoreCases.classList.remove('hide');
-            }
-          }
-          if (!element.classList.contains('hide')) counter++;
-          counter <= 3 && button.classList.contains("active") ? loadMoreCases.classList.add("hide") : loadMoreCases.classList.remove('hide');
-          if (!element.classList.contains("hide")) {
-            element.classList.add('visible');
-            console.log(visibleElements);
-          } else {
-            element.classList.remove('visible');
-          }
-          var visibleElements = document.querySelectorAll('.case-study__wrapp.visible');
-          visibleElements.forEach(function (visible, index) {
-            index % 2 == 0 ? visible.classList.remove('reverse') : visible.classList.add('reverse');
-          });
-        });
-        counter = 0;
-      }
-    });
-  }
-})();
-"use strict";
-
-(function () {
-  var currentIndex = 3;
-  var caseItems = document.querySelectorAll('.case-study__wrapp');
-  caseItems.forEach(function (item, index) {
-    index % 2 == 0 ? item.classList.add('reverse') : item.classList.remove('reverse');
-    if (index >= currentIndex) {
-      item.classList.add('hide');
-    } else {
-      item.classList.add('visible');
-    }
-  });
-  var showMoreCases = document.querySelector('.show-more-cases');
-  if (showMoreCases) {
-    showMoreCases.addEventListener('click', function () {
-      var hiddenItems = document.querySelectorAll('.case-study__wrapp.hide');
-      var visibleItems = document.querySelectorAll('.case-study__wrapp.visible');
-      for (var i = 0; i < 3; i++) {
-        if (hiddenItems[i]) {
-          hiddenItems[i].classList.remove('hide');
-          hiddenItems[i].classList.add('visible');
-        }
-      }
-      currentIndex += 3;
-      visibleItems.forEach(function (visible, index) {
-        index % 2 == 1 ? visible.classList.remove('reverse') : visible.classList.add('reverse');
-      });
-      if (document.querySelectorAll('.case-study__wrapp.hide').length === 0) {
-        showMoreCases.classList.add('hide');
-      }
-    });
-  }
-})();
-"use strict";
-
-(function () {
-  var currentIndex = 12;
-  var newsItems = document.querySelectorAll('.news-grid__container');
-  newsItems.forEach(function (item, index) {
-    if (index >= currentIndex) {
-      item.classList.add('hide');
-    }
-  });
-  var showMoreButton = document.querySelector('.show-more-button');
-  if (showMoreButton) {
-    showMoreButton.addEventListener('click', function () {
-      var hiddenItems = document.querySelectorAll('.news-grid__container.hide');
-      for (var i = 0; i < 12; i++) {
-        if (hiddenItems[i]) {
-          hiddenItems[i].classList.remove('hide');
-        }
-      }
-      currentIndex += 12;
-
-      // Проверка, нужно ли скрывать кнопку "Показать еще новости"
-      if (document.querySelectorAll('.news-grid__container.hide').length === 0) {
-        showMoreButton.style.display = 'none';
-      }
-    });
-  }
-})();
-"use strict";
-
 /**
  * ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
  * ████╗ ████║██╔════╝████╗  ██║██║   ██║
@@ -364,94 +235,49 @@ if (caseFilterButtons) {
 })();
 "use strict";
 
-(function () {
-  var buttons = document.querySelectorAll('.archive-filter__button');
-  var container = document.querySelectorAll('.news-grid__container');
-  var showMoreButton = document.querySelector('.show-more-button');
-  var showMoreButtonFilter = document.querySelector('.show-more-button-filter');
-  var filterableArchive = [];
-  var hiddenItems = [];
-  buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      showMoreButton.classList.add('hide');
-      filterableArchive = [];
-      button.classList.toggle('active');
-      var activeButtons = document.querySelectorAll('.archive-filter__button.active');
-      container.forEach(function (elem) {
-        var shouldShow = false;
-        activeButtons.forEach(function (activeButton) {
-          var filterValue = activeButton.textContent;
-          var dataType = elem.firstElementChild.getAttribute('data-type');
-          if (dataType === filterValue) {
-            shouldShow = true;
-          }
-        });
-        if (shouldShow) {
-          elem.classList.remove('hide');
-          filterableArchive.push(elem);
-        } else {
-          elem.classList.add('hide');
-        }
-      });
-      if (filterableArchive.length >= 12) showMoreButtonFilter.classList.remove('hide');
-      if (filterableArchive.length > 12) {
-        var currentIndex = 12;
-        filterableArchive.forEach(function (item, index) {
-          if (index >= currentIndex) {
-            item.classList.add('hide');
-          }
-        });
-        showMoreButtonFilter.addEventListener('click', function () {
-          hiddenItems = [];
-          filterableArchive.forEach(function (item, index) {
-            if (item.classList.contains('hide')) {
-              hiddenItems.push(item);
-            }
-          });
-          for (var i = 0; i < 12; i++) {
-            if (hiddenItems[i]) {
-              hiddenItems[i].classList.remove('hide');
-            }
-          }
-          currentIndex += 12;
-          // console.log(hiddenItems)
-          if (currentIndex >= hiddenItems.length) {
-            showMoreButtonFilter.classList.add('hide');
-          }
-        });
+var modalCall = document.querySelectorAll('.projects-content__item-image--info-description');
+var modalClose = document.querySelectorAll('.modal__close');
+var modalId = document.querySelectorAll('.modal');
+modalCall.forEach(function (e) {
+  e.addEventListener('click', function (event) {
+    event.preventDefault();
+    var attr = e.getAttribute('data-modal');
+    modalId.forEach(function (i) {
+      if (attr === i.getAttribute('id')) {
+        i.classList.add('show');
+        document.body.classList.add('no-scroll');
       }
-      if (activeButtons.length === 0) {
-        container.forEach(function (elem, index) {
-          elem.classList.remove('hide');
-          if (index >= 12) {
-            elem.classList.add('hide');
-            showMoreButton.classList.remove('hide');
-            showMoreButtonFilter.classList.add('hide');
-          }
-        });
-      } else {
-        showMoreButton.classList.add('hide');
-      }
+      setTimeout(function () {
+        i.querySelector('.modal__dialog').style.transform = "rotateX(0)";
+      }, 200);
     });
-    hiddenItems = [];
   });
-})();
-"use strict";
-
-/**
- * GEt image text block if its comes right after separator
- */
-
-var imageText = document.querySelectorAll('.wp-block-headspin-image-text');
-document.addEventListener('DOMContentLoaded', function () {
-  if (document.documentElement.clientWidth >= 1345 && imageText) {
-    imageText.forEach(function (block) {
-      var previousElement = block.previousElementSibling;
-      if (previousElement && previousElement.className === 'wp-block-headspin-short-line is-style-center') {
-        previousElement.firstChild.style.cssText = "margin-left: calc(55% - 200px)";
+});
+modalClose.forEach(function (e) {
+  e.addEventListener('click', function (event) {
+    event.preventDefault();
+    modalId.forEach(function (item) {
+      item.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
+      if (item.classList.contains('show')) {
+        setTimeout(function () {
+          item.classList.remove('show');
+          document.body.classList.remove('no-scroll');
+        }, 200);
       }
     });
-  }
+  });
+});
+modalId.forEach(function (e) {
+  e.addEventListener('click', function (event) {
+    str_val = event.target.getAttribute('class');
+    if (str_val === 'modal show') {
+      e.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
+      document.body.classList.remove('no-scroll');
+      setTimeout(function () {
+        e.classList.remove('show');
+      }, 200);
+    }
+  });
 });
 "use strict";
 
@@ -509,129 +335,102 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 })();
+// /**
+// * 
+// * ░██████╗██╗░░░██╗██████╗░░██████╗░█████╗░██████╗░██╗██████╗░████████╗██╗░█████╗░███╗░░██╗
+// * ██╔════╝██║░░░██║██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
+// * ╚█████╗░██║░░░██║██████╦╝╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░██║██║░░██║██╔██╗██║
+// * ░╚═══██╗██║░░░██║██╔══██╗░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░██║██║░░██║██║╚████║
+// * ██████╔╝╚██████╔╝██████╦╝██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██║╚█████╔╝██║░╚███║
+// * ╚═════╝░░╚═════╝░╚═════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝
+// *
+// *
+// *  Helper functions for handling subscription functionality
+// */
+
+// (function() {
+
+// 	var signupForms = document.querySelectorAll(".wp-block-headspin-subscribe-form .subscribe-form");
+
+// 	if (signupForms) {
+// 		loadRecaptcha();
+
+// 		var formStrings = {
+// 			"general_error":				"Something went wrong. Please reload the page and try again. If the problem persists, please contact us.",
+// 			"success":						"Thank you for subscription!",
+// 			"invalid_email":				"E-mail address is not valid.",
+// 			"captcha_failed":				"Captcha failed. Try submitting the form again. If the problem persists, please contact us.",
+// 			"member_exists":				"You are already subscribed to our newsletter.",
+// 			"member_permanently_deleted":	"You have previously unsubscribed from stories and news, and therefore could not be added again. Contact us to subscribe again.",
+// 			"mc_general_error":				"Something went wrong with the subscription to the newsletter. If the problem persists, please contact us.",
+// 		};
+
+// 		for (var i = 0; i < signupForms.length; i++) {
+// 			signupForms[i].addEventListener("submit", function(e) {
+// 				var self = this;
+
+// 				e.preventDefault();
+// 				if (this.disabled) return false;
+
+// 				var url = this.getAttribute("action");
+// 				console.log(url)
+// 				var formData = serializeForm(this);
+// 				var messages = this.querySelector(".messages");
+
+// 				messages.innerHTML = "";
+// 				this.classList.add("sending");
+
+// 				var xhttp = new XMLHttpRequest();
+
+// 				xhttp.onreadystatechange = function() {
+
+// 					if (this.readyState == 4) {
+
+// 						self.classList.remove("sending");
+
+// 						var response;
+
+// 						try {
+// 							response = JSON.parse(xhttp.responseText);
+// 						} catch(e) {
+
+// 							messages.innerHTML += "<li class='error'>" + formStrings["general_error"] + "</li>";
+// 							return;
+// 						}
+
+// 						if (response.status == 200 && response.message == "success") {
+// 							messages.innerHTML = "<li class='success'>" + formStrings["success"] + "</li>";
+// 							self.disabled = true;
+// 							self.classList.add("disabled");
+
+// 							gtag("event", "abonnere", {
+// 								event_category: "klikk",
+// 								event_label: "nyhetsbrev",
+// 							});
+
+// 							return;
+// 						}
+
+// 						if (formStrings.hasOwnProperty(response.message)) {
+// 							messages.innerHTML = "<li class='error'>" + formStrings[response.message] + "</li>";
+// 						} else {
+// 							messages.innerHTML = "<li class='error'>" + formStrings["general_error"] + "</li>";
+// 						}
+// 					}
+
+// 					// Reload recaptcha
+// 					loadRecaptcha();
+// 				}
+
+// 				xhttp.open("POST", url, true);
+// 				xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+// 				xhttp.send(formData);
+// 			});
+// 		}
+// 	}
+
+// })();
 "use strict";
-
-(function () {
-  var caseStudies = new Swiper(".wp-block-case-studies", {
-    loop: true,
-    spaceBetween: 25,
-    slidesPerView: 1.1,
-    breakpoints: {
-      900: {
-        slidesPerView: 1.3
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
-})();
-"use strict";
-
-// Выбираем последний родительский элемент футера
-(function () {
-  var footerContainer = document.querySelector('.footer-menu');
-  var footerLastElement = footerContainer.querySelectorAll('.menu-item-has-children:last-of-type');
-  var subMenuItems = footerLastElement[0].querySelectorAll('.menu-item');
-  if (subMenuItems) {
-    subMenuItems.forEach(function (item) {
-      var innerText = item.textContent;
-      item.classList.add(innerText.toLowerCase());
-    });
-  }
-})();
-
-//     document.addEventListener("DOMContentLoaded", function () {
-
-//     var successMessage = document.getElementById("success-message");
-//     if(successMessage){
-
-//         successMessage.style.display = "block";
-//         setTimeout(function () {
-//             successMessage.style.display = "none";
-//         }, 5000); 
-//     }
-
-// });
-"use strict";
-"use strict";
-
-/**
-* 
-* ░██████╗██╗░░░██╗██████╗░░██████╗░█████╗░██████╗░██╗██████╗░████████╗██╗░█████╗░███╗░░██╗
-* ██╔════╝██║░░░██║██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
-* ╚█████╗░██║░░░██║██████╦╝╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░██║██║░░██║██╔██╗██║
-* ░╚═══██╗██║░░░██║██╔══██╗░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░██║██║░░██║██║╚████║
-* ██████╔╝╚██████╔╝██████╦╝██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██║╚█████╔╝██║░╚███║
-* ╚═════╝░░╚═════╝░╚═════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝
-*
-*
-*  Helper functions for handling subscription functionality
-*/
-
-(function () {
-  var signupForms = document.querySelectorAll(".wp-block-headspin-subscribe-form .subscribe-form");
-  if (signupForms) {
-    loadRecaptcha();
-    var formStrings = {
-      "general_error": "Something went wrong. Please reload the page and try again. If the problem persists, please contact us.",
-      "success": "Thank you for subscription!",
-      "invalid_email": "E-mail address is not valid.",
-      "captcha_failed": "Captcha failed. Try submitting the form again. If the problem persists, please contact us.",
-      "member_exists": "You are already subscribed to our newsletter.",
-      "member_permanently_deleted": "You have previously unsubscribed from stories and news, and therefore could not be added again. Contact us to subscribe again.",
-      "mc_general_error": "Something went wrong with the subscription to the newsletter. If the problem persists, please contact us."
-    };
-    for (var i = 0; i < signupForms.length; i++) {
-      signupForms[i].addEventListener("submit", function (e) {
-        var self = this;
-        e.preventDefault();
-        if (this.disabled) return false;
-        var url = this.getAttribute("action");
-        console.log(url);
-        var formData = serializeForm(this);
-        var messages = this.querySelector(".messages");
-        messages.innerHTML = "";
-        this.classList.add("sending");
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4) {
-            self.classList.remove("sending");
-            var response;
-            try {
-              response = JSON.parse(xhttp.responseText);
-            } catch (e) {
-              messages.innerHTML += "<li class='error'>" + formStrings["general_error"] + "</li>";
-              return;
-            }
-            if (response.status == 200 && response.message == "success") {
-              messages.innerHTML = "<li class='success'>" + formStrings["success"] + "</li>";
-              self.disabled = true;
-              self.classList.add("disabled");
-              gtag("event", "abonnere", {
-                event_category: "klikk",
-                event_label: "nyhetsbrev"
-              });
-              return;
-            }
-            if (formStrings.hasOwnProperty(response.message)) {
-              messages.innerHTML = "<li class='error'>" + formStrings[response.message] + "</li>";
-            } else {
-              messages.innerHTML = "<li class='error'>" + formStrings["general_error"] + "</li>";
-            }
-          }
-
-          // Reload recaptcha
-          loadRecaptcha();
-        };
-        xhttp.open("POST", url, true);
-        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        xhttp.send(formData);
-      });
-    }
-  }
-})();
 "use strict";
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -5512,86 +5311,3 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     }
   });
 })();
-"use strict";
-
-// Video Button
-(function () {
-  var container = document.querySelector('.is-style-video');
-  if (container) {
-    var videoButton = container.querySelectorAll('.wp-block-button__link');
-    videoButton.forEach(function (e) {
-      e.addEventListener('click', function (event) {
-        event.preventDefault();
-        var modal = document.createElement("div");
-        var modalContainer = document.createElement('div');
-        var button = document.createElement('div');
-        var videoContainer = document.createElement('div');
-        var videoContent = document.createElement('iframe');
-        var src = e.getAttribute('href');
-        modal.classList.add("modal-video");
-        modalContainer.classList.add('modal-video__container');
-        videoContainer.classList.add('modal-video__content');
-        button.classList.add('modal-video__close');
-        videoContent.setAttribute("src", src);
-        videoContent.setAttribute("title", "company introduction");
-        document.body.appendChild(modal);
-        modal.appendChild(modalContainer);
-        modalContainer.appendChild(button);
-        modalContainer.appendChild(videoContainer);
-        videoContainer.appendChild(videoContent);
-        button.addEventListener('click', function () {
-          document.body.removeChild(modal);
-        });
-        modal.addEventListener('click', function () {
-          document.body.removeChild(modal);
-        });
-      });
-    });
-  }
-})();
-"use strict";
-
-var modalCall = document.querySelectorAll('.projects-content__item-image--info-description');
-var modalClose = document.querySelectorAll('.modal__close');
-var modalId = document.querySelectorAll('.modal');
-modalCall.forEach(function (e) {
-  e.addEventListener('click', function (event) {
-    event.preventDefault();
-    var attr = e.getAttribute('data-modal');
-    modalId.forEach(function (i) {
-      if (attr === i.getAttribute('id')) {
-        i.classList.add('show');
-        document.body.classList.add('no-scroll');
-      }
-      setTimeout(function () {
-        i.querySelector('.modal__dialog').style.transform = "rotateX(0)";
-      }, 200);
-    });
-  });
-});
-modalClose.forEach(function (e) {
-  e.addEventListener('click', function (event) {
-    event.preventDefault();
-    modalId.forEach(function (item) {
-      item.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
-      if (item.classList.contains('show')) {
-        setTimeout(function () {
-          item.classList.remove('show');
-          document.body.classList.remove('no-scroll');
-        }, 200);
-      }
-    });
-  });
-});
-modalId.forEach(function (e) {
-  e.addEventListener('click', function (event) {
-    str_val = event.target.getAttribute('class');
-    if (str_val === 'modal show') {
-      e.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
-      document.body.classList.remove('no-scroll');
-      setTimeout(function () {
-        e.classList.remove('show');
-      }, 200);
-    }
-  });
-});

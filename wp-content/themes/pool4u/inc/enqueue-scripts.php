@@ -49,8 +49,8 @@ function headspin_scripts() {
 
 	wp_enqueue_script('swiper-slider', get_template_directory_uri() . '/assets/js/custom/swiper-bundle.min.js', false, null, 'footer');
 
-	if ( is_singular() && has_block( "acf/subscribe-form" ) ) {
-		wp_enqueue_script( "google-recaptcha", "https://www.google.com/recaptcha/api.js?render=6LcJSiUoAAAAAEgeaFT3TmET3--IIrHeNzCfFHjK" );
+	if ( is_singular()) {
+		wp_enqueue_script( "google-recaptcha", "https://www.google.com/recaptcha/api.js?render=6Ldt_FUpAAAAADK4OKIsfDufl-1rMvTqzcaZABPt" );
 		}
 }
 add_action( "wp_enqueue_scripts", "headspin_scripts" );

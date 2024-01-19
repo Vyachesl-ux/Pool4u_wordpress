@@ -1,0 +1,209 @@
+
+.modal-work {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  
+    @include desktop-up {
+      min-height: 497px;
+    }
+  
+    @include tablet-v {
+      position: relative;
+      flex-wrap: wrap;
+    }
+  
+    @include phone-only {
+      flex-direction: column;
+    }
+  }
+  
+  .modal-work__preview {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+  
+    @include tablet-v {
+      width: 100%;
+    }
+  }
+  
+  .modal-work__content {
+    width: 40%;
+    font-weight: 300;
+    font-size: 0.86rem;
+    margin: 0 0 0 20px;
+    padding: 20px;
+    position: relative;
+  
+    @include tablet-landscape {
+      padding: 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+  
+      &-wrapper {
+        flex-grow: 1;
+      }
+    }
+  
+    @include tablet-v {
+      width: 100%;
+      margin: 0;
+    }
+  
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba($primary, 0.3);
+  
+      p {
+        margin-bottom: 0;
+        padding: 10px 0;
+  
+        &:nth-child(1) {
+          color: rgba($primary, 0.7);
+        }
+  
+        &:nth-child(2) {
+          text-align: right;
+          font-weight: 500;
+        }
+      }
+    }
+  
+  }
+  
+  .modal-work__footer {
+    display: flex;
+    justify-content: flex-end;
+  
+    @include tablet-v {
+      justify-content: space-between;
+      position: absolute;
+      top: -60%;
+      width: 100%;
+    }
+    @include phone-only{
+      top: -30%;
+    }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: relative;
+      background: transparent;
+      border: none;
+      max-width: 40px;
+      width: 100%;
+  
+      &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-bottom: 1px solid $primary;
+        border-right: 1px solid $primary;
+        top: 50%;
+        left: 50%;
+      }
+  
+      &:hover {
+        background: $primary;
+  
+        &::after {
+          border-bottom: 1px solid $white;
+          border-right: 1px solid $white;
+        }
+        @include phone-only{
+          background: none;
+        }
+      }
+  
+      @include tablet-v {
+        background: rgba($white, .5);
+        border-radius: 10px;
+      }
+      @include phone-only{
+        background: none;
+      }
+    }
+  
+    .swiper-button-prev {
+      left: -8px;
+  
+      @include tablet-v {
+        left: auto;
+      }
+  
+      &::after {
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+    }
+  
+    .swiper-button-next {
+      @include tablet-v {
+        right: 30px;
+      }
+  
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+  
+  .modal__close {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: $primary;
+    border-radius: 50%;
+    right: 0.8rem;
+    top: 0.8rem;
+    z-index: 10000;
+  
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 4px;
+      background: #fff;
+      top: 50%;
+      left: 50%;
+      transition: 0.2s linear;
+      transform-origin: center;
+    }
+  
+    &:before {
+      transform: translate(-50%, -50%) rotate(45grad);
+    }
+  
+    &:after {
+      transform: translate(-50%, -50%) rotate(350grad);
+    }
+  
+    &:hover:before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45grad);
+    }
+  
+    &:hover:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(450grad);
+    }
+  }
+  
+  .swiper-pagination-fraction {
+    width: auto;
+    left: 20px;
+    font-size: 40px;
+    color: $primary;
+    @include phone-only{
+      font-size: 20px;
+      width: 100%;
+      left: 0;
+    }
+  }
