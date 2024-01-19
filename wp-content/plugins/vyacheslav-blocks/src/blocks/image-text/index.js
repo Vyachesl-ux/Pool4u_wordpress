@@ -121,6 +121,7 @@ registerBlockType( "pool4u/image-text", {
 		const allowedBlocks = [
 			"core/heading",
 			"core/paragraph",
+			"core/columns",
 			"core/list",
 			"core/quote",
 			"core/spacer",
