@@ -1,6 +1,37 @@
 .block-editor-block-list__block.wp-block-pool4u-benefits{
     font-family: "Montserrat";
-     p, h2{
-        color: #fff !important;
+    .benefits{
+        background-color: #cecece;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+        *{
+
+            color: #000;
+        }
+        .components-button {
+            background: #fff;
+            box-shadow: inset 0 0 0 1px #000;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &.img-set {
+            *:not(.components-button){
+               color: #fff !important;
+           }
+            background-color: transparent;
+            .components-button {
+                display: none;
+                left: 16px;
+                top: 16px;
+                transform: none;
+            }
+    
+            &:hover .components-button {
+                display: block;
+            }
+        }
     }
 }

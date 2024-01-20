@@ -4,8 +4,37 @@
 .block-editor-block-list__block.wp-block-pool4u-benefits {
   font-family: "Montserrat";
 }
-.block-editor-block-list__block.wp-block-pool4u-benefits p, .block-editor-block-list__block.wp-block-pool4u-benefits h2 {
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits {
+  background-color: #cecece;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits * {
+  color: #000;
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits .components-button {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #000;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits.img-set {
+  background-color: transparent;
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits.img-set *:not(.components-button) {
   color: #fff !important;
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits.img-set .components-button {
+  display: none;
+  left: 16px;
+  top: 16px;
+  transform: none;
+}
+.block-editor-block-list__block.wp-block-pool4u-benefits .benefits.img-set:hover .components-button {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map*/
