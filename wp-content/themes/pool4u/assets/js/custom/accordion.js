@@ -1,7 +1,7 @@
 // Accordion for faq 
 
 (() => {
-	const accordions = document.querySelectorAll(".wp-block-headspin-accordion-item");
+	const accordions = document.querySelectorAll(".wp-block-pool4u-accordion-item");
 	if (accordions) accordions.forEach(item => {
 		item.container = item.querySelector(".accordion__subtitle-container");
 		item.container.style.height = 0;

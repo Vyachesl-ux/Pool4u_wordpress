@@ -1,51 +1,32 @@
-.wp-block-headspin-accordion {
+.wp-block-pool4u-accordion {
 	padding: $base-spacing-unit 0;
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
 	@include tablet-l-up {
-        flex-direction: row;
+   
 		padding: $base-spacing-unit * 2 0;
 	}
     .accordion-item__wrapper{
         &:first-child{
-            width: 100%;
-            @include tablet-l-up{
-                width: 30%;
 
-            }
             .accordion__title{
                 margin-top: 0;
             }
 
         }
-        &:last-child{
-            width: 100%;
-            @include tablet-l-up{
-                width: 70%;
-
-            }
-        }
     }
 }
 
-.wp-block-headspin-accordion-item {
+.wp-block-pool4u-accordion-item {
 	background: $white;
 	color: $primary;
 	cursor: pointer;
 	transition: .2s;
-    border: 1px solid $primary;
     margin-bottom: 8px;
-    border-radius: 10px;
+    border-bottom: 1px solid $primary;
 
-
-    &:last-child{
-        border-bottom: 1px solid $primary;
-    }
 
 
 	.accordion__title {
-		font-weight: 600;
+        @extend %h4;
 		padding: 24px 60px 24px 24px;
 		position: relative;
 

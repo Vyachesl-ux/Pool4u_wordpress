@@ -1,17 +1,17 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"textdomain": "headspin",
+	"textdomain": "pool4u",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"version": "0.1.0",
 
-	"name": "headspin/accordion-item",
-	"title": "FAq element",
+	"name": "pool4u/accordion-item",
+	"title": "Элемент аккордиона",
 	"category": "design",
-	"description": "Shows option to the faq accordion",
+	"description": "Показывает опции к часто задаваемым вопросам",
 	"keywords": ["accordion", "faq", "questions", "frequently", "asked"],
-	"parent": ["headspin/accordion"],
+	"parent": ["pool4u/accordion"],
 	"attributes": {
 		"title": {
 			"type": "string"

@@ -171,7 +171,7 @@ function getClosestByClass(element, className) {
 // Accordion for faq 
 
 (function () {
-  var accordions = document.querySelectorAll(".wp-block-headspin-accordion-item");
+  var accordions = document.querySelectorAll(".wp-block-pool4u-accordion-item");
   if (accordions) accordions.forEach(function (item) {
     item.container = item.querySelector(".accordion__subtitle-container");
     item.container.style.height = 0;

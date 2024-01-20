@@ -129,7 +129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * BLOCK: headspin-blocks
+ * BLOCK: vl-blocks
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -160,7 +160,7 @@ const {
  *                             registered; otherwise `undefined`.
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)("headspin/accordion", {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)("pool4u/accordion", {
   icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "24",
@@ -212,8 +212,8 @@ const {
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "accordion-item__wrapper"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks, {
-      allowedBlocks: ["headspin/accordion-item"],
-      template: [["headspin/accordion-item"]],
+      allowedBlocks: ["pool4u/accordion-item"],
+      template: [["pool4u/accordion-item"]],
       renderAppender: InnerBlocks.ButtonBlockAppender
     })));
   },
