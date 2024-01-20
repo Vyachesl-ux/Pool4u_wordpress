@@ -222,7 +222,7 @@ registerBlockType( "pool4u/benefits", {
 					) }
 					style={ 
 						{ 
-						  background: `url(${attributes.imgURL}) no-repeat ${attributes.imgPosition.x * 100}% ${attributes.imgPosition.y * 100}% / cover`,
+						  background: `url(${attributes.imgURL})`,
 						}
 						
 					 }

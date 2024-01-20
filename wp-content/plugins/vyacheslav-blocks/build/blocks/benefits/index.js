@@ -421,7 +421,7 @@ const icon = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('benefits'),
       style: {
-        background: `url(${attributes.imgURL}) no-repeat ${attributes.imgPosition.x * 100}% ${attributes.imgPosition.y * 100}% / cover`
+        background: `url(${attributes.imgURL})`
       }
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: `benefits-content wrapper wide`

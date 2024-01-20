@@ -84,7 +84,7 @@ img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
 h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:400;margin-bottom:1em;margin-top:1em;line-height:26px;color:#0e1e3f}
 h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:600;margin-bottom:.2em;color:#0e1e3f}
-h4{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
+h4,.benefits-content__wrapper .benefits-content__item--text{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
 h5,.wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info .icon-info__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:27px;margin-bottom:2em;margin-top:0;color:#0e1e3f}
 h6{font-family:"Montserrat",monospace;font-size:13px;font-weight:600;margin-bottom:2em;margin-top:0;color:#0e1e3f}
 h6.is-style-orange{color:#f89e4f}
@@ -536,23 +536,23 @@ p+.wp-block-columns{margin:40px 0}
 .projects-content__item-image--info-description::after{position:absolute;content:"";width:10px;height:10px;border-bottom:1px solid #0e1e3f;border-right:1px solid #0e1e3f;top:50%;right:20px;-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%)}
 .projects-content__item:last-child{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
 .projects-content__item:last-child h3{-ms-flex-item-align:center;align-self:center}
-.benefits{background-size:cover;padding:120px 0 363px 0}
+.benefits{background-repeat:no-repeat !important;background-position:center !important;background-size:cover !important;padding:120px 0 363px 0}
 .benefits *{color:#fff}
 .benefits-content__header{padding-bottom:24px;display:-webkit-box;display:-ms-flexbox;display:flex;border-bottom:1px solid rgba(255,255,255,.3)}
 .benefits-content__header .benefits-content__title,.benefits-content__header .benefits-content__text{width:50%}
 .benefits-content__wrapper{padding:70px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .benefits-content__wrapper .benefits-content__item{text-align:center;padding:0 90px;position:relative}
 .benefits-content__wrapper .benefits-content__item:not(:nth-child(1)){border-left:1px solid rgba(255,255,255,.7)}
-.benefits-content__wrapper .benefits-content__item--num{font-size:60px;margin:0 0 10px 0}
-.benefits-content__wrapper .benefits-content__item--text{opacity:.7}
-.benefits-content__wrapper .benefits-content__item--text:nth-child(1){margin:0 0 10px 0}
+.benefits-content__wrapper .benefits-content__item--text{line-height:24px}
+.benefits-content__wrapper .benefits-content__item--text:nth-child(1){margin:0}
+.benefits-content__wrapper .benefits-content__item--text strong{font-size:60px;line-height:69px;font-weight:400}
 .fullwidth{max-width:none !important;width:100% !important}
 .center-text{text-align:center !important}
 @media only screen and (min-width:600px){:root{--base-padding:24px}
 h1{font-size:40px;line-height:71px}
 h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title{font-size:35px;line-height:45px}
 h3{font-size:21px;line-height:26px}
-h4{font-size:22px}
+h4,.benefits-content__wrapper .benefits-content__item--text{font-size:22px}
 .btn,.wp-block-button__link{width:unset}
 }@media(min-width:737px){.wp-block-pool4u-image-text.cols-5050{grid-template-columns:repeat(2,1fr);grid-template-rows:1fr;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0}
 .wp-block-pool4u-image-text.cols-4555{grid-template-columns:1fr 2fr;grid-template-rows:1fr}
@@ -627,8 +627,8 @@ h4{font-size:22px}
 .projects-content__item-image img{max-width:768px;width:100%;height:auto}
 .projects-content__item:nth-child(odd):not(:nth-child(1)){margin-top:0}
 .projects-content__item:nth-child(2){margin-top:0}
-.benefits{background-position:right;padding:120px 0 235px 0}
-.benefits-content__header{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 20px}
+.benefits{background-position:right !important;padding:120px 0 235px 0}
+.benefits-content__header{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .benefits-content__header .benefits-content__title,.benefits-content__header .benefits-content__text{width:100%}
 .benefits-content__wrapper .benefits-content__item{padding:0}
 }@media only screen and (max-width:736px){.site-footer .main-footer{-ms-flex-wrap:wrap;flex-wrap:wrap}
@@ -692,8 +692,9 @@ ul li{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:16px}
 .wp-block-headspin-news .news-wrapper .news-container .news-title{font-size:18px}
 .wp-block-headspin-news .news-wrapper .news-container .news-content{font-size:16px}
 .wp-block-headspin-news .news-wrapper .news-container+.news-container{margin-left:0;margin-top:24px}
-.benefits-content__header{padding:0;text-align:center}
+.benefits-content__header{text-align:center}
 .benefits-content__wrapper .benefits-content__item:not(:nth-child(1)){border-left:0}
+.benefits-content__wrapper .benefits-content__item--text:nth-child(1){margin:0 0 30px 0}
 .benefits-content__wrapper .benefits-content__item:not(:nth-child(3))::after{position:absolute;content:"";width:30%;height:2px;bottom:15px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background:rgba(255,255,255,.5)}
 .benefits-content__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media only screen and (max-width:400px){.case-studies-archive__header-wrapper .case-header__filter .case-filter__buttons-wrapper .case-filter__button:last-child{width:100%}

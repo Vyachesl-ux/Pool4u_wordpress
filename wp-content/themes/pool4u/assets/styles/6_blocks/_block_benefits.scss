@@ -1,11 +1,10 @@
 .benefits {
-    // background: no-repeat url("assets/images/blue_bg.webp");
-    // background-position: center;
-    background-size: cover;
-    // position: relative;
+  background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
     padding: 120px 0 363px 0;
     @include tablet-v {
-      background-position: right;
+      background-position: right !important;
       padding: 120px 0 235px 0;
     }
     * {
@@ -27,7 +26,6 @@
         @include tablet-v {
           flex-wrap: wrap;
           justify-content: center;
-          padding: 0 20px;
           .benefits-content__title,
           .benefits-content__text{
           width: 100%;
@@ -35,7 +33,6 @@
         }
         }
         @include phone-only{
-          padding: 0;
           text-align: center;
         }
       }
@@ -53,15 +50,20 @@
               border-left: none  ;
             }
           }
-  
-          &--num {
-            font-size: 60px;
-            margin: 0 0 10px 0;
-          }
           &--text {
-            opacity: 0.7;
+            line-height: 24px;
+            @extend %h4;
             &:nth-child(1){
-              margin: 0 0 10px 0;
+              margin: 0;
+              @include phone-only{
+                
+                margin: 0 0 30px 0;
+              }
+            }
+            strong{
+              font-size: 60px;
+              line-height: 69px;
+              font-weight: 400;
             }
           }
           @include phone-only {
