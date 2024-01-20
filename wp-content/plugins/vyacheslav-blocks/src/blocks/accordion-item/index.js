@@ -50,7 +50,7 @@ registerBlockType( "pool4u/accordion-item", {
 					className="accordion__title"
 					value={ attributes.title }
 					onChange={ ontitleChange }
-					placeholder="Add question..."
+					placeholder="Добавить вопрос..."
 					withoutInteractiveFormatting={ true }
 					allowedFormats={ [] }
 				/>
@@ -59,7 +59,7 @@ registerBlockType( "pool4u/accordion-item", {
 						className="accordion__subtitle"
 						value={ attributes.subtitle }
 						onChange={ onsubtitleChange }
-						placeholder="Write the answer..."
+						placeholder="Напишите ответ..."
 						withoutInteractiveFormatting={ true }
 						allowedFormats={ [] }
 					/>

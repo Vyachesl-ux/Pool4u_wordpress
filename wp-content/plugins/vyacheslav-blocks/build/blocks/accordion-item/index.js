@@ -183,7 +183,7 @@ const {
       className: "accordion__title",
       value: attributes.title,
       onChange: ontitleChange,
-      placeholder: "Add question...",
+      placeholder: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432\u043E\u043F\u0440\u043E\u0441...",
       withoutInteractiveFormatting: true,
       allowedFormats: []
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -192,7 +192,7 @@ const {
       className: "accordion__subtitle",
       value: attributes.subtitle,
       onChange: onsubtitleChange,
-      placeholder: "Write the answer...",
+      placeholder: "\u041D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043E\u0442\u0432\u0435\u0442...",
       withoutInteractiveFormatting: true,
       allowedFormats: []
     })));
