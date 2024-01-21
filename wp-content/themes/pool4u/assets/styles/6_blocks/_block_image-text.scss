@@ -58,9 +58,11 @@
             grid-row: 2;
         }
         .image-text__heading{
-            @include font('default', 400, 30px, 35px);
-            margin-top: 0;
-            margin-bottom: 10px;
+            @extend %h2;
+            margin: 24px 0;
+            @include tablet-l-up{
+                margin: 0 0 24px 0;
+            }
         }
         .image-text__subheading{
             text-transform: uppercase;

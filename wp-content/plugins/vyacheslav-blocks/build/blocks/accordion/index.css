@@ -11,5 +11,8 @@
 .wp-block-pool4u-accordion.is-selected .block-list-appender, .wp-block-pool4u-accordion.has-child-selected .block-list-appender {
   display: block;
 }
+.wp-block-pool4u-accordion .accordion__subtitle-container {
+  height: 100% !important;
+}
 
 /*# sourceMappingURL=index.css.map*/

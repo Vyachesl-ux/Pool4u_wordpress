@@ -125,7 +125,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const {
-  RichText
+  RichText,
+  InnerBlocks
 } = wp.blockEditor;
 /**
  * Register: aa Gutenberg Block.
@@ -142,7 +143,7 @@ const {
  */
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)("pool4u/accordion-item", {
-  icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  icon: () => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "24",
     height: "24",
@@ -173,12 +174,22 @@ const {
       title: newValue
     });
 
-    const onsubtitleChange = newValue => setAttributes({
-      subtitle: newValue
+    const onnumChange = newValue => setAttributes({
+      num: newValue
     });
 
+    const allowedBlocks = ["core/heading", "core/paragraph", "core/columns", "core/list", "core/quote", "core/spacer"];
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
       className: isSelected && "expanded"
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "accordion-header__wrapper"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText, {
+      className: "accordion__num",
+      value: attributes.num,
+      onChange: onnumChange,
+      placeholder: "\u041D\u043E\u043C\u0435\u0440...",
+      withoutInteractiveFormatting: true,
+      allowedFormats: []
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText, {
       className: "accordion__title",
       value: attributes.title,
@@ -186,15 +197,10 @@ const {
       placeholder: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432\u043E\u043F\u0440\u043E\u0441...",
       withoutInteractiveFormatting: true,
       allowedFormats: []
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "accordion__subtitle-container"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText, {
-      className: "accordion__subtitle",
-      value: attributes.subtitle,
-      onChange: onsubtitleChange,
-      placeholder: "\u041D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043E\u0442\u0432\u0435\u0442...",
-      withoutInteractiveFormatting: true,
-      allowedFormats: []
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks, {
+      allowedBlocks: allowedBlocks
     })));
   },
 
@@ -213,17 +219,19 @@ const {
     let {
       attributes
     } = _ref2;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText.Content, {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "accordion-header__wrapper"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText.Content, {
+      className: "accordion__num",
+      tagName: "div",
+      value: attributes.num
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText.Content, {
       className: "accordion__title",
       tagName: "div",
       value: attributes.title
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "accordion__subtitle-container"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText.Content, {
-      className: "accordion__subtitle",
-      tagName: "div",
-      value: attributes.subtitle
-    })));
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InnerBlocks.Content, null)));
   }
 });
 }();

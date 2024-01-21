@@ -16,8 +16,12 @@
 		"title": {
 			"type": "string"
 		},
-		"subtitle": {
+		"num": {
 			"type": "string"
+		},
+		"useInnerBlocks": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }

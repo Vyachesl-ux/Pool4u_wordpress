@@ -96,7 +96,7 @@ registerBlockType( "pool4u/accordion", {
 	 * @returns {Mixed} JSX Frontend HTML.
 	 */
 	save: ({attributes}) =>  (
-		<div {...useBlockProps.save()}>
+		<div id='faq' {...useBlockProps.save()}>
             <div className='accordion-item__wrapper'>
                 <RichText.Content
                     tagName="h2"

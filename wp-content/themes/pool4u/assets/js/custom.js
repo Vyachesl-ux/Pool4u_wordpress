@@ -174,10 +174,14 @@ function getClosestByClass(element, className) {
   var accordions = document.querySelectorAll(".wp-block-pool4u-accordion-item");
   if (accordions) accordions.forEach(function (item) {
     item.container = item.querySelector(".accordion__subtitle-container");
-    item.container.style.height = 0;
     item.addEventListener("click", function () {
       var open = item.classList.toggle("expanded");
-      item.container.style.height = open ? "".concat(item.container.firstElementChild.offsetHeight, "px") : 0;
+
+      // Вычисляем максимальную высоту в зависимости от контента
+      var maxHeight = open ? "".concat(item.container.scrollHeight, "px") : 0;
+
+      // Задаем высоту контейнера
+      item.container.style.height = maxHeight;
     });
   });
 })();
