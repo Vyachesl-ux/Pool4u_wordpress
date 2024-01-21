@@ -176,11 +176,7 @@ function getClosestByClass(element, className) {
     item.container = item.querySelector(".accordion__subtitle-container");
     item.addEventListener("click", function () {
       var open = item.classList.toggle("expanded");
-
-      // Вычисляем максимальную высоту в зависимости от контента
       var maxHeight = open ? "".concat(item.container.scrollHeight, "px") : 0;
-
-      // Задаем высоту контейнера
       item.container.style.height = maxHeight;
     });
   });
