@@ -48,6 +48,28 @@ if ( !function_exists( "hs_excerpt" ) ) {
 	}
 }
 
+if ( !function_exists( "slugify" ) ) {
+
+	/**
+	 * Convert string to slug format.
+	 * Replaces æøå, whitespace to '-' and removes all other characters
+	 *
+	 * @param   string  $string  String to be converted
+	 *
+	 * @return  string           The slugified string
+	 */
+	function slugify(String $string ) {
+		$slug = str_replace( "æ", "ae", strtolower( $string ) );
+		$slug = str_replace( "ø", "o", $slug );
+		$slug = str_replace( "å", "a", $slug );
+		$slug = preg_replace( "/\s+/", "-", $slug );
+		$slug = preg_replace( "/[^\w-]/", "", $slug );
+
+		return $slug;
+	}
+}
+
+
 
 if ( !function_exists( "encode_email" ) ) {
 

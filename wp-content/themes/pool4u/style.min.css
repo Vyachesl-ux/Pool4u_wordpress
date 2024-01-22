@@ -83,7 +83,7 @@ img{height:auto;max-width:100%}
 img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
 h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-pool4u-image-text .image-text__content .image-text__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:400;margin-bottom:1em;margin-top:1em;line-height:26px;color:#0e1e3f}
-h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:600;margin-bottom:.2em;color:#0e1e3f}
+h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:400;margin-bottom:1em;color:#0e1e3f}
 h4,.benefits-content__wrapper .benefits-content__item--text,.wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
 h5,.wp-block-headspin-icon-info-list .icon-info-list .wp-block-headspin-icon-info .icon-info__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;line-height:27px;margin-bottom:2em;margin-top:0;color:#0e1e3f}
 h6{font-family:"Montserrat",monospace;font-size:13px;font-weight:600;margin-bottom:2em;margin-top:0;color:#0e1e3f}
@@ -553,7 +553,7 @@ p+.wp-block-columns{margin:40px 0}
 @media only screen and (min-width:600px){:root{--base-padding:24px}
 h1{font-size:40px;line-height:71px}
 h2,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-pool4u-image-text .image-text__content .image-text__heading{font-size:35px;line-height:45px}
-h3{font-size:21px;line-height:26px}
+h3{font-size:30px;line-height:26px}
 h4,.benefits-content__wrapper .benefits-content__item--text,.wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title{font-size:22px}
 .btn,.wp-block-button__link{width:unset}
 }@media(min-width:737px){.wp-block-pool4u-image-text.cols-5050{grid-template-columns:repeat(2,1fr);grid-template-rows:1fr;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0}

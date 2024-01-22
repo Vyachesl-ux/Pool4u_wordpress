@@ -35,11 +35,11 @@ h2, %h2 {
 }
 
 h3 {
-	@include font("heading", $size: 22px, $weight: 600);
-	margin-bottom: .2em;
-	color: $header;
+	@include font("heading", $size: 22px, $weight: 400);
+	margin-bottom: 1em;
+	color: $primary;
 	@include tablet-p-up {
-		font-size: 21px;
+		font-size: 30px;
 		line-height: 26px;
 	}
 }
