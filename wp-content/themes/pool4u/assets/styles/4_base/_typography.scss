@@ -23,13 +23,35 @@ p {
 		@include font("default", $size: $mobile-font-size);
 
 	}
-	.is-style-orange{
-		color: $orange;
-		@include font("buttons", 700, 13px);
-		text-transform: uppercase;	
-		margin-bottom: 0;
+}
+p{
+ 
+	a{
+		display: block;
+		
+	}
+	&.is-style-icon-phone{
+		margin-bottom: 25px;
+		& > a{
+
+			padding: 5px 0 5px 35px;
+			background: url("assets/images/icons/telephone.svg") no-repeat left;
+		}
+		+ p a{
+			padding: 5px 0 5px 35px;
+
+		}
+	}
+	&.is-style-icon-email{
+		margin-bottom: 25px;
+		a{
+			padding: 5px 0 5px 35px;
+			background: url("assets/images/icons/email.svg") no-repeat left;
+		}
+
 	}
 }
+
 
 p:last-child {
 	margin-bottom: 0;

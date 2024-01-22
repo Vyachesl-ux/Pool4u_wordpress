@@ -6,6 +6,15 @@
         height: 24px;
         .fit-image-container{
             width: 25px;
+            .components-button{
+                position: absolute;
+                width: 70px;
+                top: 40px;
+                left: -20px;
+                border: 1px solid #000;
+                font-size: 12px;
+                padding: 0 8px;
+            }
         }
     }
 }

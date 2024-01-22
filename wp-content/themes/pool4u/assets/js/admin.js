@@ -78,8 +78,12 @@
 
       //paragraph
       wp.blocks.registerBlockStyle("core/paragraph", {
-        name: "margin",
-        label: "Двойной отступ"
+        name: "icon-phone",
+        label: "Добавить иконку телефона"
+      });
+      wp.blocks.registerBlockStyle("core/paragraph", {
+        name: "icon-email",
+        label: "Добавить иконку email"
       });
 
       //section

@@ -31,7 +31,11 @@
 		max-width: 1300px !important;
 		
 	}
-	> .wp-block-pool4u-section .wp-block{
+	> .wp-block-pool4u-section {
+		.wp-block-pool4u-image-text + .wp-block-pool4u-image-text{
+			margin-top: 50px;
+		}
+		.wp-block:not(p){
 		margin: 0 auto;
 		max-width: 800px;
 		&.alignwide{
@@ -40,6 +44,7 @@
 		&.alignfull{
 			max-width: none;
 		}
+	}
 	}
 }
 
@@ -105,13 +110,20 @@
 .editor-styles-wrapper p.wp-block,
 .editor-block-preview__content p {
 	@include font("default", 400, $base-font-size);
+	@import "4_base/typography";
 }
 
 // Fix bug with acf blocks' inspector panel
 .block-editor-block-inspector .acf-block-panel .acf-block-fields {
 	margin: 0;
 }
+
+.block-editor-link-control__search-item-action.has-icon{
+	width: 50%;
+}
 //Objects
+
+
 @import "5_objects/news-archive";
 @import "5_objects/news-single";
 @import "5_objects/video-modal";

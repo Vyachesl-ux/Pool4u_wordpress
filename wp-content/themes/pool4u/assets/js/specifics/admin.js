@@ -62,7 +62,8 @@
 			wp.blocks.registerBlockStyle("core/column", { name: "background", label: "Добавить белый фон" });
 			
 			//paragraph
-			wp.blocks.registerBlockStyle("core/paragraph", { name: "margin", label: "Двойной отступ" });
+			wp.blocks.registerBlockStyle("core/paragraph", { name: "icon-phone", label: "Добавить иконку телефона" });
+			wp.blocks.registerBlockStyle("core/paragraph", { name: "icon-email", label: "Добавить иконку email" });
 
 			
 			//section
