@@ -70,6 +70,12 @@
         label: "Двойной отступ"
       });
 
+      //columns
+      wp.blocks.registerBlockStyle("core/column", {
+        name: "background",
+        label: "Добавить белый фон"
+      });
+
       //paragraph
       wp.blocks.registerBlockStyle("core/paragraph", {
         name: "margin",

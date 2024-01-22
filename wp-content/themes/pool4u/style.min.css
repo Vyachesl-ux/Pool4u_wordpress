@@ -73,12 +73,7 @@ body,button,input,select,optgroup,textarea,p{color:#0e1e3f;font-family:"Montserr
 body .is-style-orange,button .is-style-orange,input .is-style-orange,select .is-style-orange,optgroup .is-style-orange,textarea .is-style-orange,p .is-style-orange{color:#f89e4f;font-family:"Montserrat",monospace;font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:0}
 p:last-child{margin-bottom:0}
 blockquote{border-left:4px solid #0e1e3f;font-size:24px;font-style:italic;padding:4px 0 8px 16px}
-hr.wp-block-separator{border:0;border-top:0;height:4px;background:#f89e4f;margin:30px auto;width:8% !important;border-radius:4px;position:relative;overflow:visible}
-hr.wp-block-separator::after,hr.wp-block-separator::before{position:absolute;width:110px;height:4px;background:#f89e4f;content:"";left:-120px;top:0;border-radius:4px}
-hr.wp-block-separator::before{left:110%;width:16px}
-hr.wp-block-separator.is-style-left{margin:30px 0 30px 120px}
-hr.wp-block-separator.is-style-right{margin:30px 0 30px calc(100% - 100px)}
-hr.wp-block-separator+.wp-block-pool4u-image-text{padding-top:0}
+hr.wp-block-separator{border:0;border-top:0;height:1px;background:#0e1e3f;margin:30px auto}
 img{height:auto;max-width:100%}
 img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
@@ -373,7 +368,7 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .wp-block-separator.alignwide{width:var(--page-width)}
 p+.wp-block-columns{margin:40px 0}
 .wp-block-columns{margin:80px 0;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.wp-block-columns .wp-block-column{margin-bottom:20px}
+.wp-block-columns .wp-block-column.is-style-background{background-color:#fff;border-radius:10px;padding:30px}
 .swiper-slide{cursor:-webkit-grab;cursor:grab}
 .block-editor-block-list__block.wp-block-pool4u-image-text{grid-template-rows:450px !important}
 .wp-block-pool4u-image-text{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-top:60px;padding-bottom:60px;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;line-height:23px}
@@ -650,10 +645,6 @@ h4,.benefits-content__wrapper .benefits-content__item--text,.wp-block-pool4u-acc
 .wp-block-headspin-advantages .advantages-content__item+.advantages-content__item{margin-top:50px}
 }@media(max-width:600px){.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper{grid-template-columns:1fr;grid-template-rows:1fr 1.1fr}
 }@media only screen and (max-width:599px){body,button,input,select,optgroup,textarea,p{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:16px}
-hr.wp-block-separator::after,hr.wp-block-separator::before{width:60px;left:-70px}
-hr.wp-block-separator::before{width:16px;left:130%}
-hr.wp-block-separator.is-style-left{margin:30px 0 30px 70px}
-hr.wp-block-separator.is-style-right{margin:30px 0 30px calc(100% - 70px)}
 ul li{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:16px}
 .site-header .site-branding{margin-left:0}
 .news-archive .archive-header__filter .archive-filter__buttons-wrapper{-ms-flex-wrap:wrap;flex-wrap:wrap}

@@ -18,7 +18,12 @@ p + .wp-block-columns{
 	justify-content: space-between;
 
 	.wp-block-column {
-		margin-bottom: half($base-spacing-unit);
+
+		&.is-style-background{
+			background-color: $white;
+			border-radius: 10px;
+			padding: 30px;
+		}
 	}
 
 

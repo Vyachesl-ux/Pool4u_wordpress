@@ -57,6 +57,9 @@
 			
 			//headings
 			wp.blocks.registerBlockStyle("core/heading", { name: "margin", label: "Двойной отступ" });
+
+			//columns
+			wp.blocks.registerBlockStyle("core/column", { name: "background", label: "Добавить белый фон" });
 			
 			//paragraph
 			wp.blocks.registerBlockStyle("core/paragraph", { name: "margin", label: "Двойной отступ" });
