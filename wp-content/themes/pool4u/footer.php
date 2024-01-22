@@ -63,14 +63,14 @@
 			<div class="main-footer__item">
 				<a href="<?php echo home_url("/"); ?>" class="footer-logo" aria-label="Go to home page">
 					<?php
-					$logo_path = get_template_directory() . "/assets/images/footer-logo.svg";
+					$logo_path = get_template_directory() . "/assets/images/icons/logo_white.svg";
 					if (file_exists($logo_path)) echo file_get_contents($logo_path);
 					?>
 				</a>
 			</div>
 			<?php
 				wp_nav_menu( array(
-					'theme_location' => 'footer-menu',
+					'theme_location' => 'menu-1',
 					'container' => false, 
 					'menu_class' => 'footer-menu', 
 				) );
@@ -78,10 +78,10 @@
 
 		</div>
 		<div class="footer-footer">
-			<span>© <?php echo date("Y"); hsl_e(" Sunphade"); ?></span>
+			<span>© <?php echo date("Y"); hsl_e(" Pool4u"); ?></span>
 			<div class="footer-footer__wrapp">
-				<a class="privacy" href="/privacy-policy"><?php echo hsl_e("Privacy policy") ?></a>
-				<div><?php echo hsl_e("Made by Headspin") ?></div>
+				<a class="privacy" href="/pool4u/public/privacy-policy"><?php echo hsl_e("Privacy policy") ?></a>
+				<div style="color: #FFE27E"><?php echo hsl_e("Made by Vyacheslav Lobintsev") ?> <a style="color: #29ABE2" href="mailto:vyacheslav.lobintsev@gmail.com"><?php hsl_e("Send email to Vyacheslav") ?></a></div>
 			</div>
 
 		</div>

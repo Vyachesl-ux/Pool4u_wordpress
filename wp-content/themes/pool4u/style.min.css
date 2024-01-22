@@ -186,12 +186,12 @@ body.scrolled .site-header .main-navigation .menu-hoved-meny-container,body.scro
 .fit-image-container.top img{-o-object-position:top;object-position:top}
 .fit-image-container.bottom{background-position:bottom}
 .fit-image-container.bottom img{-o-object-position:bottom;object-position:bottom}
-.site-footer{background:#0e1e3f;color:#bbeae9;font-size:13px;font-weight:500}
+.site-footer{background:#141414;color:#fff;font-size:13px;font-weight:500}
 .site-footer .main-footer,.site-footer .footer-footer{max-width:1150px;margin:auto}
 .site-footer .main-footer{display:-webkit-box;display:-ms-flexbox;display:flex;padding:50px 0;gap:20px}
-.site-footer .main-footer .footer-menu{width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:0;margin-left:0;padding-left:20px;gap:20px}
+.site-footer .main-footer .footer-menu{width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:0;margin-left:0;padding-left:20px;gap:20px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .site-footer .main-footer .footer-menu .menu-item{list-style-type:none;text-transform:uppercase;padding:0 30px}
-.site-footer .main-footer .footer-menu .menu-item a{margin-bottom:30px;font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:13px;font-weight:500;line-height:16.9px;color:#ffe27e;letter-spacing:1px;cursor:auto;display:block}
+.site-footer .main-footer .footer-menu .menu-item a{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:13px;font-weight:500;line-height:16.9px;color:#fff}
 .site-footer .main-footer .footer-menu .menu-item .sub-menu{margin-left:0}
 .site-footer .main-footer .footer-menu .menu-item .sub-menu .menu-item{padding:0}
 .site-footer .main-footer .footer-menu .menu-item .sub-menu .menu-item a{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;text-transform:capitalize;color:#bbeae9;letter-spacing:normal;cursor:pointer;padding:5px 0;margin-bottom:5px}
