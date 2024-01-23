@@ -48,12 +48,16 @@
 		@include phone-only{
 			margin-left: 0;
 		}
-		&,
+	
 		.site-title {
 			width: 160px;
 			display: flex;
 			align-items: center;
-
+			@include phone-only{
+				padding: 10px;
+				background-color: $white;
+				border-radius: 10px;
+			}
 			@include tablet-landscape {
 				width: auto;
 			}
@@ -61,6 +65,11 @@
 
 			@include big-desktop-up {
 				width:210px;
+			}
+			img{
+				@include phone-only{
+					width: 50px;
+				}
 			}
 		}
 
