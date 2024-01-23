@@ -80,8 +80,8 @@
 		<div class="footer-footer">
 			<span>© <?php echo date("Y"); hsl_e(" Pool4u"); ?></span>
 			<div class="footer-footer__wrapp">
-				<a class="privacy" href="/pool4u/public/privacy-policy"><?php echo hsl_e("Privacy policy") ?></a>
-				<div style="color: #FFE27E"><?php echo hsl_e("Made by Vyacheslav Lobintsev") ?> <a style="color: #29ABE2" href="mailto:vyacheslav.lobintsev@gmail.com"><?php hsl_e("Send email to Vyacheslav") ?></a></div>
+				<a class="privacy" href="/pool4u/public/privacy-policy"><?php echo hsl_e("Політика конфіденційності") ?></a>
+				<div style="color: #FFE27E"><?php echo hsl_e("Створено В'ячеслав Лобінцев") ?> <a style="color: #29ABE2" href="mailto:vyacheslav.lobintsev@gmail.com"><?php hsl_e("Написати до В'ячеслава") ?></a></div>
 			</div>
 
 		</div>

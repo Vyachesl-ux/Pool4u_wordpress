@@ -18,10 +18,6 @@
 		},
 		"num": {
 			"type": "string"
-		},
-		"useInnerBlocks": {
-			"type": "boolean",
-			"default": false
 		}
 	}
 }

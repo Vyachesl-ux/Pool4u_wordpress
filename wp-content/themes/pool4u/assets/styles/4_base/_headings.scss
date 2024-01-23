@@ -13,12 +13,14 @@
 
 %h1,
 h1 {
-	@include font("heading", $size: 36px, $weight: 300);
-	line-height: 45px;
-	color: $header;
+	@include font("heading", $size: 28px, $weight: 300);
+	line-height: 35px;
+	color: $primary;
+	margin-bottom: 20px;
 	@include tablet-p-up {
 		font-size: 40px;
 		line-height: 71px;
+		margin-bottom: 40px;
 	}
 }
 

@@ -4,7 +4,7 @@
 .edit-post-visual-editor img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .edit-post-visual-editor .site-content table{border-collapse:collapse;width:100%}
 .edit-post-visual-editor .site-content table td,.edit-post-visual-editor .site-content table th{border:1px solid #29abe2;padding:6px}
-.edit-post-visual-editor h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
+.edit-post-visual-editor h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:35px;color:#0e1e3f;margin-bottom:20px}
 .edit-post-visual-editor h2,.edit-post-visual-editor .wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) .edit-post-visual-editor h3,.edit-post-visual-editor .wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .edit-post-visual-editor .swiper-slide__title,.edit-post-visual-editor .wp-block-pool4u-image-text .image-text__content .image-text__heading,.wp-block-pool4u-image-text .image-text__content .edit-post-visual-editor .image-text__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:400;margin-bottom:1em;margin-top:1em;line-height:26px;color:#0e1e3f}
 .edit-post-visual-editor h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:400;margin-bottom:1em;color:#0e1e3f}
 .edit-post-visual-editor h4,.edit-post-visual-editor .benefits-content__wrapper .benefits-content__item--text,.benefits-content__wrapper .edit-post-visual-editor .benefits-content__item--text,.edit-post-visual-editor .wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title,.wp-block-pool4u-accordion-item .accordion-header__wrapper .edit-post-visual-editor .accordion__title{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
@@ -50,7 +50,7 @@
 .block-editor-block-list__layout>.wp-block-pool4u-section .wp-block:not(p).alignfull{max-width:none}
 .edit-post-visual-editor{background:#fff}
 .edit-post-visual-editor .editor-styles-wrapper{background:#fff}
-.edit-post-visual-editor .block-editor-block-list__layout h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:36px;font-weight:300;line-height:45px;color:#0e1e3f}
+.edit-post-visual-editor .block-editor-block-list__layout h1{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:28px;font-weight:300;line-height:35px;color:#0e1e3f;margin-bottom:20px}
 .edit-post-visual-editor .block-editor-block-list__layout h2,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) .edit-post-visual-editor .block-editor-block-list__layout h3,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .edit-post-visual-editor .block-editor-block-list__layout .swiper-slide__title,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-pool4u-image-text .image-text__content .image-text__heading,.wp-block-pool4u-image-text .image-text__content .edit-post-visual-editor .block-editor-block-list__layout .image-text__heading{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:21px;font-weight:400;margin-bottom:1em;margin-top:1em;line-height:26px;color:#0e1e3f}
 .edit-post-visual-editor .block-editor-block-list__layout h3{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:22px;font-weight:400;margin-bottom:1em;color:#0e1e3f}
 .edit-post-visual-editor .block-editor-block-list__layout h4,.edit-post-visual-editor .block-editor-block-list__layout .benefits-content__wrapper .benefits-content__item--text,.benefits-content__wrapper .edit-post-visual-editor .block-editor-block-list__layout .benefits-content__item--text,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title,.wp-block-pool4u-accordion-item .accordion-header__wrapper .edit-post-visual-editor .block-editor-block-list__layout .accordion__title{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;margin-bottom:.2em}
@@ -399,13 +399,18 @@ p+.wp-block-columns{margin:40px 0}
 .benefits-content__wrapper .benefits-content__item--text:nth-child(1){margin:0}
 .benefits-content__wrapper .benefits-content__item--text strong{font-size:60px;line-height:69px;font-weight:400}
 .contact-form-block .form-inputs .field-group input,.contact-form-block .form-inputs .field-group textarea{border:1px solid #0e1e3f;width:100%;margin-bottom:20px;padding:10px;background:rgba(0,0,0,0);border-radius:5px}
+.wp-block-pool4u-intro{margin-top:0;padding-bottom:70%}
+.wp-block-pool4u-intro .intro{position:relative;min-height:500px}
+.wp-block-pool4u-intro .intro .wp-block-columns{padding-top:0;position:absolute;top:100%;margin:0}
+.wp-block-pool4u-intro .intro .wp-block-columns .wp-block-column{max-width:400px;width:100%;max-width:unset}
+.wp-block-pool4u-intro .intro .wp-block-columns .wp-block-pool4u-social-icons{margin-top:40px}
 @media only screen and (min-width:600px){:root{--base-padding:24px}
-.edit-post-visual-editor h1{font-size:40px;line-height:71px}
+.edit-post-visual-editor h1{font-size:40px;line-height:71px;margin-bottom:40px}
 .edit-post-visual-editor h2,.edit-post-visual-editor .wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) .edit-post-visual-editor h3,.edit-post-visual-editor .wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .edit-post-visual-editor .swiper-slide__title,.edit-post-visual-editor .wp-block-pool4u-image-text .image-text__content .image-text__heading,.wp-block-pool4u-image-text .image-text__content .edit-post-visual-editor .image-text__heading{font-size:35px;line-height:45px}
 .edit-post-visual-editor h3{font-size:30px;line-height:26px}
 .edit-post-visual-editor h4,.edit-post-visual-editor .benefits-content__wrapper .benefits-content__item--text,.benefits-content__wrapper .edit-post-visual-editor .benefits-content__item--text,.edit-post-visual-editor .wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title,.wp-block-pool4u-accordion-item .accordion-header__wrapper .edit-post-visual-editor .accordion__title{font-size:22px}
 .edit-post-visual-editor .btn,.edit-post-visual-editor .wp-block-button__link{width:unset}
-.edit-post-visual-editor .block-editor-block-list__layout h1{font-size:40px;line-height:71px}
+.edit-post-visual-editor .block-editor-block-list__layout h1{font-size:40px;line-height:71px;margin-bottom:40px}
 .edit-post-visual-editor .block-editor-block-list__layout h2,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-headspin-advantages .advantages-content__item:nth-child(2) h3,.wp-block-headspin-advantages .advantages-content__item:nth-child(2) .edit-post-visual-editor .block-editor-block-list__layout h3,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .swiper-slide__title,.wp-block-case-studies .swiper-wrapper .case-studies__content--wrapper .case-studies__content--item .edit-post-visual-editor .block-editor-block-list__layout .swiper-slide__title,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-pool4u-image-text .image-text__content .image-text__heading,.wp-block-pool4u-image-text .image-text__content .edit-post-visual-editor .block-editor-block-list__layout .image-text__heading{font-size:35px;line-height:45px}
 .edit-post-visual-editor .block-editor-block-list__layout h3{font-size:30px;line-height:26px}
 .edit-post-visual-editor .block-editor-block-list__layout h4,.edit-post-visual-editor .block-editor-block-list__layout .benefits-content__wrapper .benefits-content__item--text,.benefits-content__wrapper .edit-post-visual-editor .block-editor-block-list__layout .benefits-content__item--text,.edit-post-visual-editor .block-editor-block-list__layout .wp-block-pool4u-accordion-item .accordion-header__wrapper .accordion__title,.wp-block-pool4u-accordion-item .accordion-header__wrapper .edit-post-visual-editor .block-editor-block-list__layout .accordion__title{font-size:22px}
@@ -430,6 +435,11 @@ p+.wp-block-columns{margin:40px 0}
 .wp-block-headspin-news{margin:80px 0}
 .wp-block-pool4u-accordion{padding:80px 0}
 .brochures-block__wrapper{width:25%}
+.wp-block-pool4u-intro{margin-top:-111px;padding-bottom:0}
+.wp-block-pool4u-intro .intro{background-position-x:80% !important}
+.wp-block-pool4u-intro .intro .wp-block-columns{position:unset;padding-top:20%;margin:80px 0}
+.wp-block-pool4u-intro .intro .wp-block-columns .wp-block-column{max-width:500px}
+.wp-block-pool4u-intro .intro .wp-block-columns .wp-block-pool4u-social-icons{margin-top:80px}
 }@media only screen and (min-width:900px)and (max-width:1199px){.wp-block-pool4u-image-text .image-text__content .image-text__subheading{margin-top:0}
 }@media only screen and (min-width:1200px){.news-archive .archive-header__filter{padding:0}
 .modal-video__container{padding:0}
@@ -443,6 +453,7 @@ p+.wp-block-columns{margin:40px 0}
 .projects-content__item-image:hover .projects-content__item-image--info{-webkit-transition:opacity .5s ease 0s;transition:opacity .5s ease 0s;opacity:1}
 .projects-content__item-image:hover .projects-content__item-image--info-description:hover{background:#d5d5d5;-webkit-transition:background .3s;transition:background .3s}
 .benefits-content__header{padding-bottom:50px}
+.wp-block-pool4u-intro .intro{background-position:right;min-height:800px}
 }@media(min-width:1380px){.wp-block-case-studies{padding:120px 0 !important;width:1150px !important}
 .wp-block-case-studies .swiper-button-prev,.wp-block-case-studies .swiper-button-next{top:128px}
 .wp-block-case-studies .swiper-button-next{right:0}
@@ -522,6 +533,10 @@ p+.wp-block-columns{margin:40px 0}
 .benefits-content__wrapper .benefits-content__item--text:nth-child(1){margin:0 0 30px 0}
 .benefits-content__wrapper .benefits-content__item:not(:nth-child(3))::after{position:absolute;content:"";width:30%;height:2px;bottom:15px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background:rgba(255,255,255,.5)}
 .benefits-content__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.wp-block-pool4u-intro{padding-bottom:130%}
+.wp-block-pool4u-intro .intro{background-position-x:90% !important}
+}@media only screen and (max-width:360px){.wp-block-pool4u-intro{padding-bottom:160%}
+.wp-block-pool4u-intro .intro .wp-block-columns .wp-block-pool4u-social-icons{margin-top:20px}
 }@-webkit-keyframes pulse{from{-webkit-transform:scale(1);transform:scale(1)}
 50%{-webkit-transform:scale(2);transform:scale(2)}
 to{-webkit-transform:scale(1);transform:scale(1)}

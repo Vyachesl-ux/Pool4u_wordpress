@@ -1,0 +1,59 @@
+.wp-block-pool4u-intro{
+    margin-top: 0;
+    padding-bottom: 70%;
+    @include small-phone-only{
+        padding-bottom: 160%;
+    }
+    @include phone-only{
+        padding-bottom: 130%;
+    }
+    @include tablet-l-up{
+        margin-top: -111px;
+        padding-bottom: 0;
+    }
+    .intro{
+        position: relative;
+        min-height: 500px;
+        @include phone-only{
+            background-position-x: 90% !important;
+        }
+        @include tablet-l-up{
+            background-position-x: 80% !important;
+        }
+        @include desktop-up{
+            background-position: right;
+            min-height: 800px;
+        }
+        .wp-block-columns{
+            padding-top: 0;
+            position: absolute;
+            top: 100%;
+            margin: 0;
+            @include tablet-l-up{
+                position: unset;
+                padding-top: 20%;
+                margin: 80px 0;
+            }
+            .wp-block-column{
+                max-width: 400px;
+                width: 100%;
+                max-width: unset;
+                @include tablet-l-up{
+                    max-width: 500px;
+
+                }
+                
+            }
+            .wp-block-pool4u-social-icons{
+                margin-top: 40px;
+                @include small-phone-only{
+                    margin-top: 20px;
+                }
+                @include tablet-l-up{
+                    margin-top: 80px;
+
+                }
+            }
+        }
+    }
+}
