@@ -8,7 +8,7 @@
  *
  * @package _headspin
  */
-
+$lang = get_bloginfo("language");
 ?>
 
 	</div><!-- #content -->

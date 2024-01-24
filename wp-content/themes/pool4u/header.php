@@ -49,12 +49,15 @@
 					</a>
 				</<?php echo $title_tag; ?>><!-- .site-branding -->
 		
-				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'headspin' ); ?></button>
+				<nav id="site-navigation" class="main-navigation hamburger-menu">
+					<input type="checkbox" id="menu__toggle"></input>
+					<label for="menu__toggle" class="menu__btn"><span></span></label>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
+						'menu_class'	=>'menu nav-items menu-box',
+						"container" => 0
 					) );
 					?>
 				</nav><!-- #site-navigation -->
