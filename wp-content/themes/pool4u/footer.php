@@ -9,17 +9,19 @@
  * @package _headspin
  */
 $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
+var_dump($lang)
 ?>
 
-	</div><!-- #content -->
-	<?php 
+</div><!-- #content -->
+<?php 
 		$projects = new WP_Query([
 			"post_type" => "projects",
 			"posts_per_page" => -1,
 			]
 		);
+		
 
-		foreach($projects->posts as $post): ?>
+		foreach($projects->posts as $post):?>
 		<div class="modal" id="<?php echo $post->ID ?>">
 			<div class="modal__dialog">
 				<div class="modal-work">
@@ -27,21 +29,21 @@ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 					<div class="modal-work__preview swiper">
 						<div class="swiper-wrapper">
 							<?php $images = get_field("project_images", $post->ID);
-								foreach($images as $image):?>
-									<div class="swiper-slide"><img src="<?php echo $image["url"] ?>" alt="фотография бассейна" class="modal-work__photo"></div>
-								<?php endforeach
-							?>
+								if ($images):
+									foreach ($images as $image) : ?>
+										<div class="swiper-slide"><img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="modal-work__photo"></div>
+									<?php endforeach; endif?>
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 					<div class="modal-work__content">
 						<h4 class="modal-work__header"><?php hsl_e("характеристики") ?></h4>
 						<div class="modal-work__content-wrapper">
-							<?php $descriptions = get_field("description", $post->ID);
+							<?php $descriptions = get_field("description_{$lang}", $post->ID);
 								foreach($descriptions as $description):?>
 									<div class="modal-work__content-item">
-										<p class="modal-text"><?php echo $description['first_col'] ?></p>
-										<p class="modal-text"><?php echo $description['second_col'] ?></p>
+										<p class="modal-text"><?php echo $description["first_col_{$lang}"] ?></p>
+										<p class="modal-text"><?php echo $description["second_col_{$lang}"] ?></p>
 									</div>
 							<?php endforeach?>
 							
@@ -80,8 +82,8 @@ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 		<div class="footer-footer">
 			<span>© <?php echo date("Y"); hsl_e(" Pool4u"); ?></span>
 			<div class="footer-footer__wrapp">
-				<a class="privacy" href="/pool4u/public/privacy-policy"><?php echo hsl_e("Політика конфіденційності") ?></a>
-				<div style="color: #FFE27E"><?php echo hsl_e("Створено В'ячеслав Лобінцев") ?> <a style="color: #29ABE2" href="mailto:vyacheslav.lobintsev@gmail.com"><?php hsl_e("Написати до В'ячеслава") ?></a></div>
+				<a class="privacy" href="/pool4u/public/privacy-policy"><?php echo $lang === 'uk' ? "Політика конфіденційності" : "Политика конфиденциальности" ?></a>
+				<div style="color: #FFE27E"><?php echo $lang === 'uk' ? "Створено В'ячеслав Лобінцев" : "Сделано Вячеслав Лобинцев" ?> <a style="color: #29ABE2" href="mailto:vyacheslav.lobintsev@gmail.com"><?php echo $lang === 'uk' ? "Написати до В'ячеслава" : "Написать Вячеславу" ?></a></div>
 			</div>
 
 		</div>

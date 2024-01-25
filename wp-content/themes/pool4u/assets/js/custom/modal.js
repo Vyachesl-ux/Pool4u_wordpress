@@ -33,7 +33,7 @@ modalClose.forEach(e => {
 })
 modalId.forEach(e => {
    e.addEventListener('click', (event) => {
-      str_val = event.target.getAttribute('class');
+      let str_val = event.target.getAttribute('class');
       if(str_val === 'modal show'){
          e.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
          document.body.classList.remove('no-scroll');

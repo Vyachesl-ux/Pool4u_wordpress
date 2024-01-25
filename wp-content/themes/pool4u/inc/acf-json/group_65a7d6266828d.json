@@ -32,8 +32,8 @@
         },
         {
             "key": "field_65a7d71a9c3cd",
-            "label": "Характеристики",
-            "name": "description",
+            "label": "Характеристики Русская версия",
+            "name": "description_ru",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -55,7 +55,7 @@
                 {
                     "key": "field_65a7d7649c3ce",
                     "label": "Первая колонка",
-                    "name": "first_col",
+                    "name": "first_col_ru",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -76,7 +76,7 @@
                 {
                     "key": "field_65a7e28948d9e",
                     "label": "Вторая колонка",
-                    "name": "second_col",
+                    "name": "second_col_ru",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -93,6 +93,72 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_65a7d71a9c3cd"
+                }
+            ]
+        },
+        {
+            "key": "field_65b249eea1386",
+            "label": "Характеристики Українська версія",
+            "name": "description_uk",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 6,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65b249eea1387",
+                    "label": "Перша колонка",
+                    "name": "first_col_uk",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65b249eea1386"
+                },
+                {
+                    "key": "field_65b249eea1388",
+                    "label": "Друга колонка",
+                    "name": "second_col_uk",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65b249eea1386"
                 }
             ]
         }
@@ -115,5 +181,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705609219
+    "modified": 1706199391
 }

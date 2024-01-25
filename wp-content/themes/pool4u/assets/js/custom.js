@@ -252,7 +252,7 @@ modalClose.forEach(function (e) {
 });
 modalId.forEach(function (e) {
   e.addEventListener('click', function (event) {
-    str_val = event.target.getAttribute('class');
+    var str_val = event.target.getAttribute('class');
     if (str_val === 'modal show') {
       e.querySelector('.modal__dialog').style.transform = "rotateX(90deg)";
       document.body.classList.remove('no-scroll');
