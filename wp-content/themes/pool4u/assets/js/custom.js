@@ -194,44 +194,27 @@ function getClosestByClass(element, className) {
  */
 
 (function () {
-  var hamburger = document.querySelector(".hamburger");
-  var mobileHeader = document.querySelector("#masthead-mobile");
-  var mobileMenu = document.querySelector(".main-navigation.mobile");
-  var menuClue = document.querySelector(".menu-clue");
-  if (hamburger) {
-    hamburger.addEventListener("click", function () {
-      if (!mobileHeader.classList.contains("active")) {
-        hamburger.classList.add("active");
-        mobileHeader.classList.add("active");
-        mobileMenu.classList.add("active");
-        document.documentElement.classList.add("open-menu");
-        menuClue.innerHTML = 'close';
-      } else {
-        hamburger.classList.remove("active");
-        mobileHeader.classList.remove("active");
-        mobileMenu.classList.remove("active");
-        document.documentElement.classList.remove("open-menu");
-        menuClue.innerHTML = "menu";
-      }
-    });
-  }
-  if (mobileMenu) {
-    var menuItems = mobileMenu.querySelectorAll(".menu-item-has-children");
-    menuItems.forEach(function (item) {
-      var link = item.querySelector("a");
-      var submenu = item.querySelector(".sub-menu");
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        var subItems = Array.prototype.slice.call(submenu.children);
-        var isOpen = item.classList.toggle("active");
-        var newHeight = 0;
-        if (isOpen) subItems.forEach(function (subItem) {
-          return newHeight += subItem.offsetHeight;
-        });
-        submenu.style.height = newHeight + "px";
+  if (document.documentElement.clientWidth <= 768) {
+    var nav = document.querySelectorAll('.menu-item:not(:last-child)');
+    nav.forEach(function (e) {
+      e.addEventListener('click', function (event) {
+        if (event.type === 'click') {
+          setTimeout(function () {
+            document.getElementById('menu__toggle').checked = false;
+            document.body.classList.remove('overflow');
+          }, 100);
+        }
       });
     });
   }
+  var checkbox = document.getElementById('menu__toggle');
+  checkbox.addEventListener('click', function (e) {
+    if (checkbox.checked) {
+      document.body.classList.add('overflow');
+    } else {
+      document.body.classList.remove('overflow');
+    }
+  });
 })();
 "use strict";
 

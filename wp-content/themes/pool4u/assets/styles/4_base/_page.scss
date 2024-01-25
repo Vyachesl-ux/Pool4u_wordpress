@@ -29,6 +29,19 @@ body {
 	background: $bgcolor;
 	color: $primary;
 	letter-spacing: 1px;
+	&.overflow{
+		position: relative;
+		&::after{
+		   position: absolute;
+		   content: '';
+		   top: 0;
+		   left: 0;
+		   bottom: 0;
+		   right: 0;
+		   background: rgba($black, .5);
+		   z-index: 1;
+		}
+	 }
 }
 .page.has-post-thumbnail{
 	& > section{

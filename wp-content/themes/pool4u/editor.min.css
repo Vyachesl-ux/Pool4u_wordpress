@@ -70,6 +70,8 @@
 .edit-post-visual-editor .block-editor-block-list__layout blockquote{border-left:4px solid #0e1e3f;font-size:24px;font-style:italic;padding:4px 0 8px 16px}
 .edit-post-visual-editor .block-editor-block-list__layout html{overflow-y:auto}
 .edit-post-visual-editor .block-editor-block-list__layout body{background:#fff;color:#0e1e3f;letter-spacing:1px}
+.edit-post-visual-editor .block-editor-block-list__layout body.overflow{position:relative}
+.edit-post-visual-editor .block-editor-block-list__layout body.overflow::after{position:absolute;content:"";top:0;left:0;bottom:0;right:0;background:rgba(20,20,20,.5);z-index:1}
 .edit-post-visual-editor .block-editor-block-list__layout .page.has-post-thumbnail>section{padding:0}
 .edit-post-visual-editor .block-editor-block-list__layout section+section:not(.padded){padding-top:0}
 .edit-post-visual-editor .block-editor-block-list__layout section.no-padding{padding:0}

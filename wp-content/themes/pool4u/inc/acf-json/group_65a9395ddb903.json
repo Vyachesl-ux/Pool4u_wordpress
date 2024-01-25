@@ -5,7 +5,7 @@
         {
             "key": "field_65a9395ee3f11",
             "label": "Заголовок",
-            "name": "heading",
+            "name": "heading_uk",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,9 +23,29 @@
             "append": ""
         },
         {
+            "key": "field_65b224294cb9b",
+            "label": "Заголовок",
+            "name": "heading_ru",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Связаться с нами",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65a939d9e3f12",
-            "label": "Текст для информации",
-            "name": "description_action",
+            "label": "Інформація",
+            "name": "description_action_uk",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
@@ -43,9 +63,49 @@
             "new_lines": ""
         },
         {
+            "key": "field_65b223c54cb9a",
+            "label": "Информация",
+            "name": "description_action_ru",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Оставьте свои контакты, мы перезвоним и проконсультируем вас",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_65a93a63e3f13",
+            "label": "Текст для кнопки переходу у форму контактів",
+            "name": "button_text_uk",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "перейти у форму",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b2237b4cb99",
             "label": "Текст для кнопки перехода в форму контактов",
-            "name": "button_text",
+            "name": "button_text_ru",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -81,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705589479
+    "modified": 1706173529
 }
