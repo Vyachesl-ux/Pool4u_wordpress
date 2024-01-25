@@ -7,6 +7,8 @@ $projects = new WP_Query([
  $id = "projects-" . $block["id"];
  $class = array_key_exists( "className", $block ) ? $block["className"] : "";
  $class .= " alignwide";
+ 
+ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 
  ?>
 

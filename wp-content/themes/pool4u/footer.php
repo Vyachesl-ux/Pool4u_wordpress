@@ -8,7 +8,7 @@
  *
  * @package _headspin
  */
-$lang = get_bloginfo("language");
+$lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 ?>
 
 	</div><!-- #content -->
