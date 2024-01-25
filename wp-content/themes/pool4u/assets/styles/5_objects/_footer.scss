@@ -41,7 +41,7 @@
 			@include phone-h{
 				flex-wrap: wrap;
 				width: 100%;
-				justify-content: flex-start;
+				justify-content: center;
 				padding-left: 0;
 			}
 			.menu-item{
@@ -55,56 +55,7 @@
 					@include font('default', 500, 13px, 16.9px);
 					color: $white;
 				} 
-				.sub-menu{
-					margin-left: 0;
-					.menu-item{
-						padding: 0;
-						a{
-							@include font('default', 400, 18px);
-							text-transform: capitalize;
-							color: $cyan80;
-							letter-spacing: normal;
-							cursor: pointer;
-							padding: 5px 0;
-							margin-bottom: 5px;
-						}
 
-					}
-				}
-				&:last-of-type{
-					.sub-menu{
-						.menu-item{
-							padding-left: 40px;
-							position: relative;
-							&::after{
-								position: absolute;
-								content:'';
-								width: 24px;
-								height: 24px;
-								left: 0;
-								top: 0;
-							}
-							&.instagram{
-								&::after{
-									background: url("assets/images/icons/instagram.png") no-repeat;
-									background-size: cover;
-								}
-							}
-							&.linkedin{
-								&::after{
-									background: url("assets/images/icons/linkedin.png") no-repeat;
-									background-size: cover;
-								}
-							}
-							&.facebook{
-								&::after{
-									background: url("assets/images/icons/facebook.png") no-repeat;
-									background-size: cover;
-								}
-							}
-						}
-					}
-				}
 			}
 		}
 	}

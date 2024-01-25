@@ -70,7 +70,7 @@ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 			</div>
 			<?php
 				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
+					'theme_location' => 'footer-menu',
 					'container' => false, 
 					'menu_class' => 'footer-menu', 
 				) );
