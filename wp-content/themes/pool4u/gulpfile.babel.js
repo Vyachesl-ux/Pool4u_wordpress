@@ -268,7 +268,15 @@ gulp.task( 'customJS', () => {
 		.pipe( uglify() )
 		.pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
 		.pipe( gulp.dest( config.jsCustomDestination ) )
-		.pipe( notify({ message: '\n\n✅  ===> CUSTOM JS — completed!\n', onLast: true }) );
+		.pipe(
+			notify({
+				title: 'Gulp',
+				subtitle: 'Success',
+				message: '✅  ===> CUSTOM JS — completed!',
+				onLast: true
+			})
+		);
+		
 });
 
 /**
