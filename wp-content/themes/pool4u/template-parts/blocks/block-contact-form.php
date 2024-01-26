@@ -58,7 +58,6 @@ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 	<div class="hidden">
 		<?php wp_nonce_field("contact_form", "nonce"); ?><!-- WP Nonce -->
 		<input type="hidden" name="action" value="contact_form">
-		<input type="hidden" name="post-id" value=<?php echo is_post_type_archive( "faq" ) ? "faq-archive" : get_the_ID(); ?>>
 		<input type="hidden" name="block-id" value=<?php echo $block["id"]; ?>>
 		<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 	</div>
