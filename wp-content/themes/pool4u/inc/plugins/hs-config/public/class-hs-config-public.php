@@ -90,7 +90,7 @@ class HS_Config_Public {
 		 * class.
 		 */
 
-		// wp_enqueue_style( $this->plugin_name, $this->url . '/css/hs-config-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, $this->url . '/css/hs-config-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -112,7 +112,7 @@ class HS_Config_Public {
 		 * class.
 		 */
 
-		// wp_enqueue_script( $this->plugin_name, $this->url . '/js/hs-config-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, $this->url . '/js/hs-config-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 
