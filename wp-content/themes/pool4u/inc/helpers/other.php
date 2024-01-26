@@ -116,7 +116,7 @@ if ( !function_exists( "ah_validate_recaptcha" ) ) {
 	 * @return  Boolean         True if validated
 	 */
 	function ah_validate_recaptcha( $token ) {
-		$secret = "6LcJSiUoAAAAALxkvip3eCKfKXMAnJezsj33ZTaH";
+		$secret = get_option( "hs_options" )["recaptcha"];
 		$url = "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$token}";
 
 		$ch = curl_init();
