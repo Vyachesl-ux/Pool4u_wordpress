@@ -12,6 +12,20 @@ $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
 ?>
 
 </div><!-- #content -->
+<div class=widget-callback>
+      <div class=callback-button>
+        <span class=callback-button-title><?php echo get_field("widget_button_title_{$lang}", "options") ?></span>
+        <span class=callback-button-phone></span>
+      </div>
+      <div class=callback-form>
+        <form id=calbback-widget-form>
+          <span class=callback-form-title><?php echo get_field("widget_form_title_{$lang}", "options") ?></span>
+          <input type=tel name=wgphone placeholder="+38 (068) 999 99 99" required>
+          <input type=hidden name=wgdata value="Заявка на обратный звонок">
+          <input class=callback-form__send type=submit value=<?php echo $lang === 'uk' ? "надіслати" : "отправить" ?>>
+        </form>
+      </div>
+    </div>
 <?php 
 		$projects = new WP_Query([
 			"post_type" => "projects",
