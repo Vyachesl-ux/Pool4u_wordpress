@@ -22,7 +22,7 @@ $projects = new WP_Query([
                             <div class="projects-content__item-image">
                                 <?php echo $thumbnail ?>
                                 <div class="projects-content__item-image--info">
-                                    <h3 class="projects-content__item-image--info-header"><?php echo $project->post_title ?></h3>
+                                    <h3 class="projects-content__item-image--info-header"><?php echo get_field("project_name_{$lang}", $project->ID) ?></h3>
                                     <a href="<?php echo get_permalink($project->ID) ?>" class="projects-content__item-image--info-description" data-modal="<?php echo $project->ID?>"><?php echo $lang === "uk" ? "Докладніше" :  "Подробнее" ?></a>
                                 </div>
                             </div>

@@ -3,6 +3,46 @@
     "title": "Projects",
     "fields": [
         {
+            "key": "field_65b3379d59a6e",
+            "label": "Название проекта",
+            "name": "project_name_ru",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65b337d659a6f",
+            "label": "Назва проекту",
+            "name": "project_name_uk",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65a7d62b9c3cc",
             "label": "Фотографии проекта",
             "name": "project_images",
@@ -181,5 +221,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706199391
+    "modified": 1706244074
 }
