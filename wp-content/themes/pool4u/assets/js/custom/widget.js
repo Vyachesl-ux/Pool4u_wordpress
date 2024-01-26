@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var formNm = document.getElementById(formID);
   
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', '../../mail.php', true);
+        xhr.open('POST', '../../../inc/mail.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   
         xhr.onload = function () {
