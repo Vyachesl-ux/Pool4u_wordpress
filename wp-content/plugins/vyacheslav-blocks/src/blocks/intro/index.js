@@ -6,13 +6,12 @@
  */
 
 //  Import CSS.
-// import './editor.scss';
+import './editor.scss';
 
 import classnames from "classnames";
 
 import { registerBlockType } from "@wordpress/blocks"; // Import registerBlockType() from wp.blocks
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
-import { stretchWide, stretchFullWidth } from '@wordpress/icons';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 
