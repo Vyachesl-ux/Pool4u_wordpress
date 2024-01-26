@@ -9,7 +9,6 @@
  * @package _headspin
  */
 $lang = str_replace( "ru-RU", "ru", hsl_current_language() );
-var_dump($lang)
 ?>
 
 </div><!-- #content -->

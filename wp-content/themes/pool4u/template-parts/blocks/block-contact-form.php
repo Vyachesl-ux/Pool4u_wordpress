@@ -13,6 +13,8 @@ $fields = get_field( "fields" );
 if ( count( $fields ) > 0 && end( $fields )["acf_fc_layout"] === "textarea" ) $class .= " textarea-last";
 
 $form_tag = ( is_admin() ) ? "div" : "form";
+$lang = str_replace( "ru-RU", "ru", hsl_current_language() );
+
 ?>
 
 <<?php echo $form_tag; ?> method="post" action="<?php echo admin_url("admin-ajax.php")?>" class="contact-form-block block <?php echo $class; ?>" id="<?php echo $id; ?>">
@@ -37,7 +39,7 @@ $form_tag = ( is_admin() ) ? "div" : "form";
 			) );
 		endwhile;
 
-		$button_text = get_field( "button_text" );
+		$button_text = get_field( "button_text_{$lang}");
 		if ( !$button_text ) $button_text = hsl__( "надіслати" );
 		?>
 		<div class="field-group submit">
