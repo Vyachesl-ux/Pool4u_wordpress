@@ -19,6 +19,10 @@
 	margin-top: -111px;
 	position: relative;
 	z-index: 1;
+	&:not(:has(.wp-block-pool4u-intro)){
+		margin-top: 0;
+		padding: 50px 24px;
+	}
 	.site-main{
 		.entry-header{
 			.entry-title{
